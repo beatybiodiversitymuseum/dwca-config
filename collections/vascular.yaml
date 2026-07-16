@@ -1,9 +1,17 @@
 name: vascular
 specify_name: Vascular Plants
-query_id: 604
-deduplicate_by: Accession Number
+query_id: 364
+deduplicate_by: collectionobject.catalogNumber
 dwca_terms:
-  Field Observations: fieldNotes
+  collectionobject.collectingEvent.text3: verbatimEventDate
+  collectionobject.collectingEvent.locality.text1: verbatimElevation
+  collectionobject.collectingEvent.remarks: habitat
+  collectionobject.collectingEvent.text2: fieldNotes
+  collectionobject.collectionObjectProperties.text31: associatedReferences
+  collectionobject.collectionObjectProperties.text16: basisOfRecord
+  collectionobject.determinations.text2: dateIdentified
+  collectionobject.determinations.text5: identifiedBy
+  collectionobject.determinations.taxon.acceptedTaxon.text1: taxonRank
 dwca_defaults:
   collectionCode: UBC
   collectionID: http://grscicoll.org/institution/university-british-columbia-botany-department

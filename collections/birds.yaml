@@ -1,7 +1,28 @@
 name: birds
-specify_name: null
-query_id: null
-deduplicate_by: Collection Object - GUID
+specify_name: Birds
+query_id: 363
+deduplicate_by: collectionobject.guid
+dwca_terms:
+  collectionobject.collectingEvent.integer1: day
+  collectionobject.collectingEvent.integer2: month
+  collectionobject.collectingEvent.text2: year
+  collectionobject.collectingEvent.text6: recordedBy
+  collectionobject.collectingEvent.text1: fieldNotes
+  collectionobject.collectingEvent.text3: habitat
+  collectionobject.collectingEvent.locality.text1: verbatimCoordinates
+  collectionobject.collectingEvent.locality.geoCoordDetails.geoRefCompiledBy.lastName: georeferenceRemarks
+  collectionobject.collectingEvent.locality.geoCoordDetails.text1: georeferencedDate
+  collectionobject.collectingEvent.locality.geoCoordDetails.protocol: georeferenceProtocol
+  collectionobject.collectingEvent.locality.geoCoordDetails.geoRefRemarks: georeferenceRemarks
+  collectionobject.collectingEvent.locality.geoCoordDetails.source: georeferenceSources
+  collectionobject.collectingEvent.locality.localityDetails.number3: maximumElevationInMeters
+  collectionobject.collectingEvent.locality.localityDetails.number4: minimumElevationInMeters
+  collectionobject.determinations.text3: dateIdentified
+  collectionobject.determinations.determiner.lastName: identifiedBy
+  collectionobject.determinations.text6: identificationQualifier
+  collectionobject.determinations.alternateName: vernacularName
+  collectionobject.determinations.preferredTaxon: scientificName
+  collectionobject.preparations.text10: preparations
 dwca_defaults:
   collectionCode: CTC
   collectionID: http://grbio.org/cool/m0m3-x1cz

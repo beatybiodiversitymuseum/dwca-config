@@ -1,115 +1,70 @@
 dwca_terms:
-  Collection Object - GUID: occurrenceID
-  Accession Number: catalogNumber
-  Catalog Number: catalogNumber
-  Date Collected: eventDate
-  Start Date: eventDate
-  Verbatim Date Collected: verbatimEventDate
-  Verbatim Date: verbatimEventDate
-  Start Date Verbatim: verbatimEventDate
-  Locality: locality
-  Verbatim Locality: verbatimLocality
-  Locality - Remarks: locationRemarks
-  Locality Remarks: locationRemarks
-  Latitude: decimalLatitude
-  Latitude1: decimalLatitude
-  Longitude: decimalLongitude
-  Longitude1: decimalLongitude
-  Verbatim Latitude: verbatimLatitude
-  Verbatim Longitude: verbatimLongitude
-  Verbatim Coordinates: verbatimCoordinates
-  Kingdom - Full Name: kingdom
-  Division - Full Name: phylum
-  Phylum - Full Name: phylum
-  Subphylum - Full Name: subphylum
-  Class - Full Name: class
-  Subclass - Full Name: subclass
-  Infraclass - Full Name: infraclass
-  Superorder - Full Name: superorder
-  Order - Full Name: order
-  Suborder - Full Name: suborder
-  Infraorder - Full Name: infraorder
-  Superfamily - Full Name: superfamily
-  Family - Full Name: family
-  Subfamily - Full Name: subfamily
-  Tribe - Full Name: tribe
-  Subtribe - Full Name: subtribe
-  Genus - Full Name: genus
-  Subgenus - Full Name: subgenus
-  Species - Full Name: specificEpithet
-  specificEpithet - Full Name: specificEpithet
-  Subspecies - Full Name: infraspecificEpithet
-  Infraspecific - Full Name: infraspecificEpithet
-  Species - Author: scientificNameAuthorship
-  Preferred Taxon: scientificName
-  Common Name: vernacularName
-  Taxonomic Rank: taxonRank
-  Infraspecific - Infraspecific Rank: taxonRank
-  Infraspecific - Infraspecific Rank (A): taxonRank
-  Continent - Full Name: continent
-  Country - Full Name: country
-  State - Full Name: stateProvince
-  County - Full Name: county
-  Named Place: higherGeography
-  Water Body: waterBody
-  Verbatim Elevation: verbatimElevation
-  Maximum Elevation in Metres Verbatim: maximumElevationInMeters
-  Minimum Elevation in Metres Verbatim: minimumElevationInMeters
-  Collectors: recordedBy
-  Recorded by Verbatim: recordedBy
-  Collector Verbatim: recordedBy
-  Collector Number: recordNumber
-  Collecting Event Number: recordNumber
-  Field Number: fieldNumber
-  Collecting Information - Habitat: habitat
-  Habitat Type: habitat
-  Field Notes: fieldNotes
-  Collection Remarks: eventRemarks
-  Associated References: associatedReferences
-  Organism Remarks: occurrenceRemarks
-  Determination Date Verbatim: dateIdentified
-  Date Identified Verbatim: dateIdentified
-  Determined Date Verbatim: dateIdentified
-  Determined Date: dateIdentified
-  Determiner Verbatim: identifiedBy
-  Determiner: identifiedBy
-  Identification Qualifier Verbatim: identificationQualifier
-  Determinations - Remarks: identificationRemarks
-  Identifications - Remarks: identificationRemarks
-  Identification Remarks: identificationRemarks
-  Previous Determinations: previousIdentifications
-  Type Status: typeStatus
-  Preparations - Disposition: disposition
-  Collection Status: disposition
-  Preparations - Preparation: preparations
-  Prep Type: preparations
-  Preparations - Count: individualCount
-  Basis of Record: basisOfRecord
-  Associated Media: associatedMedia
-  Alt Cat Number: otherCatalogNumbers
-  "SEM #": otherCatalogNumbers
-  Attributes - Sex: sex
-  Col Obj Attribute - Sex: sex
-  Min Depth: minimumDepthInMeters
-  Max Depth: maximumDepthInMeters
-  Day (Legacy): day
-  Month (Legacy): month
-  Year (Legacy): year
-  Collection Object - Modified Date: modified
-  Last Name: georeferenceRemarks
-  Last Name.1: identifiedBy
-  Geo Ref Remarks: georeferenceRemarks
-  Georeferenced Date Verbatim: georeferencedDate
-  Geo Coord Details - Protocol: georeferenceProtocol
-  Geo Coord Details - Source: georeferenceSources
-  Erathem/Era - Full Name: earliestEraOrLowestErathem
-  System/Period - Full Name: earliestPeriodOrLowestSystem
-  Series/Epoch - Full Name: earliestEpochOrLowestSeries
-  Stage/Age - Full Name: earliestAgeOrLowestStage
-  Group - Full Name: group
-  Formation - Full Name: formation
-  Member - Full Name: member
-  Exposure - Full Name: bed
+  collectionobject.guid: occurrenceID
+  collectionobject.catalogNumber: catalogNumber
+  collectionobject.altCatalogNumber: otherCatalogNumbers
+  collectionobject.timestampModified: modified
+  collectionobject.collectingEvent.startDate: eventDate
+  collectionobject.collectingEvent.endDate: eventDate
+  collectionobject.collectingEvent.verbatimDate: verbatimEventDate
+  collectionobject.collectingEvent.startDateVerbatim: verbatimEventDate
+  collectionobject.collectingEvent.verbatimLocality: verbatimLocality
+  collectionobject.collectingEvent.stationFieldNumber: recordNumber
+  collectionobject.collectingEvent.collectors: recordedBy
+  collectionobject.collectingEvent.locality.localityName: locality
+  collectionobject.collectingEvent.locality.latitude1: decimalLatitude
+  collectionobject.collectingEvent.locality.longitude1: decimalLongitude
+  collectionobject.collectingEvent.locality.verbatimLatitude: verbatimLatitude
+  collectionobject.collectingEvent.locality.verbatimLongitude: verbatimLongitude
+  collectionobject.collectingEvent.locality.verbatimElevation: verbatimElevation
+  collectionobject.collectingEvent.locality.namedPlace: higherGeography
+  collectionobject.collectingEvent.locality.remarks: locationRemarks
+  collectionobject.collectingEvent.locality.geography.Continent.fullName: continent
+  collectionobject.collectingEvent.locality.geography.Country.fullName: country
+  collectionobject.collectingEvent.locality.geography.State.fullName: stateProvince
+  collectionobject.collectingEvent.locality.geography.County.fullName: county
+  collectionobject.determinations.taxon.Kingdom.fullName: kingdom
+  collectionobject.determinations.taxon.Division.fullName: phylum
+  collectionobject.determinations.taxon.Phylum.fullName: phylum
+  collectionobject.determinations.taxon.Subphylum.fullName: subphylum
+  collectionobject.determinations.taxon.Class.fullName: class
+  collectionobject.determinations.taxon.Subclass.fullName: subclass
+  collectionobject.determinations.taxon.Infraclass.fullName: infraclass
+  collectionobject.determinations.taxon.Superorder.fullName: superorder
+  collectionobject.determinations.taxon.Order.fullName: order
+  collectionobject.determinations.taxon.Suborder.fullName: suborder
+  collectionobject.determinations.taxon.Infraorder.fullName: infraorder
+  collectionobject.determinations.taxon.Superfamily.fullName: superfamily
+  collectionobject.determinations.taxon.Family.fullName: family
+  collectionobject.determinations.taxon.Subfamily.fullName: subfamily
+  collectionobject.determinations.taxon.Tribe.fullName: tribe
+  collectionobject.determinations.taxon.Subtribe.fullName: subtribe
+  collectionobject.determinations.taxon.Genus.fullName: genus
+  collectionobject.determinations.taxon.Subgenus.fullName: subgenus
+  collectionobject.determinations.taxon.Species.fullName: specificEpithet
+  collectionobject.determinations.taxon.Subspecies.fullName: infraspecificEpithet
+  collectionobject.determinations.taxon.Infraspecific.fullName: infraspecificEpithet
+  collectionobject.determinations.taxon.author: scientificNameAuthorship
+  collectionobject.determinations.preferredTaxon.Kingdom.fullName: kingdom
+  collectionobject.determinations.preferredTaxon.Division.fullName: phylum
+  collectionobject.determinations.preferredTaxon.Class.fullName: class
+  collectionobject.determinations.preferredTaxon.Order.fullName: order
+  collectionobject.determinations.preferredTaxon.Family.fullName: family
+  collectionobject.determinations.preferredTaxon.Genus.fullName: genus
+  collectionobject.determinations.preferredTaxon.Species.fullName: specificEpithet
+  collectionobject.determinations.preferredTaxon.Infraspecific.fullName: infraspecificEpithet
+  collectionobject.determinations.determinedDate: dateIdentified
+  collectionobject.determinations.remarks: identificationRemarks
+  collectionobject.preparations.status: disposition
+  collectionobject.preparations.prepType.name: preparations
+  collectionobject.preparations.countAmt: individualCount
+  collectionobject.collectingEvent.paleoContext.chronosStrat.Erathem/Era.fullName: earliestEraOrLowestErathem
+  collectionobject.collectingEvent.paleoContext.chronosStrat.System/Period.fullName: earliestPeriodOrLowestSystem
+  collectionobject.collectingEvent.paleoContext.chronosStrat.Series/Epoch.fullName: earliestEpochOrLowestSeries
+  collectionobject.collectingEvent.paleoContext.chronosStrat.Stage/Age.fullName: earliestAgeOrLowestStage
+  collectionobject.collectingEvent.paleoContext.lithoStrat.Litho Group.fullName: group
+  collectionobject.collectingEvent.paleoContext.lithoStrat.Formation.fullName: formation
+  collectionobject.collectingEvent.paleoContext.lithoStrat.Member.fullName: member
+  collectionobject.collectingEvent.paleoContext.lithoStrat.Exposure.fullName: bed
 dwca_defaults:
   ownerInstitutionCode: BBM
   license: https://creativecommons.org/publicdomain/zero/1.0/

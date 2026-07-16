@@ -1,9 +1,15 @@
 name: entomology
-specify_name: null
-query_id: null
+specify_name: Entomology
+query_id: 369
 deduplicate_by: null
 dwca_terms:
-  Locality and Habitat Notes: localityRemarks
+  collectionobject.collectingEvent.text1: recordedBy
+  collectionobject.collectingEvent.remarks: localityRemarks
+  collectionobject.determinations.typeStatusName: typeStatus
+  collectionobject.determinations.text1: identifiedBy
+  collectionobject.determinations.text2: dateIdentified
+  collectionobject.text2: previousIdentifications
+  collectionobject.collectionObjectAttribute.text1: sex
 dwca_defaults:
   collectionCode: SEC
   collectionID: http://grbio.org/cool/qxx6-knwq

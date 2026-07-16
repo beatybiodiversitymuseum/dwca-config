@@ -1,12 +1,19 @@
 name: algae
 specify_name: Algae
-query_id: 590
-deduplicate_by: Accession Number
+query_id: 365
+deduplicate_by: collectionobject.catalogNumber
 media:
-  attachment_column: Attachments
+  attachment_column: collectionobject.collectionObjectAttachments
 dwca_terms:
-  Collecting Information - Microhabitat: microhabitat
-  Field Observations: eventRemarks
+  collectionobject.collectingEvent.text3: verbatimEventDate
+  collectionobject.collectingEvent.text4: microhabitat
+  collectionobject.collectingEvent.text5: recordedBy
+  collectionobject.collectingEvent.remarks: habitat
+  collectionobject.collectingEvent.text2: eventRemarks
+  collectionobject.collectionObjectProperties.text31: associatedReferences
+  collectionobject.determinations.text2: dateIdentified
+  collectionobject.determinations.text5: identifiedBy
+  collectionobject.determinations.preferredTaxon.text10: taxonRank
 dwca_defaults:
   collectionCode: UBC
   collectionID: http://grscicoll.org/institution/university-british-columbia-botany-department

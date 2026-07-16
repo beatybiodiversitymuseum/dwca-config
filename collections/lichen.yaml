@@ -1,0 +1,17 @@
+name: lichen
+specify_name: Lichen
+query_id: 515
+deduplicate_by: null
+dwca_terms:
+  collectionobject.collectingEvent.text3: recordedBy
+  collectionobject.collectingEvent.text4: verbatimLatitude
+  collectionobject.collectingEvent.text5: verbatimLongitude
+  collectionobject.collectingEvent.remarks: habitat
+  collectionobject.collectionObjectProperties.text31: associatedReferences
+  collectionobject.determinations.text2: typeStatus
+  collectionobject.determinations.text5: identificationReferences
+dwca_defaults: {}
+dwca_metadata:
+  dataset_id: null
+  title: null
+  description: null

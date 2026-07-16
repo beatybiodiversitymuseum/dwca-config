@@ -1,9 +1,13 @@
 name: fish
-specify_name: null
-query_id: null
+specify_name: Fishes
+query_id: 367
 deduplicate_by: null
 dwca_terms:
-  Locality and Habitat Notes: eventRemarks
+  collectionobject.collectingEvent.remarks: eventRemarks
+  collectionobject.collectingEvent.text1: recordNumber
+  collectionobject.collectingEvent.collectingEventAttribute.text9: habitat
+  collectionobject.collectingEvent.collectingEventAttribute.text1: minimumDepthInMeters
+  collectionobject.collectingEvent.collectingEventAttribute.text2: maximumDepthInMeters
 dwca_defaults:
   collectionCode: ICH
   collectionID: 5aee131f-91dd-4b78-bfee-296f86801b7f

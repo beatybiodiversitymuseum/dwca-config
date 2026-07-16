@@ -1,7 +1,12 @@
 name: marine_invertebrates
-specify_name: null
-query_id: null
-deduplicate_by: Catalog Number
+specify_name: Marine Invertebrates
+query_id: 368
+deduplicate_by: collectionobject.catalogNumber
+dwca_terms:
+  collectionobject.remarks: occurrenceRemarks
+  collectionobject.determinations.alternateName: vernacularName
+  collectionobject.determinations.determiner: identifiedBy
+  collectionobject.preparations.text2: specimenCondition
 dwca_defaults:
   collectionCode: UBC
   collectionID: 403e3c1f-086f-461b-9718-60537ee4ce3c
