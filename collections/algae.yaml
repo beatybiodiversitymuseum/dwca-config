@@ -1,0 +1,19 @@
+name: algae
+specify_name: Algae
+query_id: 590
+deduplicate_by: Accession Number
+media:
+  attachment_column: Attachments
+dwca_terms:
+  Collecting Information - Microhabitat: microhabitat
+  Field Observations: eventRemarks
+dwca_defaults:
+  collectionCode: UBC
+  collectionID: http://grscicoll.org/institution/university-british-columbia-botany-department
+  datasetName: University of British Columbia Herbarium (UBC) - Algae Collection
+  datasetID: https://doi.org/10.5886/ujwtvvs2
+dwca_metadata:
+  dataset_id: https://doi.org/10.5886/ujwtvvs2
+  title: University of British Columbia Herbarium (UBC) - Algae Collection
+  description: Occurrence records from the algae collection of the University of British
+    Columbia Herbarium.

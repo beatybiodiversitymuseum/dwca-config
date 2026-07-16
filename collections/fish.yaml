@@ -1,0 +1,15 @@
+name: fish
+specify_name: null
+query_id: null
+deduplicate_by: null
+dwca_terms:
+  Locality and Habitat Notes: eventRemarks
+dwca_defaults:
+  collectionCode: ICH
+  collectionID: 5aee131f-91dd-4b78-bfee-296f86801b7f
+  datasetName: Beaty Biodiversity Museum Fish Collection
+  datasetID: https://doi.org/10.15468/yacq34
+dwca_metadata:
+  dataset_id: https://doi.org/10.15468/yacq34
+  title: Beaty Biodiversity Museum Fish Collection
+  description: null

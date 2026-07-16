@@ -1,0 +1,16 @@
+name: marine_invertebrates
+specify_name: null
+query_id: null
+deduplicate_by: Catalog Number
+dwca_defaults:
+  collectionCode: UBC
+  collectionID: 403e3c1f-086f-461b-9718-60537ee4ce3c
+  datasetName: Beaty Biodiversity Museum Marine Invertebrate Collection
+dwca_metadata:
+  dataset_id: null
+  title: Beaty Biodiversity Museum Marine Invertebrate Collection
+  description: null
+
+# The legacy script publishes these measurement columns, but their Darwin Core
+# extension namespace has not been identified. Add them after choosing terms:
+dwca_extensions: {}

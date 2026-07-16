@@ -1,0 +1,13 @@
+name: fossils
+specify_name: null
+query_id: null
+deduplicate_by: null
+dwca_defaults:
+  collectionCode: PAL
+  collectionID: 1fcf0cb0-aa26-40d0-8311-fb4b6f2050f7
+  datasetName: Beaty Biodiversity Museum Fossil Collection
+  datasetID: https://doi.org/10.15468/vfe3yq
+dwca_metadata:
+  dataset_id: https://doi.org/10.15468/vfe3yq
+  title: Beaty Biodiversity Museum Fossil Collection
+  description: null

@@ -1,0 +1,15 @@
+name: entomology
+specify_name: null
+query_id: null
+deduplicate_by: null
+dwca_terms:
+  Locality and Habitat Notes: localityRemarks
+dwca_defaults:
+  collectionCode: SEC
+  collectionID: http://grbio.org/cool/qxx6-knwq
+  datasetName: University of British Columbia - Spencer Entomological Collection
+  datasetID: https://doi.org/10.5886/r5d29ft9
+dwca_metadata:
+  dataset_id: https://doi.org/10.5886/r5d29ft9
+  title: University of British Columbia - Spencer Entomological Collection
+  description: null

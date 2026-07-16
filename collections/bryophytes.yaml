@@ -1,0 +1,12 @@
+name: bryophytes
+source: symbiota
+deduplicate_by: catalogNumber
+dwca_defaults:
+  collectionCode: UBC
+  collectionID: http://grscicoll.org/institution/university-british-columbia-botany-department
+  datasetName: University of British Columbia Herbarium (UBC) - Bryophyte Collection
+  datasetID: https://doi.org/10.5886/5rr9fbb6
+dwca_metadata:
+  dataset_id: https://doi.org/10.5886/5rr9fbb6
+  title: University of British Columbia Herbarium (UBC) - Bryophyte Collection
+  description: null

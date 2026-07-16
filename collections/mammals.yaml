@@ -1,0 +1,13 @@
+name: mammals
+specify_name: null
+query_id: null
+deduplicate_by: null
+dwca_defaults:
+  collectionCode: CTC
+  collectionID: http://grbio.org/cool/m0m3-x1cz
+  datasetName: Cowan Tetrapod Collection - Mammals
+  datasetID: https://doi.org/10.15468/qgdpad
+dwca_metadata:
+  dataset_id: https://doi.org/10.15468/qgdpad
+  title: Cowan Tetrapod Collection - Mammals
+  description: null

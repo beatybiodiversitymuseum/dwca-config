@@ -1,0 +1,137 @@
+dwca_terms:
+  Collection Object - GUID: occurrenceID
+  Accession Number: catalogNumber
+  Catalog Number: catalogNumber
+  Date Collected: eventDate
+  Start Date: eventDate
+  Verbatim Date Collected: verbatimEventDate
+  Verbatim Date: verbatimEventDate
+  Start Date Verbatim: verbatimEventDate
+  Locality: locality
+  Verbatim Locality: verbatimLocality
+  Locality - Remarks: locationRemarks
+  Locality Remarks: locationRemarks
+  Latitude: decimalLatitude
+  Latitude1: decimalLatitude
+  Longitude: decimalLongitude
+  Longitude1: decimalLongitude
+  Verbatim Latitude: verbatimLatitude
+  Verbatim Longitude: verbatimLongitude
+  Verbatim Coordinates: verbatimCoordinates
+  Kingdom - Full Name: kingdom
+  Division - Full Name: phylum
+  Phylum - Full Name: phylum
+  Subphylum - Full Name: subphylum
+  Class - Full Name: class
+  Subclass - Full Name: subclass
+  Infraclass - Full Name: infraclass
+  Superorder - Full Name: superorder
+  Order - Full Name: order
+  Suborder - Full Name: suborder
+  Infraorder - Full Name: infraorder
+  Superfamily - Full Name: superfamily
+  Family - Full Name: family
+  Subfamily - Full Name: subfamily
+  Tribe - Full Name: tribe
+  Subtribe - Full Name: subtribe
+  Genus - Full Name: genus
+  Subgenus - Full Name: subgenus
+  Species - Full Name: specificEpithet
+  specificEpithet - Full Name: specificEpithet
+  Subspecies - Full Name: infraspecificEpithet
+  Infraspecific - Full Name: infraspecificEpithet
+  Species - Author: scientificNameAuthorship
+  Preferred Taxon: scientificName
+  Common Name: vernacularName
+  Taxonomic Rank: taxonRank
+  Infraspecific - Infraspecific Rank: taxonRank
+  Infraspecific - Infraspecific Rank (A): taxonRank
+  Continent - Full Name: continent
+  Country - Full Name: country
+  State - Full Name: stateProvince
+  County - Full Name: county
+  Named Place: higherGeography
+  Water Body: waterBody
+  Verbatim Elevation: verbatimElevation
+  Maximum Elevation in Metres Verbatim: maximumElevationInMeters
+  Minimum Elevation in Metres Verbatim: minimumElevationInMeters
+  Collectors: recordedBy
+  Recorded by Verbatim: recordedBy
+  Collector Verbatim: recordedBy
+  Collector Number: recordNumber
+  Collecting Event Number: recordNumber
+  Field Number: fieldNumber
+  Collecting Information - Habitat: habitat
+  Habitat Type: habitat
+  Field Notes: fieldNotes
+  Collection Remarks: eventRemarks
+  Associated References: associatedReferences
+  Organism Remarks: occurrenceRemarks
+  Determination Date Verbatim: dateIdentified
+  Date Identified Verbatim: dateIdentified
+  Determined Date Verbatim: dateIdentified
+  Determined Date: dateIdentified
+  Determiner Verbatim: identifiedBy
+  Determiner: identifiedBy
+  Identification Qualifier Verbatim: identificationQualifier
+  Determinations - Remarks: identificationRemarks
+  Identifications - Remarks: identificationRemarks
+  Identification Remarks: identificationRemarks
+  Previous Determinations: previousIdentifications
+  Type Status: typeStatus
+  Preparations - Disposition: disposition
+  Collection Status: disposition
+  Preparations - Preparation: preparations
+  Prep Type: preparations
+  Preparations - Count: individualCount
+  Basis of Record: basisOfRecord
+  Associated Media: associatedMedia
+  Alt Cat Number: otherCatalogNumbers
+  "SEM #": otherCatalogNumbers
+  Attributes - Sex: sex
+  Col Obj Attribute - Sex: sex
+  Min Depth: minimumDepthInMeters
+  Max Depth: maximumDepthInMeters
+  Day (Legacy): day
+  Month (Legacy): month
+  Year (Legacy): year
+  Collection Object - Modified Date: modified
+  Last Name: georeferenceRemarks
+  Last Name.1: identifiedBy
+  Geo Ref Remarks: georeferenceRemarks
+  Georeferenced Date Verbatim: georeferencedDate
+  Geo Coord Details - Protocol: georeferenceProtocol
+  Geo Coord Details - Source: georeferenceSources
+  Erathem/Era - Full Name: earliestEraOrLowestErathem
+  System/Period - Full Name: earliestPeriodOrLowestSystem
+  Series/Epoch - Full Name: earliestEpochOrLowestSeries
+  Stage/Age - Full Name: earliestAgeOrLowestStage
+  Group - Full Name: group
+  Formation - Full Name: formation
+  Member - Full Name: member
+  Exposure - Full Name: bed
+dwca_defaults:
+  ownerInstitutionCode: BBM
+  license: https://creativecommons.org/publicdomain/zero/1.0/
+  basisOfRecord: PreservedSpecimen
+  institutionCode: BBM
+  rightsHolder: The University of British Columbia
+  institutionID: http://biocol.org/urn:lsid:biocol.org:col:15106
+dwca_metadata:
+  license: CC0 1.0 Universal (https://creativecommons.org/publicdomain/zero/1.0/)
+  organization: Beaty Biodiversity Museum, University of British Columbia
+media:
+  output_column: Associated Media
+  public_base_url: https://beaty.b-cdn.net
+  link_separator: " | "
+  convertible_extensions:
+  - jpg
+  - jpeg
+  - png
+  - tif
+  - tiff
+  output_extension: jpg
+  filename:
+    pattern: ""
+    sequence_style: alphabetic
+    first_unsuffixed: true

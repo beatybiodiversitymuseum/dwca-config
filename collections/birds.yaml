@@ -1,0 +1,13 @@
+name: birds
+specify_name: null
+query_id: null
+deduplicate_by: Collection Object - GUID
+dwca_defaults:
+  collectionCode: CTC
+  collectionID: http://grbio.org/cool/m0m3-x1cz
+  datasetName: Cowan Tetrapod Collection - Birds
+  datasetID: https://doi.org/10.15468/aytqsu
+dwca_metadata:
+  dataset_id: https://doi.org/10.15468/aytqsu
+  title: Cowan Tetrapod Collection - Birds
+  description: null

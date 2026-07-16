@@ -1,0 +1,16 @@
+name: vascular
+specify_name: Vascular Plants
+query_id: 604
+deduplicate_by: Accession Number
+dwca_terms:
+  Field Observations: fieldNotes
+dwca_defaults:
+  collectionCode: UBC
+  collectionID: http://grscicoll.org/institution/university-british-columbia-botany-department
+  datasetName: University of British Columbia Herbarium (UBC) - Vascular Plant Collection
+  datasetID: https://doi.org/10.5886/rtt57cc9
+dwca_metadata:
+  dataset_id: https://doi.org/10.5886/rtt57cc9
+  title: University of British Columbia Herbarium (UBC) - Vascular Plant Collection
+  description: Occurrence records from the vascular plant collection of the University
+    of British Columbia Herbarium.
