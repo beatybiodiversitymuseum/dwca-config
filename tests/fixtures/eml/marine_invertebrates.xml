@@ -1,0 +1,158 @@
+    <eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+             xmlns:dc="http://purl.org/dc/terms/"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.2/eml.xsd"
+             packageId="https://data.canadensys.net/ipt/resource?id=beaty-biodiversity-museum-marine-invertebrates/v1.1" system="http://gbif.org" scope="system"
+    xml:lang="eng">
+
+        <dataset>
+                <alternateIdentifier>https://data.canadensys.net/ipt/resource?r=beaty-biodiversity-museum-marine-invertebrates</alternateIdentifier>
+                <title xml:lang="eng">Beaty Biodiversity Museum Marine Invertebrate Collection</title>
+                    <creator>
+            <individualName>
+                    <givenName>Sheila</givenName>
+                <surName>Byers</surName>
+            </individualName>
+            <organizationName>Beaty Biodiversity Museum</organizationName>
+            <positionName>Curatorial Assistant, Marine Invertebrate Collection</positionName>
+            <address>
+                    <deliveryPoint>2212 Main Mall</deliveryPoint>
+                    <city>Vancouver</city>
+                    <administrativeArea>British Columbia</administrativeArea>
+                    <postalCode>V6T 1Z4</postalCode>
+                    <country>CA</country>
+            </address>
+            <electronicMailAddress>sheila.byers@ubc.ca</electronicMailAddress>
+                    </creator>
+                    <metadataProvider>
+            <individualName>
+                    <givenName>Paul</givenName>
+                <surName>Bucci</surName>
+            </individualName>
+            <organizationName>Beaty Biodiversity Museum</organizationName>
+            <positionName>Collections Curator, Biodiversity Informatics</positionName>
+            <address>
+                    <deliveryPoint>2212 Main Mall</deliveryPoint>
+                    <city>Vancouver</city>
+                    <administrativeArea>British Columbia</administrativeArea>
+                    <postalCode>V6T 1Z4</postalCode>
+                    <country>CA</country>
+            </address>
+            <electronicMailAddress>paul.bucci@ubc.ca</electronicMailAddress>
+                    <userId directory="https://orcid.org/">0000-0002-8646-7730</userId>
+                    </metadataProvider>
+                    <associatedParty>
+            <individualName>
+                    <givenName>Sheila</givenName>
+                <surName>Byers</surName>
+            </individualName>
+            <organizationName>Beaty Biodiversity Museum</organizationName>
+            <positionName>Curatorial Assistant, Marine Invertebrate Collection</positionName>
+            <address>
+                    <deliveryPoint>2212 Main Mall</deliveryPoint>
+                    <city>Vancouver</city>
+                    <administrativeArea>British Columbia</administrativeArea>
+                    <postalCode>V6T 1Z4</postalCode>
+                    <country>CA</country>
+            </address>
+            <electronicMailAddress>sheila.byers@ubc.ca</electronicMailAddress>
+            <role>custodianSteward</role>
+                    </associatedParty>
+                    <associatedParty>
+            <individualName>
+                    <givenName>Paul</givenName>
+                <surName>Bucci</surName>
+            </individualName>
+            <organizationName>Beaty Biodiversity Museum</organizationName>
+            <positionName>Collections Curator, Biodiversity Informatics</positionName>
+            <address>
+                    <deliveryPoint>2212 Main Mall</deliveryPoint>
+                    <city>Vancouver</city>
+                    <administrativeArea>British Columbia</administrativeArea>
+                    <postalCode>V6T 1Z4</postalCode>
+                    <country>CA</country>
+            </address>
+            <electronicMailAddress>paul.bucci@ubc.ca</electronicMailAddress>
+                    <userId directory="https://orcid.org/">0000-0002-8646-7730</userId>
+            <role>processor</role>
+                    </associatedParty>
+            <pubDate>
+                    2024-12-10
+            </pubDate>
+            <language>eng</language>
+                <abstract>
+                            <para>The Marine Invertebrate collection of the University of British Columbia was started in the 1940s with alcohol-preserved specimens collected by Dr. C. McLean Fraser and Dr. Ian McTaggart-Cowan. Primarily used for teaching, the collection eventually grew to several thousand specimens representing the major lineages of invertebrate animals. In 2006, Kelly Norton donated the Alice Stein collection, consisting of thousands of shells and corals. The Marine Invertebrate Collection was further expanded in 2007 with a large donation of shells from Evelyn Hebb Killam. Both contributions represent mostly tropical species and include some spectacular examples of global marine biodiversity, such as giant clams and some rare species of cowries.</para>
+                </abstract>
+                        <keywordSet>
+                                    <keyword>Occurrence</keyword>
+                            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml</keywordThesaurus>
+                        </keywordSet>
+                        <keywordSet>
+                                    <keyword>Specimen</keyword>
+                            <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+                        </keywordSet>
+                <intellectualRights>
+                    <para>To the extent possible under law, the publisher has waived all rights to these data and has dedicated them to the <ulink url="http://creativecommons.org/publicdomain/zero/1.0/legalcode"><citetitle>Public Domain (CC0 1.0)</citetitle></ulink>. Users may copy, modify, distribute and use the work, including for commercial purposes, without restriction.</para>
+                </intellectualRights>
+                <coverage>
+                        <geographicCoverage>
+                                <geographicDescription>Worldwide, emphasis on Pacific Northwest of North America</geographicDescription>
+                            <boundingCoordinates>
+                                <westBoundingCoordinate>-180</westBoundingCoordinate>
+                                <eastBoundingCoordinate>180</eastBoundingCoordinate>
+                                <northBoundingCoordinate>90</northBoundingCoordinate>
+                                <southBoundingCoordinate>-90</southBoundingCoordinate>
+                            </boundingCoordinates>
+                        </geographicCoverage>
+                </coverage>
+                <maintenance>
+                    <description>
+                        <para></para>
+                    </description>
+                    <maintenanceUpdateFrequency>continually</maintenanceUpdateFrequency>
+                </maintenance>
+
+                    <contact>
+            <individualName>
+                    <givenName>Sheila</givenName>
+                <surName>Byers</surName>
+            </individualName>
+            <organizationName>Beaty Biodiversity Museum</organizationName>
+            <positionName>Curatorial Assistant, Marine Invertebrate Collection</positionName>
+            <address>
+                    <deliveryPoint>2212 Main Mall</deliveryPoint>
+                    <city>Vancouver</city>
+                    <administrativeArea>British Columbia</administrativeArea>
+                    <postalCode>V6T 1Z4</postalCode>
+                    <country>CA</country>
+            </address>
+            <electronicMailAddress>sheila.byers@ubc.ca</electronicMailAddress>
+                    </contact>
+                    <contact>
+            <individualName>
+                    <givenName>Paul</givenName>
+                <surName>Bucci</surName>
+            </individualName>
+            <organizationName>Beaty Biodiversity Museum</organizationName>
+            <positionName>Collections Curator, Biodiversity Informatics</positionName>
+            <address>
+                    <deliveryPoint>2212 Main Mall</deliveryPoint>
+                    <city>Vancouver</city>
+                    <administrativeArea>British Columbia</administrativeArea>
+                    <postalCode>V6T 1Z4</postalCode>
+                    <country>CA</country>
+            </address>
+            <electronicMailAddress>paul.bucci@ubc.ca</electronicMailAddress>
+                    <userId directory="https://orcid.org/">0000-0002-8646-7730</userId>
+                    </contact>
+        </dataset>
+            <additionalMetadata>
+                <metadata>
+                    <gbif>
+                            <dateStamp>2024-12-10T23:27:33.972+00:00</dateStamp>
+                            <hierarchyLevel>dataset</hierarchyLevel>
+                            <dc:replaces>https://data.canadensys.net/ipt/resource?id=beaty-biodiversity-museum-marine-invertebrates/v1.1.xml</dc:replaces>
+                    </gbif>
+                </metadata>
+            </additionalMetadata>
+    </eml:eml>

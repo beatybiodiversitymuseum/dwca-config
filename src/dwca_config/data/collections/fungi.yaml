@@ -1,12 +1,10 @@
-name: bryophytes
-source: symbiota
-deduplicate_by: catalogNumber
+name: fungi
 dwca_defaults:
   collectionCode: UBC
   collectionID: http://grscicoll.org/institution/university-british-columbia-botany-department
-  datasetID: https://doi.org/10.5886/5rr9fbb6
+  datasetID: https://doi.org/10.5886/h4px7g4b
 eml_metadata:
-  datasetTitle: University of British Columbia Herbarium (UBC) - Bryophytes Collection
+  datasetTitle: University of British Columbia Herbarium (UBC) - Fungi Collection
   creators:
   - givenName: Karen
     surName: Golinski
@@ -20,42 +18,43 @@ eml_metadata:
       administrativeArea: British Columbia
       postalCode: V6T 1Z4
       country: CA
-    userId:
-      value: 0000-0002-4205-7481
-      directory: https://orcid.org/
   associatedParties:
   - givenName: Jeannette
     surName: Whitton
     organizationName: University of British Columbia Herbarium
     positionName: Herbarium Director
     email: jeannette.whitton@botany.ubc.ca
-    onlineUrl: http://www.botany.ubc.ca/people/jwhitton.html
-    role: principalInvestigator
     address:
       deliveryPoint: 6270 University Boulevard
       city: Vancouver
       administrativeArea: British Columbia
       postalCode: V6T 1Z4
       country: CA
-    userId:
-      value: 0000-0003-1609-5203
-      directory: https://orcid.org/
+  - givenName: Mary
+    surName: Berbee
+    organizationName: University of British Columbia Herbarium
+    positionName: Curator, Fungi
+    email: berbee@mail.ubc.ca
+    role: curator
+    address:
+      deliveryPoint: 3529-6270 University Boulevard
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
   - givenName: Karen
     surName: Golinski
     organizationName: University of British Columbia Herbarium
     positionName: Collections Curator, Bryophyte, Lichen, and Fungi Collections
     email: karen.golinski@ubc.ca
     onlineUrl: https://beatymuseum.ubc.ca/research-2/collections/herbarium/
-    role: custodianSteward
+    role: curator
     address:
       deliveryPoint: 2212 Main Mall
       city: Vancouver
       administrativeArea: British Columbia
       postalCode: V6T 1Z4
       country: CA
-    userId:
-      value: 0000-0002-4205-7481
-      directory: https://orcid.org/
   - givenName: Paul
     surName: Bucci
     organizationName: Beaty Biodiversity Museum
@@ -71,22 +70,9 @@ eml_metadata:
     userId:
       value: 0000-0002-8646-7730
       directory: https://orcid.org/
-  abstract: 'The UBC bryophyte collection houses mosses, liverworts, and hornworts and is
-    a tribute to the career of Dr. Wilf Schofield, who came to UBC in 1960. Professor Schofield
-    was the first bryologist hired at a Canadian university. When he started at UBC, the collection
-    included roughly 3,000 specimens. As a result of Dr. Schofield’s efforts and those of
-    his students and post-doctoral researchers, the collection has grown to over 250,000 specimens,
-    a considerable legacy. After his retirement, Dr. Schofield continued his research, up
-    to the month before his passing in November 2008. He was such an avid collector that his
-    specimens will continue to be processed and added to the collection for some time. - See
-    more at: http://www.beatymuseum.ubc.ca/herbarium-bryophytes#sthash.pjK2COJK.dpuf'
+  abstract: This dataset includes all digitized fungi in the UBC collection, encompassing
+    approximately 95% of the collection.
   keywordSets:
-  - keywords:
-    - Occurrence
-    thesaurus: 'GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml'
-  - keywords:
-    - Specimen
-    thesaurus: 'GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml'
   - keywords:
     - UBC
     - University of British Columbia Herbarium
@@ -97,35 +83,46 @@ eml_metadata:
     - collection
     - herbarium
     - specimens
-    - bryophytes
+    - fungi
     thesaurus: n/a
+  - keywords:
+    - Occurrence
+    thesaurus: 'GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml'
+  - keywords:
+    - Specimen
+    thesaurus: 'GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml'
   - keywords:
     - Occurrence
     thesaurus: 'GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml'
   distributions:
   - scope: document
     function: information
-    url: https://collections.beatymuseum.ubc.ca/dataset/4edd9396-59df-4b01-9e29-dc21a59f9963
+    url: https://collections.beatymuseum.ubc.ca/dataset/ca1bcd7e-7387-42f9-81ba-1470db55e3e8
   geographicCoverage:
-    description: 'The major representation is for British Columbia and adjacent states of
-      the United States: Alaska, Washington, Oregon, California, and Arizona, in particular.
-      Strong representation is also true for the Atlantic provinces of Canada, largely through
-      R.J. Belland. For Europe the collection has modest holdings; for Australia and New Zealand
-      the collections are representative, but not extensive. The same is true for Japan, Taiwan,
-      and the Hawaiian Islands. The lowest representation is for Africa and South America.
-      - See more at: http://www.beatymuseum.ubc.ca/herbarium-bryophytes#sthash.pjK2COJK.dpuf'
+    description: The UBC Herbarium fungi collection is worldwide in scope, with emphasis on
+      British Columbia & North America.
   taxonomicCoverage:
-    description: 'The genera with the most comprehensive representation are: Mosses; Andreaea,
-      Grimmia, Hygrohypnum, Hypnum, Hylocomium, Isothecium, Philonotis, Racomitrium, Rhytidiadelphus,
-      Sanionia, Schistidium, Sphagnum, Takakia, Tetraphis, Tetrodontium and Hepatics; Anastrophyllum,
-      Diplophyllum, Gymnomitrion, Lophozia (s.l.), Marsupella, Plagiochila, Ptilidium, Scapania.
-      Type specimens : 220'
+    description: Fungi represent a separate Kingdom from plants and contain the basidiomycetes
+      (including mushrooms, shelf fungi), ascomycetes (morels, truffles, molds, yeasts), and
+      teliomycetes (smuts, rusts), as well as slime molds.
     classifications:
-    - rankName: genus
-      rankValue: Andreaea
+    - rankName: kingdom
+      rankValue: Fungi
       commonName: ''
+    - rankName: kingdom
+      rankValue: Protozoa
+      commonName: ''
+    - rankName: phylum
+      rankValue: Basidiomycota
+      commonName: ''
+    - rankName: phylum
+      rankValue: Ascomycota
+      commonName: ''
+    - rankName: phylum
+      rankValue: Amoebozoa
+      commonName: Slime molds
   maintenance:
-    frequency: monthly
+    frequency: continually
   contacts:
   - givenName: Karen
     surName: Golinski
@@ -139,9 +136,6 @@ eml_metadata:
       administrativeArea: British Columbia
       postalCode: V6T 1Z4
       country: CA
-    userId:
-      value: 0000-0002-4205-7481
-      directory: https://orcid.org/
   - givenName: Paul
     surName: Bucci
     organizationName: Beaty Biodiversity Museum
@@ -160,7 +154,7 @@ eml_metadata:
   collection:
     parentIdentifier: UBC
     identifier: UBC
-    name: UBC Herbarium
-  formationPeriod: early 1900s - present
+    name: University of British Columbia Herbarium (UBC) - Fungi Collection
+  formationPeriod: early 1900s-present
   preservationMethods:
-  - mounted
+  - dried

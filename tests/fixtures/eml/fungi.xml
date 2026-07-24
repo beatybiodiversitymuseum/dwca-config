@@ -1,0 +1,252 @@
+    <eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+             xmlns:dc="http://purl.org/dc/terms/"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.2/eml.xsd"
+             packageId="ca1bcd7e-7387-42f9-81ba-1470db55e3e8/v14.11" system="http://gbif.org" scope="system"
+    xml:lang="eng">
+
+        <dataset>
+                <alternateIdentifier>ca1bcd7e-7387-42f9-81ba-1470db55e3e8</alternateIdentifier>
+                <alternateIdentifier>http://dx.doi.org/10.5886/h4px7g4b</alternateIdentifier>
+                <alternateIdentifier>https://data.canadensys.net/ipt/resource?r=ubc-fungi-specimens</alternateIdentifier>
+                <title xml:lang="eng">University of British Columbia Herbarium (UBC) - Fungi Collection</title>
+                    <creator>
+            <individualName>
+                    <givenName>Karen</givenName>
+                <surName>Golinski</surName>
+            </individualName>
+            <organizationName>University of British Columbia Herbarium</organizationName>
+            <positionName>Collections Curator, Bryophyte, Lichen, and Fungi Collections</positionName>
+            <address>
+                    <deliveryPoint>2212 Main Mall</deliveryPoint>
+                    <city>Vancouver</city>
+                    <administrativeArea>British Columbia</administrativeArea>
+                    <postalCode>V6T 1Z4</postalCode>
+                    <country>CA</country>
+            </address>
+            <electronicMailAddress>karen.golinski@ubc.ca</electronicMailAddress>
+            <onlineUrl>https://beatymuseum.ubc.ca/research-2/collections/herbarium/</onlineUrl>
+                    </creator>
+                    <metadataProvider>
+            <individualName>
+                    <givenName>Paul</givenName>
+                <surName>Bucci</surName>
+            </individualName>
+            <organizationName>Beaty Biodiversity Museum</organizationName>
+            <positionName>Collections Curator, Biodiversity Informatics</positionName>
+            <address>
+                    <deliveryPoint>2212 Main Mall</deliveryPoint>
+                    <city>Vancouver</city>
+                    <administrativeArea>British Columbia</administrativeArea>
+                    <postalCode>V6T 1Z4</postalCode>
+                    <country>CA</country>
+            </address>
+            <electronicMailAddress>paul.bucci@ubc.ca</electronicMailAddress>
+                    <userId directory="https://orcid.org/">0000-0002-8646-7730</userId>
+                    </metadataProvider>
+                    <associatedParty>
+            <individualName>
+                    <givenName>Jeannette</givenName>
+                <surName>Whitton</surName>
+            </individualName>
+            <organizationName>University of British Columbia Herbarium</organizationName>
+            <positionName>Herbarium Director</positionName>
+            <address>
+                    <deliveryPoint>6270 University Boulevard</deliveryPoint>
+                    <city>Vancouver</city>
+                    <administrativeArea>British Columbia</administrativeArea>
+                    <postalCode>V6T 1Z4</postalCode>
+                    <country>CA</country>
+            </address>
+            <electronicMailAddress>jeannette.whitton@botany.ubc.ca</electronicMailAddress>
+            <role></role>
+                    </associatedParty>
+                    <associatedParty>
+            <individualName>
+                    <givenName>Mary</givenName>
+                <surName>Berbee</surName>
+            </individualName>
+            <organizationName>University of British Columbia Herbarium</organizationName>
+            <positionName>Curator, Fungi</positionName>
+            <address>
+                    <deliveryPoint>3529-6270 University Boulevard</deliveryPoint>
+                    <city>Vancouver</city>
+                    <administrativeArea>British Columbia</administrativeArea>
+                    <postalCode>V6T 1Z4</postalCode>
+                    <country>CA</country>
+            </address>
+            <electronicMailAddress>berbee@mail.ubc.ca</electronicMailAddress>
+            <role>curator</role>
+                    </associatedParty>
+                    <associatedParty>
+            <individualName>
+                    <givenName>Karen</givenName>
+                <surName>Golinski</surName>
+            </individualName>
+            <organizationName>University of British Columbia Herbarium</organizationName>
+            <positionName>Collections Curator, Bryophyte, Lichen, and Fungi Collections</positionName>
+            <address>
+                    <deliveryPoint>2212 Main Mall</deliveryPoint>
+                    <city>Vancouver</city>
+                    <administrativeArea>British Columbia</administrativeArea>
+                    <postalCode>V6T 1Z4</postalCode>
+                    <country>CA</country>
+            </address>
+            <electronicMailAddress>karen.golinski@ubc.ca</electronicMailAddress>
+            <onlineUrl>https://beatymuseum.ubc.ca/research-2/collections/herbarium/</onlineUrl>
+            <role>curator</role>
+                    </associatedParty>
+                    <associatedParty>
+            <individualName>
+                    <givenName>Paul</givenName>
+                <surName>Bucci</surName>
+            </individualName>
+            <organizationName>Beaty Biodiversity Museum</organizationName>
+            <positionName>Collections Curator, Biodiversity Informatics</positionName>
+            <address>
+                    <deliveryPoint>2212 Main Mall</deliveryPoint>
+                    <city>Vancouver</city>
+                    <administrativeArea>British Columbia</administrativeArea>
+                    <postalCode>V6T 1Z4</postalCode>
+                    <country>CA</country>
+            </address>
+            <electronicMailAddress>paul.bucci@ubc.ca</electronicMailAddress>
+                    <userId directory="https://orcid.org/">0000-0002-8646-7730</userId>
+            <role>metadataProvider</role>
+                    </associatedParty>
+            <pubDate>
+                    2024-10-29
+            </pubDate>
+            <language>eng</language>
+                <abstract>
+                            <para>This dataset includes all digitized fungi in the UBC collection, encompassing approximately 95% of the collection.</para>
+                </abstract>
+                        <keywordSet>
+                                    <keyword>UBC</keyword>
+                                    <keyword>University of British Columbia Herbarium</keyword>
+                                    <keyword>Beaty Biodiversity Museum</keyword>
+                                    <keyword>Canadensys</keyword>
+                                    <keyword>Canada</keyword>
+                                    <keyword>British Columbia</keyword>
+                                    <keyword>collection</keyword>
+                                    <keyword>herbarium</keyword>
+                                    <keyword>specimens</keyword>
+                                    <keyword>fungi</keyword>
+                            <keywordThesaurus>n/a</keywordThesaurus>
+                        </keywordSet>
+                        <keywordSet>
+                                    <keyword>Occurrence</keyword>
+                            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+                        </keywordSet>
+                        <keywordSet>
+                                    <keyword>Specimen</keyword>
+                            <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+                        </keywordSet>
+                        <keywordSet>
+                                    <keyword>Occurrence</keyword>
+                            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml</keywordThesaurus>
+                        </keywordSet>
+                <intellectualRights>
+                    <para>To the extent possible under law, the publisher has waived all rights to these data and has dedicated them to the <ulink url="http://creativecommons.org/publicdomain/zero/1.0/legalcode"><citetitle>Public Domain (CC0 1.0)</citetitle></ulink>. Users may copy, modify, distribute and use the work, including for commercial purposes, without restriction.</para>
+                </intellectualRights>
+                <distribution scope="document">
+                    <online>
+                        <url function="information">https://collections.beatymuseum.ubc.ca/dataset/ca1bcd7e-7387-42f9-81ba-1470db55e3e8</url>
+                    </online>
+                </distribution>
+                <coverage>
+                        <geographicCoverage>
+                                <geographicDescription>The UBC Herbarium fungi collection is worldwide in scope, with emphasis on British Columbia &amp; North America.</geographicDescription>
+                            <boundingCoordinates>
+                                <westBoundingCoordinate>-180</westBoundingCoordinate>
+                                <eastBoundingCoordinate>180</eastBoundingCoordinate>
+                                <northBoundingCoordinate>90</northBoundingCoordinate>
+                                <southBoundingCoordinate>-90</southBoundingCoordinate>
+                            </boundingCoordinates>
+                        </geographicCoverage>
+                                <taxonomicCoverage>
+                                        <generalTaxonomicCoverage>Fungi represent a separate Kingdom from plants and contain the basidiomycetes (including mushrooms, shelf fungi), ascomycetes (morels, truffles, molds, yeasts), and teliomycetes (smuts, rusts), as well as slime molds.</generalTaxonomicCoverage>
+                                        <taxonomicClassification>
+                                                <taxonRankName>kingdom</taxonRankName>
+                                            <taxonRankValue>Fungi</taxonRankValue>
+                                        </taxonomicClassification>
+                                        <taxonomicClassification>
+                                                <taxonRankName>kingdom</taxonRankName>
+                                            <taxonRankValue>Protozoa</taxonRankValue>
+                                        </taxonomicClassification>
+                                        <taxonomicClassification>
+                                                <taxonRankName>phylum</taxonRankName>
+                                            <taxonRankValue>Basidiomycota</taxonRankValue>
+                                        </taxonomicClassification>
+                                        <taxonomicClassification>
+                                                <taxonRankName>phylum</taxonRankName>
+                                            <taxonRankValue>Ascomycota</taxonRankValue>
+                                        </taxonomicClassification>
+                                        <taxonomicClassification>
+                                                <taxonRankName>phylum</taxonRankName>
+                                            <taxonRankValue>Amoebozoa</taxonRankValue>
+                                                <commonName>Slime molds</commonName>
+                                        </taxonomicClassification>
+                                </taxonomicCoverage>
+                </coverage>
+                <maintenance>
+                    <description>
+                        <para></para>
+                    </description>
+                    <maintenanceUpdateFrequency>continually</maintenanceUpdateFrequency>
+                </maintenance>
+
+                    <contact>
+            <individualName>
+                    <givenName>Karen</givenName>
+                <surName>Golinski</surName>
+            </individualName>
+            <organizationName>University of British Columbia Herbarium</organizationName>
+            <positionName>Collections Curator, Bryophyte, Lichen, and Fungi Collections</positionName>
+            <address>
+                    <deliveryPoint>2212 Main Mall</deliveryPoint>
+                    <city>Vancouver</city>
+                    <administrativeArea>British Columbia</administrativeArea>
+                    <postalCode>V6T 1Z4</postalCode>
+                    <country>CA</country>
+            </address>
+            <electronicMailAddress>karen.golinski@ubc.ca</electronicMailAddress>
+            <onlineUrl>https://beatymuseum.ubc.ca/research-2/collections/herbarium/</onlineUrl>
+                    </contact>
+                    <contact>
+            <individualName>
+                    <givenName>Paul</givenName>
+                <surName>Bucci</surName>
+            </individualName>
+            <organizationName>Beaty Biodiversity Museum</organizationName>
+            <positionName>Collections Curator, Biodiversity Informatics</positionName>
+            <address>
+                    <deliveryPoint>2212 Main Mall</deliveryPoint>
+                    <city>Vancouver</city>
+                    <administrativeArea>British Columbia</administrativeArea>
+                    <postalCode>V6T 1Z4</postalCode>
+                    <country>CA</country>
+            </address>
+            <electronicMailAddress>paul.bucci@ubc.ca</electronicMailAddress>
+                    <userId directory="https://orcid.org/">0000-0002-8646-7730</userId>
+                    </contact>
+        </dataset>
+            <additionalMetadata>
+                <metadata>
+                    <gbif>
+                            <dateStamp>2012-04-11T10:40:55.359+00:00</dateStamp>
+                            <hierarchyLevel>dataset</hierarchyLevel>
+                                <citation identifier="doi:10.5886/h4px7g4b">University of British Columbia Herbarium (UBC) - Fungi Collection from University of British Columbia. http://dx.doi.org/10.5886/h4px7g4b (accessed on [date])</citation>
+                            <resourceLogoUrl>https://explore.beatymuseum.ubc.ca/brand/sub/beaty-logo-sub-fungi-colour.svg</resourceLogoUrl>
+                                    <collection>
+                                            <parentCollectionIdentifier>UBC</parentCollectionIdentifier>
+                                            <collectionIdentifier>UBC</collectionIdentifier>
+                                        <collectionName>University of British Columbia Herbarium (UBC) - Fungi Collection</collectionName>
+                                    </collection>
+                                <formationPeriod>early 1900s-present</formationPeriod>
+                                    <specimenPreservationMethod>dried</specimenPreservationMethod>
+                            <dc:replaces>ca1bcd7e-7387-42f9-81ba-1470db55e3e8/v14.11.xml</dc:replaces>
+                    </gbif>
+                </metadata>
+            </additionalMetadata>
+    </eml:eml>

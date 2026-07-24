@@ -1,16 +1,111 @@
 name: fossils
 specify_name: Paleontology
 query_id: 380
-deduplicate_by: null
-dwca_terms:
-  collectionobject.determinations.determiner: identifiedBy
-  collectionobject.determinations.alternateName: vernacularName
 dwca_defaults:
   collectionCode: PAL
   collectionID: 1fcf0cb0-aa26-40d0-8311-fb4b6f2050f7
-  datasetName: Beaty Biodiversity Museum Fossil Collection
   datasetID: https://doi.org/10.15468/vfe3yq
-dwca_metadata:
-  dataset_id: https://doi.org/10.15468/vfe3yq
-  title: Beaty Biodiversity Museum Fossil Collection
-  description: null
+eml_metadata:
+  datasetTitle: Beaty Biodiversity Museum Fossil Collection
+  creators:
+  - givenName: S. Bruce
+    surName: Archibald
+    organizationName: Beaty Biodiversity Museum
+    positionName: Collections Curator, Paleontology
+    email: bruce.archibald@ubc.ca
+    address:
+      deliveryPoint: 2212 Main Mall
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+    userId:
+      value: 0000-0002-4397-2497
+      directory: https://orcid.org/
+  - givenName: Paul
+    surName: Bucci
+    organizationName: Beaty Biodiversity Museum
+    positionName: Collections Curator, Biodiversity Informatics
+    email: paul.bucci@ubc.ca
+    address:
+      deliveryPoint: 2212 Main Mall
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+    userId:
+      value: 0000-0002-8646-7730
+      directory: https://orcid.org/
+  associatedParties:
+  - givenName: S. Bruce
+    surName: Archibald
+    organizationName: Beaty Biodiversity Museum
+    positionName: Collections Curator, Paleontology
+    email: bruce.archibald@ubc.ca
+    role: originator
+    address:
+      deliveryPoint: 2212 Main Mall
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+    userId:
+      value: 0000-0002-4397-2497
+      directory: https://orcid.org/
+  - givenName: Paul
+    surName: Bucci
+    organizationName: Beaty Biodiversity Museum
+    positionName: Collections Curator, Biodiversity Informatics
+    email: paul.bucci@ubc.ca
+    role: processor
+    address:
+      deliveryPoint: 2212 Main Mall
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+    userId:
+      value: 0000-0002-8646-7730
+      directory: https://orcid.org/
+  - givenName: S. Bruce
+    surName: Archibald
+    organizationName: Beaty Biodiversity Museum
+    positionName: Collections Curator, Paleontology
+    email: bruce.archibald@ubc.ca
+    role: custodianSteward
+    address:
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+    userId:
+      value: 0000-0002-4397-2497
+      directory: https://orcid.org/
+  abstract: The data published in this dataset represents a small fraction of the total fossil
+    collection at the Beaty Biodiversity Museum. Additional specimens from the collection
+    are continuously being digitized and will be added to this dataset when available.
+  keywordSets:
+  - keywords:
+    - Occurrence
+    thesaurus: 'GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml'
+  - keywords:
+    - Specimen
+    thesaurus: 'GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml'
+  geographicCoverage: null
+  maintenance:
+    frequency: asNeeded
+  contacts:
+  - givenName: S. Bruce
+    surName: Archibald
+    organizationName: Beaty Biodiversity Museum
+    positionName: Collections Curator, Paleontology
+    email: bruce.archibald@ubc.ca
+    address:
+      deliveryPoint: 2212 Main Mall
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+    userId:
+      value: 0000-0002-4397-2497
+      directory: https://orcid.org/

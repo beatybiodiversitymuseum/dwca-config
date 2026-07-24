@@ -1,17 +1,207 @@
 name: lichen
 specify_name: Lichen
 query_id: 515
-deduplicate_by: null
 dwca_terms:
+  collectionobject.collectingEvent.remarks: habitat
   collectionobject.collectingEvent.text3: recordedBy
   collectionobject.collectingEvent.text4: verbatimLatitude
   collectionobject.collectingEvent.text5: verbatimLongitude
-  collectionobject.collectingEvent.remarks: habitat
-  collectionobject.collectionObjectProperties.text31: associatedReferences
   collectionobject.determinations.text2: typeStatus
   collectionobject.determinations.text5: identificationReferences
-dwca_defaults: {}
-dwca_metadata:
-  dataset_id: null
-  title: null
-  description: null
+dwca_defaults:
+  collectionCode: UBC
+  collectionID: http://grscicoll.org/institution/university-british-columbia-botany-department
+  datasetID: https://doi.org/10.5886/8hh3tyfd
+eml_metadata:
+  datasetTitle: University of British Columbia Herbarium (UBC) - Lichen Collection
+  creators:
+  - givenName: Olivia
+    surName: Lee
+    organizationName: University of British Columbia Herbarium
+    positionName: Manager of Bryophyhte, Fungi and Lichen Collections
+    phone: (604) 822-3344
+    email: UBC.Herbarium@ubc.ca
+    onlineUrl: http://www.biodiversity.ubc.ca/museum/herbarium/
+    address:
+      deliveryPoint: 3529-6270 University Boulevard
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+  - givenName: Karen
+    surName: Golinski
+    organizationName: University of British Columbia Herbarium
+    positionName: Manager of Bryophyhte, Fungi and Lichen Collections
+    phone: (604) 822-3344
+    email: Karen.Golinski@ubc.ca
+    onlineUrl: https://herbweb.botany.ubc.ca/herbarium/index.php
+    address:
+      deliveryPoint: 017-2212 Main Mall
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+  metadataProviders:
+  - givenName: Beryl
+    surName: Zhuang
+    organizationName: University of British Columbia Herbarium
+    positionName: Database Manager
+    phone: (604) 822-3344
+    email: bzhuang@mail.ubc.ca
+    onlineUrl: http://www.biodiversity.ubc.ca/museum/herbarium/
+    address:
+      deliveryPoint: 3529-6270 University Boulevard
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+  associatedParties:
+  - givenName: Beryl
+    surName: Zhuang
+    organizationName: University of British Columbia Herbarium
+    positionName: Database Manager
+    phone: (604) 822-3344
+    email: bzhuang@mail.ubc.ca
+    onlineUrl: https://herbweb.botany.ubc.ca/herbarium/index.php
+    role: programmer
+    address:
+      deliveryPoint: 3529-6270 University Boulevard
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+  - givenName: Jeannette
+    surName: Whitton
+    organizationName: University of British Columbia Herbarium
+    positionName: Director & Curator, Vascular Plants
+    email: jeannette.whitton@botany.ubc.ca
+    onlineUrl: https://botany.ubc.ca/people/jeannette-whitton
+    role: principalInvestigator
+    address:
+      deliveryPoint: 3529-6270 University Boulevard
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+  - givenName: Trevor
+    surName: Goward
+    organizationName: University of British Columbia Herbarium
+    positionName: Co-Curator of Lichens
+    role: curator
+    address:
+      country: CA
+  - givenName: Curtis
+    surName: Björk
+    organizationName: University of British Columbia Herbarium
+    positionName: Co-Curator of Lichens
+    role: curator
+    address:
+      country: CA
+  - givenName: Karen
+    surName: Golinski
+    organizationName: University of British Columbia Herbarium
+    positionName: Manager of Bryophyhte, Fungi and Lichen Collections
+    phone: (604) 822-3344
+    email: Karen.Golinski@ubc.ca
+    onlineUrl: https://herbweb.botany.ubc.ca/herbarium/index.php
+    role: custodianSteward
+    address:
+      deliveryPoint: 017-2212 Main Mall
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+  abstract: With 40,000 lichen specimens catalogued to date, the UBC Herbarium houses one
+    of the largest lichen collections in western North America. We have a very solid macrolichen
+    collection, with a strong focus on cyanolichens, especially the genus Peltigera. For this
+    genus, at least, this is certainly the largest collection in North America. The collection
+    is also strong in Calicioids as well as in other microlichen groups characteristic of
+    oldgrowth forests. Taken as a whole, the collection is very strong on epiphytic lichens,
+    and rather strong on terricolous lichens, especially macrolichens.
+  keywordSets:
+  - keywords:
+    - Occurrence
+    thesaurus: 'GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml'
+  - keywords:
+    - UBC
+    - University of British Columbia Herbarium
+    - Beaty Biodiversity Museum
+    - Canadensys
+    - Canada
+    - British Columbia
+    - collection
+    - herbarium
+    - specimens
+    - lichen
+    thesaurus: n/a
+  - keywords:
+    - Specimen
+    thesaurus: 'GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml'
+  distributions:
+  - scope: document
+    function: information
+    url: https://beatymuseum.ubc.ca/research-2/collections/herbarium/herbarium-fungi-and-lichens/
+  geographicCoverage:
+    description: We have a very solid macrolichen collection, with a strong focus on cyanolichens,
+      especially the genus Peltigera. For this genus, at least, this is certainly the largest
+      collection in North America. The collection is also strong in Calicioids as well as
+      in other microlichen groups characteristic of oldgrowth forests. Taken as a whole, the
+      collection is very strong on epiphytic lichens, and rather strong on terricolous lichens,
+      especially macrolichens.
+  taxonomicCoverage:
+    description: We have a very solid macrolichen collection, with a strong focus on cyanolichens,
+      especially the genus Peltigera. For this genus, at least, this is certainly the largest
+      collection in North America. The collection is also strong in Calicioids as well as
+      in other microlichen groups characteristic of oldgrowth forests. Taken as a whole, the
+      collection is very strong on epiphytic lichens, and rather strong on terricolous lichens,
+      especially macrolichens.
+    classifications:
+    - rankName: kingdom
+      rankValue: Lichen
+      commonName: Lichen
+  maintenance:
+    frequency: unkown
+  contacts:
+  - givenName: Karen
+    surName: Golinski
+    organizationName: University of British Columbia Herbarium
+    positionName: Manager of Bryophyhte, Fungi and Lichen Collections
+    phone: (604) 822-3344
+    email: Karen.Golinski@ubc.ca
+    onlineUrl: https://herbweb.botany.ubc.ca/herbarium/index.php
+    address:
+      deliveryPoint: 017-2212 Main Mall
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+  methods:
+    steps:
+    - ''
+  externalDataSets:
+  - name: UBC Herbarium Databases
+    characterEncoding: UTF-8
+    formatName: HTML
+    formatVersion: ''
+    function: download
+    url: https://herbweb.botany.ubc.ca/herbarium/index.php
+  - name: Canadensys explorer
+    characterEncoding: UTF-8
+    formatName: HTML
+    formatVersion: ''
+    function: download
+    url: https://data.canadensys.net/explorer/occurrences/search?q=data_resource_uid?dr19
+  - name: GBIF data portal
+    characterEncoding: UTF-8
+    formatName: HTML
+    formatVersion: ''
+    function: download
+    url: https://www.gbif.org/dataset/628abbe5-dc8d-41e9-a0c7-f05efe282649
+  resourceLogoUrl: https://data.canadensys.net/ipt/logo.do?r=ubc-vascular-specimens
+  collection:
+    parentIdentifier: UBC
+    identifier: UBC
+    name: University of British Columbia Herbarium (UBC) - Lichen Collection
+  formationPeriod: early 1900s-present
+  preservationMethods:
+  - mounted

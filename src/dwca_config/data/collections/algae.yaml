@@ -1,26 +1,213 @@
 name: algae
 specify_name: Algae
 query_id: 365
-deduplicate_by: collectionobject.catalogNumber
-media:
-  attachment_column: collectionobject.collectionObjectAttachments
 dwca_terms:
+  collectionobject.collectingEvent.remarks: habitat
+  collectionobject.collectingEvent.text2: eventRemarks
   collectionobject.collectingEvent.text3: verbatimEventDate
   collectionobject.collectingEvent.text4: microhabitat
   collectionobject.collectingEvent.text5: recordedBy
-  collectionobject.collectingEvent.remarks: habitat
-  collectionobject.collectingEvent.text2: eventRemarks
-  collectionobject.collectionObjectProperties.text31: associatedReferences
   collectionobject.determinations.text2: dateIdentified
   collectionobject.determinations.text5: identifiedBy
-  collectionobject.determinations.preferredTaxon.text10: taxonRank
 dwca_defaults:
   collectionCode: UBC
   collectionID: http://grscicoll.org/institution/university-british-columbia-botany-department
-  datasetName: University of British Columbia Herbarium (UBC) - Algae Collection
   datasetID: https://doi.org/10.5886/ujwtvvs2
-dwca_metadata:
-  dataset_id: https://doi.org/10.5886/ujwtvvs2
-  title: University of British Columbia Herbarium (UBC) - Algae Collection
-  description: Occurrence records from the algae collection of the University of British
-    Columbia Herbarium.
+eml_metadata:
+  datasetTitle: University of British Columbia Herbarium (UBC) - Algae Collection
+  creators:
+  - givenName: Linda
+    surName: PJ Lipsen
+    organizationName: University of British Columbia Herbarium
+    positionName: Collections Curator, Vascular Plants & Algae
+    phone: (604) 822-9740
+    email: linda.jennings@ubc.ca
+    address:
+      deliveryPoint: 2212 Main Mall
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+  associatedParties:
+  - givenName: Jeannette
+    surName: Whitton
+    organizationName: University of British Columbia Herbarium
+    positionName: Director
+    email: jeannette.whitton@botany.ubc.ca
+    onlineUrl: http://www.botany.ubc.ca/people/jwhitton.html
+    role: principalInvestigator
+    address:
+      deliveryPoint: 3529-6270 University Boulevard
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+  - givenName: Michael
+    surName: Hawkes
+    organizationName: University of British Columbia Herbarium
+    positionName: Curator, Algae
+    email: michael.hawkes@botany.ubc.ca
+    onlineUrl: http://www.botany.ubc.ca/people/hawkes.html
+    role: principalInvestigator
+    address:
+      deliveryPoint: 3529-6270 University Boulevard
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+  - givenName: Sandra
+    surName: Lindstrom
+    organizationName: University of British Columbia Herbarium
+    positionName: Curator, Algae
+    email: sandra.lindstrom@botany.ubc.ca
+    role: principalInvestigator
+    address:
+      deliveryPoint: 3529-6270 University Boulevard
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+  - givenName: Patrick
+    surName: Martone
+    organizationName: University of British Columbia Herbarium
+    positionName: Curator, Coralline Algae
+    email: patrick.martone@botany.ubc.ca
+    onlineUrl: http://www.botany.ubc.ca/martone/
+    role: principalInvestigator
+    address:
+      deliveryPoint: 3529-6270 University Boulevard
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+  - givenName: Linda
+    surName: PJ Lipsen
+    organizationName: University of British Columbia Herbarium
+    positionName: Collections Curator, Vascular Plants & Algae
+    email: linda.jennings@ubc.ca
+    onlineUrl: https://beatymuseum.ubc.ca/research-2/collections/herbarium/
+    role: custodianSteward
+    address:
+      deliveryPoint: 3529-6270 University Boulevard
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+  abstract: This dataset includes all digitized algae in the UBC collection, encompassing
+    approximately 80% of the collection. During the course of Robert Scagel’s academic career
+    (1952-1986) and assisted by graduate students and postdoctoral fellows carrying out research
+    on benthic marine algae, Scagel oversaw the expansion of the Phycological Herbarium to
+    over 67,000 specimens. During this period, with support from U.B.C., the National Research
+    Council of Canada (NSERC), the Defence Research Board of Canada, the Fisheries Research
+    Board of Canada, the Provincial Fisheries Department, the B.C. Research Council and the
+    National Science Foundation (U.S.), collecting activities were carried out all along the
+    Pacific Coast from central California to Alaska, including the Aleutian Islands as far
+    west as Attu Island. The collection now includes over 100,000 specimens. The Alaska representation
+    in the Phycological Collection has been significantly augmented since 1986 by donations
+    from Sandra Lindstrom and, in recent years, the BC representation has expanded from efforts
+    by Sandra, Patrick Martone and others participating in various Hakai Institute projects.
+  keywordSets:
+  - keywords:
+    - UBC
+    - University of British Columbia Herbarium
+    - Beaty Biodiversity Museum
+    - Canadensys
+    - Canada
+    - British Columbia
+    - collection
+    - herbarium
+    - specimens
+    - algae
+    thesaurus: n/a
+  - keywords:
+    - Occurrence
+    thesaurus: 'GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml'
+  - keywords:
+    - Specimen
+    thesaurus: 'GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml'
+  - keywords:
+    - Occurrence
+    thesaurus: 'GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml'
+  license:
+    name: Creative Commons Zero v1.0 Universal
+    url: https://spdx.org/licenses/CC0-1.0.html
+    identifier: CC0-1.0
+  distributions:
+  - scope: document
+    function: information
+    url: https://beatymuseum.ubc.ca/research-2/collections/herbarium/
+  geographicCoverage:
+    description: The strength of the U.B.C. Phycological Collection is primarily in the northeast
+      Pacific, where its holdings represent the most comprehensive of any Herbarium. In addition,
+      smaller collections made UBC Botanists in Australia, New Zealand, Hawaii, Mauritius,
+      East Africa and Japan and frequent exchanges with other institutions have expanded the
+      geographic breadth of the Collection.
+  taxonomicCoverage:
+    description: The algal collection is composed of mainly macroscopic algae, with significant
+      representation of seaweeds of the Northeast Pacific Ocean. The collection also includes
+      packages of organisms such as diatoms, dinoflagellates, and water moulds. Some blue-green
+      algae are also represented.
+    classifications:
+    - rankName: phylum
+      rankValue: Chlorophyta
+      commonName: ''
+    - rankName: phylum
+      rankValue: Cyanobacteria
+      commonName: ''
+    - rankName: phylum
+      rankValue: Euglenozoa
+      commonName: ''
+    - rankName: phylum
+      rankValue: Myzozoa
+      commonName: ''
+    - rankName: phylum
+      rankValue: Ochrophyta
+      commonName: ''
+    - rankName: phylum
+      rankValue: Oomycota
+      commonName: ''
+    - rankName: phylum
+      rankValue: Rhodophyta
+      commonName: ''
+  maintenance:
+    frequency: monthly
+  contacts:
+  - givenName: Linda
+    surName: PJ Lipsen
+    organizationName: University of British Columbia Herbarium
+    positionName: Collections Curator, Vascular Plants & Algae
+    phone: (604) 822-9740
+    email: linda.jennings@ubc.ca
+    address:
+      deliveryPoint: 2212 Main Mall
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+  externalDataSets:
+  - name: UBC Herbarium Databases
+    characterEncoding: UTF-8
+    formatName: HTML
+    formatVersion: ''
+    function: download
+    url: https://databases.beatymuseum.ubc.ca/
+  - name: Canadensys explorer
+    characterEncoding: UTF-8
+    formatName: HTML
+    formatVersion: ''
+    function: download
+    url: http://data.canadensys.net/explorer/en/resources/ubc-algae-specimens
+  - name: GBIF data portal
+    characterEncoding: UTF-8
+    formatName: HTML
+    formatVersion: ''
+    function: download
+    url: http://www.gbif.org/dataset/90302970-1bc6-4865-be76-9aef1dd707f9
+  resourceLogoUrl: http://data.canadensys.net/ipt/logo.do?r=ubc-algae-specimens
+  collection:
+    parentIdentifier: UBC
+    identifier: UBC
+    name: University of British Columbia Herbarium (UBC) - Algae Collection
+  formationPeriod: mid 1800s-present
+  preservationMethods:
+  - mounted

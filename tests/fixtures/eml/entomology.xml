@@ -1,0 +1,240 @@
+    <eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+             xmlns:dc="http://purl.org/dc/terms/"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.2/eml.xsd"
+             packageId="9c45867f-f77d-42f3-9751-ae16bb7c9bc8/v13.12" system="http://gbif.org" scope="system"
+    xml:lang="eng">
+
+        <dataset>
+                <alternateIdentifier>9c45867f-f77d-42f3-9751-ae16bb7c9bc8</alternateIdentifier>
+                <alternateIdentifier>http://dx.doi.org/10.5886/r5d29ft9</alternateIdentifier>
+                <alternateIdentifier>https://data.canadensys.net/ipt/resource?r=ubc-entomology-collections</alternateIdentifier>
+                <title xml:lang="eng">University of British Columbia - Spencer Entomological Collection (UBCZ)</title>
+                    <creator>
+            <individualName>
+                    <givenName>Karen</givenName>
+                <surName>Needham</surName>
+            </individualName>
+            <organizationName>University of British Columbia, Beaty Biodiversity Museum</organizationName>
+            <positionName>Curator</positionName>
+            <address>
+                    <deliveryPoint>2212 Main Mall</deliveryPoint>
+                    <city>Vancouver</city>
+                    <administrativeArea>British Columbia</administrativeArea>
+                    <postalCode>V6T 1Z4</postalCode>
+                    <country>CA</country>
+            </address>
+            <phone>(604) 822-3379</phone>
+            <electronicMailAddress>needham@zoology.ubc.ca</electronicMailAddress>
+            <onlineUrl>http://www.beatymuseum.ubc.ca</onlineUrl>
+                    </creator>
+                    <metadataProvider>
+            <individualName>
+                    <givenName>Karen</givenName>
+                <surName>Needham</surName>
+            </individualName>
+            <organizationName>University of British Columbia, Beaty Biodiversity Museum</organizationName>
+            <positionName>Curator</positionName>
+            <address>
+                    <deliveryPoint>2212 Main Mall</deliveryPoint>
+                    <city>Vancouver</city>
+                    <administrativeArea>British Columbia</administrativeArea>
+                    <postalCode>V6T 1Z4</postalCode>
+                    <country>CA</country>
+            </address>
+            <phone>(604) 822-3379</phone>
+            <electronicMailAddress>needham@zoology.ubc.ca</electronicMailAddress>
+            <onlineUrl>http://www.beatymuseum.ubc.ca</onlineUrl>
+                    </metadataProvider>
+                    <associatedParty>
+            <organizationName>University of British Columbia</organizationName>
+            <address>
+                    <deliveryPoint>2212 Main Mall</deliveryPoint>
+                    <city>Vancouver</city>
+                    <administrativeArea>British Columbia</administrativeArea>
+                    <postalCode>V6T 1Z4</postalCode>
+                    <country>CA</country>
+            </address>
+            <role>publisher</role>
+                    </associatedParty>
+                    <associatedParty>
+            <individualName>
+                    <givenName>Karen</givenName>
+                <surName>Needham</surName>
+            </individualName>
+            <organizationName>University of British Columbia, Beaty Biodiversity Museum</organizationName>
+            <positionName>Curator</positionName>
+            <address>
+                    <deliveryPoint>2212 Main Mall</deliveryPoint>
+                    <city>Vancouver</city>
+                    <administrativeArea>British Columbia</administrativeArea>
+                    <postalCode>V6T 1Z4</postalCode>
+                    <country>CA</country>
+            </address>
+            <phone>(604) 822-3379</phone>
+            <electronicMailAddress>needham@zoology.ubc.ca</electronicMailAddress>
+            <onlineUrl>http://www.beatymuseum.ubc.ca</onlineUrl>
+            <role>principalInvestigator</role>
+                    </associatedParty>
+            <pubDate>
+                    2025-04-02
+            </pubDate>
+            <language>eng</language>
+                <abstract>
+                            <para>Over half a million pinned specimens, 75,000 alcohol-preserved specimens and 25,000 specimens on slides showcase BC and the Yukon’s spectacular insect diversity. Past collectors’ particular projects have shaped the collection, and have resulted in particularly strong holdings of Hemiptera (true bugs), Odonata (dragonflies and damselflies), Siphonaptera (fleas) and Anoplura and Mallophaga (lice). The collection has also been enriched by the following notable holdings: de Waard Lepidoptera (moths), Downes Hemiptera (true bugs), Foxlee Diptera (true flies) and Hymenoptera (bees and wasps), Harrison Coleoptera (carabids), Llwewllyn Jones Lepidoptera (butterflies), Scudder Hemiptera (true bugs), Stace-Smith Coleoptera (beetles).
+The Collection also includes an extensive library of entomological literature, ranging from insect taxonomy, biology, and habitat to pest control. It includes over 350 books, 8000 reprints, and 20 series of unbound journals. We also have over 10,000 photographic slides of insects and arachnids with accompanying data.</para>
+                </abstract>
+                        <keywordSet>
+                                    <keyword>Occurrence</keyword>
+                            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+                        </keywordSet>
+                        <keywordSet>
+                                    <keyword>UBCZ</keyword>
+                                    <keyword>Spencer entomological collection</keyword>
+                                    <keyword>University of British Columbia</keyword>
+                                    <keyword>Canadensys</keyword>
+                                    <keyword>Canada</keyword>
+                                    <keyword>British Columbia</keyword>
+                                    <keyword>collection</keyword>
+                                    <keyword>specimens</keyword>
+                                    <keyword>entomology</keyword>
+                            <keywordThesaurus>n/a</keywordThesaurus>
+                        </keywordSet>
+                        <keywordSet>
+                                    <keyword>Specimen</keyword>
+                            <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+                        </keywordSet>
+                        <keywordSet>
+                                    <keyword>Occurrence</keyword>
+                            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml</keywordThesaurus>
+                        </keywordSet>
+                <intellectualRights>
+                    <para>To the extent possible under law, the publisher has waived all rights to these data and has dedicated them to the <ulink url="http://creativecommons.org/publicdomain/zero/1.0/legalcode"><citetitle>Public Domain (CC0 1.0)</citetitle></ulink>. Users may copy, modify, distribute and use the work, including for commercial purposes, without restriction.</para>
+                </intellectualRights>
+                <distribution scope="document">
+                    <online>
+                        <url function="information">https://beatymuseum.ubc.ca/research-2/collections/spencer-entomological-collection/</url>
+                    </online>
+                </distribution>
+                <coverage>
+                        <geographicCoverage>
+                                <geographicDescription>Mainly a BC collection, with additional holdings from YT, AK, NT, and NU . Also a small number of specimens from the other Canadian Provinces and WA, OR, and CA in the United States.</geographicDescription>
+                            <boundingCoordinates>
+                                <westBoundingCoordinate>-168.91</westBoundingCoordinate>
+                                <eastBoundingCoordinate>-115.68</eastBoundingCoordinate>
+                                <northBoundingCoordinate>71.46</northBoundingCoordinate>
+                                <southBoundingCoordinate>32.57</southBoundingCoordinate>
+                            </boundingCoordinates>
+                        </geographicCoverage>
+                                <temporalCoverage>
+                                        <rangeOfDates>
+                                                <beginDate>
+                                                    <calendarDate>1830-01-01</calendarDate>
+                                                </beginDate>
+                                            <endDate>
+                                                <calendarDate>2024-01-02</calendarDate>
+                                            </endDate>
+                                        </rangeOfDates>
+                                </temporalCoverage>
+                                <taxonomicCoverage>
+                                        <generalTaxonomicCoverage>BC specimens from all insect orders. A small collection of non-insect arthropods from BC. Jumping spiders (Family Salticidae) from around the world.</generalTaxonomicCoverage>
+                                        <taxonomicClassification>
+                                                <taxonRankName>class</taxonRankName>
+                                            <taxonRankValue>Insecta</taxonRankValue>
+                                                <commonName>Insects</commonName>
+                                        </taxonomicClassification>
+                                </taxonomicCoverage>
+                </coverage>
+                <maintenance>
+                    <description>
+                        <para></para>
+                    </description>
+                    <maintenanceUpdateFrequency>asNeeded</maintenanceUpdateFrequency>
+                </maintenance>
+
+                    <contact>
+            <individualName>
+                    <givenName>Karen</givenName>
+                <surName>Needham</surName>
+            </individualName>
+            <organizationName>University of British Columbia, Beaty Biodiversity Museum</organizationName>
+            <positionName>Curator</positionName>
+            <address>
+                    <deliveryPoint>2212 Main Mall</deliveryPoint>
+                    <city>Vancouver</city>
+                    <administrativeArea>British Columbia</administrativeArea>
+                    <postalCode>V6T 1Z4</postalCode>
+                    <country>CA</country>
+            </address>
+            <phone>(604) 822-3379</phone>
+            <electronicMailAddress>needham@zoology.ubc.ca</electronicMailAddress>
+            <onlineUrl>http://www.beatymuseum.ubc.ca</onlineUrl>
+                    </contact>
+        </dataset>
+            <additionalMetadata>
+                <metadata>
+                    <gbif>
+                            <dateStamp>2013-06-20T02:08:36.141+00:00</dateStamp>
+                            <hierarchyLevel>dataset</hierarchyLevel>
+                                <citation identifier="doi:10.5886/r5d29ft9">Spencer Entomological Collection (UBCZ) from University of British Columbia. http://dx.doi.org/10.5886/r5d29ft9 (accessed on [date])</citation>
+                                <physical>
+                                    <objectName>Canadensys explorer</objectName>
+                                    <characterEncoding>UTF-8</characterEncoding>
+                                    <dataFormat>
+                                        <externallyDefinedFormat>
+                                            <formatName>HTML</formatName>
+                                        </externallyDefinedFormat>
+                                    </dataFormat>
+                                    <distribution>
+                                        <online>
+                                            <url function="download">http://data.canadensys.net/explorer/d/ubc-entomology-collections</url>
+                                        </online>
+                                    </distribution>
+                                </physical>
+                                <physical>
+                                    <objectName>GBIF data portal</objectName>
+                                    <characterEncoding>UTF-8</characterEncoding>
+                                    <dataFormat>
+                                        <externallyDefinedFormat>
+                                            <formatName>HTML</formatName>
+                                        </externallyDefinedFormat>
+                                    </dataFormat>
+                                    <distribution>
+                                        <online>
+                                            <url function="download">http://www.gbif.org/dataset/9c45867f-f77d-42f3-9751-ae16bb7c9bc8</url>
+                                        </online>
+                                    </distribution>
+                                </physical>
+                            <resourceLogoUrl>https://data.canadensys.net/ipt/logo.do?r=ubc-entomology-collections</resourceLogoUrl>
+                                    <collection>
+                                            <parentCollectionIdentifier>UBCZ</parentCollectionIdentifier>
+                                            <collectionIdentifier>SEMUBC</collectionIdentifier>
+                                        <collectionName>Spencer Entomological Museum</collectionName>
+                                    </collection>
+                                    <specimenPreservationMethod>pinned</specimenPreservationMethod>
+                                <jgtiCuratorialUnit>
+                                        <jgtiUnitType>pinned specimens</jgtiUnitType>
+                                        <jgtiUnitRange>
+                                            <beginRange>500000</beginRange>
+                                            <endRange>550000</endRange>
+                                        </jgtiUnitRange>
+                                </jgtiCuratorialUnit>
+                                <jgtiCuratorialUnit>
+                                        <jgtiUnitType>alcohol specimens</jgtiUnitType>
+                                        <jgtiUnitRange>
+                                            <beginRange>75000</beginRange>
+                                            <endRange>80000</endRange>
+                                        </jgtiUnitRange>
+                                </jgtiCuratorialUnit>
+                                <jgtiCuratorialUnit>
+                                        <jgtiUnitType>microscope slides</jgtiUnitType>
+                                        <jgtiUnitRange>
+                                            <beginRange>25000</beginRange>
+                                            <endRange>30000</endRange>
+                                        </jgtiUnitRange>
+                                </jgtiCuratorialUnit>
+                            <dc:replaces>9c45867f-f77d-42f3-9751-ae16bb7c9bc8/v13.12.xml</dc:replaces>
+                    </gbif>
+                </metadata>
+            </additionalMetadata>
+    </eml:eml>

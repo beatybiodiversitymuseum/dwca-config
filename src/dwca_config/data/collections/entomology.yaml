@@ -1,21 +1,166 @@
 name: entomology
 specify_name: Entomology
 query_id: 369
-deduplicate_by: null
 dwca_terms:
-  collectionobject.collectingEvent.text1: recordedBy
   collectionobject.collectingEvent.remarks: localityRemarks
-  collectionobject.determinations.typeStatusName: typeStatus
-  collectionobject.determinations.text1: identifiedBy
+  collectionobject.collectingEvent.text1: recordedBy
   collectionobject.determinations.text2: dateIdentified
-  collectionobject.text2: previousIdentifications
-  collectionobject.collectionObjectAttribute.text1: sex
 dwca_defaults:
-  collectionCode: SEC
-  collectionID: http://grbio.org/cool/qxx6-knwq
-  datasetName: University of British Columbia - Spencer Entomological Collection
+  collectionCode: UBCZ
+  collectionID: 131204b7-6c41-4de2-bb35-170c1701b266
   datasetID: https://doi.org/10.5886/r5d29ft9
-dwca_metadata:
-  dataset_id: https://doi.org/10.5886/r5d29ft9
-  title: University of British Columbia - Spencer Entomological Collection
-  description: null
+  datasetName: University of British Columbia - Spencer Entomological Collection
+eml_metadata:
+  datasetTitle: University of British Columbia - Spencer Entomological Collection (UBCZ)
+  creators:
+  - givenName: Karen
+    surName: Needham
+    organizationName: University of British Columbia, Beaty Biodiversity Museum
+    positionName: Curator
+    phone: (604) 822-3379
+    email: needham@zoology.ubc.ca
+    onlineUrl: http://www.beatymuseum.ubc.ca
+    address:
+      deliveryPoint: 2212 Main Mall
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+  metadataProviders:
+  - givenName: Karen
+    surName: Needham
+    organizationName: University of British Columbia, Beaty Biodiversity Museum
+    positionName: Curator
+    phone: (604) 822-3379
+    email: needham@zoology.ubc.ca
+    onlineUrl: http://www.beatymuseum.ubc.ca
+    address:
+      deliveryPoint: 2212 Main Mall
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+  associatedParties:
+  - organizationName: University of British Columbia
+    role: publisher
+    address:
+      deliveryPoint: 2212 Main Mall
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+  - givenName: Karen
+    surName: Needham
+    organizationName: University of British Columbia, Beaty Biodiversity Museum
+    positionName: Curator
+    phone: (604) 822-3379
+    email: needham@zoology.ubc.ca
+    onlineUrl: http://www.beatymuseum.ubc.ca
+    role: principalInvestigator
+    address:
+      deliveryPoint: 2212 Main Mall
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+  abstract: 'Over half a million pinned specimens, 75,000 alcohol-preserved specimens and
+    25,000 specimens on slides showcase BC and the Yukon’s spectacular insect diversity. Past
+    collectors’ particular projects have shaped the collection, and have resulted in particularly
+    strong holdings of Hemiptera (true bugs), Odonata (dragonflies and damselflies), Siphonaptera
+    (fleas) and Anoplura and Mallophaga (lice). The collection has also been enriched by the
+    following notable holdings: de Waard Lepidoptera (moths), Downes Hemiptera (true bugs),
+    Foxlee Diptera (true flies) and Hymenoptera (bees and wasps), Harrison Coleoptera (carabids),
+    Llwewllyn Jones Lepidoptera (butterflies), Scudder Hemiptera (true bugs), Stace-Smith
+    Coleoptera (beetles). The Collection also includes an extensive library of entomological
+    literature, ranging from insect taxonomy, biology, and habitat to pest control. It includes
+    over 350 books, 8000 reprints, and 20 series of unbound journals. We also have over 10,000
+    photographic slides of insects and arachnids with accompanying data.'
+  keywordSets:
+  - keywords:
+    - Occurrence
+    thesaurus: 'GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml'
+  - keywords:
+    - UBCZ
+    - Spencer entomological collection
+    - University of British Columbia
+    - Canadensys
+    - Canada
+    - British Columbia
+    - collection
+    - specimens
+    - entomology
+    thesaurus: n/a
+  - keywords:
+    - Specimen
+    thesaurus: 'GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml'
+  - keywords:
+    - Occurrence
+    thesaurus: 'GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml'
+  distributions:
+  - scope: document
+    function: information
+    url: https://beatymuseum.ubc.ca/research-2/collections/spencer-entomological-collection/
+  geographicCoverage:
+    description: Mainly a BC collection, with additional holdings from YT, AK, NT, and NU
+      . Also a small number of specimens from the other Canadian Provinces and WA, OR, and
+      CA in the United States.
+    west: '-168.91'
+    east: '-115.68'
+    north: '71.46'
+    south: '32.57'
+  taxonomicCoverage:
+    description: BC specimens from all insect orders. A small collection of non-insect arthropods
+      from BC. Jumping spiders (Family Salticidae) from around the world.
+    classifications:
+    - rankName: class
+      rankValue: Insecta
+      commonName: Insects
+  temporalCoverage:
+    beginDate: '1830-01-01'
+    endDate: '2024-01-02'
+  maintenance:
+    frequency: asNeeded
+  contacts:
+  - givenName: Karen
+    surName: Needham
+    organizationName: University of British Columbia, Beaty Biodiversity Museum
+    positionName: Curator
+    phone: (604) 822-3379
+    email: needham@zoology.ubc.ca
+    onlineUrl: http://www.beatymuseum.ubc.ca
+    address:
+      deliveryPoint: 2212 Main Mall
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+  externalDataSets:
+  - name: Canadensys explorer
+    characterEncoding: UTF-8
+    formatName: HTML
+    formatVersion: ''
+    function: download
+    url: http://data.canadensys.net/explorer/d/ubc-entomology-collections
+  - name: GBIF data portal
+    characterEncoding: UTF-8
+    formatName: HTML
+    formatVersion: ''
+    function: download
+    url: http://www.gbif.org/dataset/9c45867f-f77d-42f3-9751-ae16bb7c9bc8
+  resourceLogoUrl: https://data.canadensys.net/ipt/logo.do?r=ubc-entomology-collections
+  collection:
+    parentIdentifier: UBCZ
+    identifier: SEMUBC
+    name: Spencer Entomological Museum
+  preservationMethods:
+  - pinned
+  curatorialUnits:
+  - unitType: pinned specimens
+    beginRange: '500000'
+    endRange: '550000'
+  - unitType: alcohol specimens
+    beginRange: '75000'
+    endRange: '80000'
+  - unitType: microscope slides
+    beginRange: '25000'
+    endRange: '30000'

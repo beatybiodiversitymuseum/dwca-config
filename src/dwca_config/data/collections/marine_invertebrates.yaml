@@ -1,21 +1,97 @@
 name: marine_invertebrates
 specify_name: Marine Invertebrates
 query_id: 368
-deduplicate_by: collectionobject.catalogNumber
-dwca_terms:
-  collectionobject.remarks: occurrenceRemarks
-  collectionobject.determinations.alternateName: vernacularName
-  collectionobject.determinations.determiner: identifiedBy
-  collectionobject.preparations.text2: specimenCondition
 dwca_defaults:
-  collectionCode: UBC
+  collectionCode: MIC
   collectionID: 403e3c1f-086f-461b-9718-60537ee4ce3c
-  datasetName: Beaty Biodiversity Museum Marine Invertebrate Collection
-dwca_metadata:
-  dataset_id: null
-  title: Beaty Biodiversity Museum Marine Invertebrate Collection
-  description: null
-
 # The legacy script publishes these measurement columns, but their Darwin Core
 # extension namespace has not been identified. Add them after choosing terms:
 dwca_extensions: {}
+eml_metadata:
+  datasetTitle: Beaty Biodiversity Museum Marine Invertebrate Collection
+  creators:
+  - givenName: Sheila
+    surName: Byers
+    organizationName: Beaty Biodiversity Museum
+    positionName: Curatorial Assistant, Marine Invertebrate Collection
+    email: sheila.byers@ubc.ca
+    address:
+      deliveryPoint: 2212 Main Mall
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+  associatedParties:
+  - givenName: Sheila
+    surName: Byers
+    organizationName: Beaty Biodiversity Museum
+    positionName: Curatorial Assistant, Marine Invertebrate Collection
+    email: sheila.byers@ubc.ca
+    role: custodianSteward
+    address:
+      deliveryPoint: 2212 Main Mall
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+  - givenName: Paul
+    surName: Bucci
+    organizationName: Beaty Biodiversity Museum
+    positionName: Collections Curator, Biodiversity Informatics
+    email: paul.bucci@ubc.ca
+    role: processor
+    address:
+      deliveryPoint: 2212 Main Mall
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+    userId:
+      value: 0000-0002-8646-7730
+      directory: https://orcid.org/
+  abstract: The Marine Invertebrate collection of the University of British Columbia was started
+    in the 1940s with alcohol-preserved specimens collected by Dr. C. McLean Fraser and Dr.
+    Ian McTaggart-Cowan. Primarily used for teaching, the collection eventually grew to several
+    thousand specimens representing the major lineages of invertebrate animals. In 2006, Kelly
+    Norton donated the Alice Stein collection, consisting of thousands of shells and corals.
+    The Marine Invertebrate Collection was further expanded in 2007 with a large donation
+    of shells from Evelyn Hebb Killam. Both contributions represent mostly tropical species
+    and include some spectacular examples of global marine biodiversity, such as giant clams
+    and some rare species of cowries.
+  keywordSets:
+  - keywords:
+    - Occurrence
+    thesaurus: 'GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml'
+  - keywords:
+    - Specimen
+    thesaurus: 'GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml'
+  geographicCoverage:
+    description: Worldwide, emphasis on Pacific Northwest of North America
+  maintenance:
+    frequency: continually
+  contacts:
+  - givenName: Sheila
+    surName: Byers
+    organizationName: Beaty Biodiversity Museum
+    positionName: Curatorial Assistant, Marine Invertebrate Collection
+    email: sheila.byers@ubc.ca
+    address:
+      deliveryPoint: 2212 Main Mall
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+  - givenName: Paul
+    surName: Bucci
+    organizationName: Beaty Biodiversity Museum
+    positionName: Collections Curator, Biodiversity Informatics
+    email: paul.bucci@ubc.ca
+    address:
+      deliveryPoint: 2212 Main Mall
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+    userId:
+      value: 0000-0002-8646-7730
+      directory: https://orcid.org/

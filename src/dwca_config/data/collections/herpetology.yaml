@@ -1,10 +1,10 @@
-name: mammals
+name: herpetology
 dwca_defaults:
   collectionCode: CTC
-  collectionID: http://grbio.org/cool/m0m3-x1cz
-  datasetID: https://doi.org/10.15468/qgdpad
+  collectionID:
+  datasetID:
 eml_metadata:
-  datasetTitle: Cowan Tetrapod Collection - Mammals
+  datasetTitle: Cowan Tetrapod Collection - Herpetology
   creators:
   - givenName: Ildiko
     surName: Szabo
@@ -18,33 +18,20 @@ eml_metadata:
       administrativeArea: BC
       postalCode: V6T 1Z4
       country: CA
-  - givenName: Christopher
-    surName: Stinson
+  metadataProviders:
+  - givenName: Ildiko
+    surName: Szabo
     organizationName: Beaty Biodiversity Museum
-    positionName: Lead Curatorial Assistant
-    email: christopher.stinson@ubc.ca
+    positionName: Collections Curator of the UBC BBM Cowan Tetrapod Collection
+    email: ildiko.szabo@ubc.ca
+    onlineUrl: https://beatymuseum.ubc.ca/research-2/collections/cowan-tetrapod-collection/
     address:
       deliveryPoint: 2212 Main Mall
       city: Vancouver
-      administrativeArea: British Columbia
+      administrativeArea: BC
       postalCode: V6T 1Z4
       country: CA
   associatedParties:
-  - givenName: Carole
-    surName: Sinou
-    organizationName: Université de Montréal
-    positionName: Canadensys manager
-    email: carole.sinou@umontreal.ca
-    role: programmer
-    address:
-      deliveryPoint: 4101 rue Sherbrooke Est
-      city: Montréal
-      administrativeArea: Québec
-      postalCode: H1X 2B2
-      country: CA
-    userId:
-      value: 0000-0002-6718-6669
-      directory: https://orcid.org/
   - givenName: Paul
     surName: Bucci
     organizationName: Beaty Biodiversity Museum
@@ -70,12 +57,26 @@ eml_metadata:
       city: Vancouver
       administrativeArea: British Columbia
       country: CA
-  abstract: The Cowan Tetrapod Collection mammal holdings holdings of 540 species in 95 families
-    is comprised over 20,000 specimens. Global in scope, the collection is especially strong
-    in specimens collected from Western Canada and southern Africa. The collection was founded
-    by Dr. Ian McTaggart-Cowan and his father-in-law Kenneth Racey. The mammal collection
-    is housed at the University of British Columbia Beaty Biodiversity Museum which contains
-    approximately 2 million natural history specimens.
+  - givenName: Carole
+    surName: Sinou
+    organizationName: Université de Montréal
+    positionName: Canadensys manager
+    email: carole.sinou@umontreal.ca
+    role: programmer
+    address:
+      deliveryPoint: 4101 rue Sherbrooke Est
+      city: Montréal
+      administrativeArea: Québec
+      postalCode: H1X 2B2
+      country: CA
+    userId:
+      value: 0000-0002-6718-6669
+      directory: https://orcid.org/
+  abstract: The Cowan Tetrapod Collection herpetology holdings of 206 species is principally
+    a North American synoptic collection. 84% of the living species known to occur in British
+    Columbia are represented. The collection was founded by Dr. Ian McTaggart-Cowan. The herpetology
+    collection is housed at the University of British Columbia Beaty Biodiversity Museum,
+    which contains approximately 2 million natural history specimens.
   keywordSets:
   - keywords:
     - Occurrence
@@ -91,16 +92,19 @@ eml_metadata:
     function: information
     url: https://beatymuseum.ubc.ca/research-2/collections/cowan-tetrapod-collection/
   geographicCoverage:
-    description: Global in scope with a particular emphasis on Western Canada and Southern
-      Africa.
+    description: Global in scope but principally a North American Synoptic collection with
+      a Western Canada emphasis.
   taxonomicCoverage:
-    description: 24 out of 29 living orders; 62% of living mammalian families are represented.
+    description: 36 out of 43 British Columbia species.
     classifications:
     - rankName: class
-      rankValue: Mammalia
-      commonName: Mammals
+      rankValue: Reptilia
+      commonName: Reptiles
+    - rankName: class
+      rankValue: Amphibia
+      commonName: Amphibians
   temporalCoverage:
-    beginDate: '1930'
+    beginDate: '1931'
     endDate: '2013'
   maintenance:
     frequency: unkown
@@ -117,21 +121,10 @@ eml_metadata:
       administrativeArea: BC
       postalCode: V6T 1Z4
       country: CA
-  - givenName: Christopher
-    surName: Stinson
-    organizationName: Beaty Biodiversity Museum
-    positionName: Lead Curatorial Assistant
-    email: christopher.stinson@ubc.ca
-    address:
-      deliveryPoint: 2212 Main Mall
-      city: Vancouver
-      administrativeArea: British Columbia
-      postalCode: V6T 1Z4
-      country: CA
-  resourceLogoUrl: https://explore.beatymuseum.ubc.ca/brand/sub/beaty-logo-sub-mammal-colour.png
+  resourceLogoUrl: https://explore.beatymuseum.ubc.ca/brand/sub/beaty-logo-sub-herptology-colour.png
   collection:
     parentIdentifier: University of British Columbia Beaty Biodiversity Museum
     identifier: UBCBBM
-    name: Cowan Tetrapod Collection - Mammals
+    name: Cowan Tetrapod Collection - Herpetology
   preservationMethods:
-  - dried
+  - alcohol

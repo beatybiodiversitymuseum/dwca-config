@@ -1,0 +1,201 @@
+    <eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+             xmlns:dc="http://purl.org/dc/terms/"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.2/eml.xsd"
+             packageId="https://data.canadensys.net/ipt/resource?id=ubc_bbm_ctc_herps/v6.1" system="http://gbif.org" scope="system"
+    xml:lang="eng">
+
+        <dataset>
+                <alternateIdentifier>df9c8b86-9d36-4e29-91b3-4274dff053e5</alternateIdentifier>
+                <alternateIdentifier>https://data.canadensys.net/ipt/resource?r=ubc_bbm_ctc_herps</alternateIdentifier>
+                <title xml:lang="eng">Cowan Tetrapod Collection - Herpetology</title>
+                    <creator>
+            <individualName>
+                    <givenName>Ildiko</givenName>
+                <surName>Szabo</surName>
+            </individualName>
+            <organizationName> Beaty Biodiversity Museum</organizationName>
+            <positionName>Collections Curator of the UBC BBM Cowan Tetrapod Collection</positionName>
+            <address>
+                    <deliveryPoint>2212 Main Mall</deliveryPoint>
+                    <city>Vancouver</city>
+                    <administrativeArea>BC</administrativeArea>
+                    <postalCode>V6T 1Z4</postalCode>
+                    <country>CA</country>
+            </address>
+            <electronicMailAddress>ildiko.szabo@ubc.ca</electronicMailAddress>
+            <onlineUrl>https://beatymuseum.ubc.ca/research-2/collections/cowan-tetrapod-collection/</onlineUrl>
+                    </creator>
+                    <metadataProvider>
+            <individualName>
+                    <givenName>Ildiko</givenName>
+                <surName>Szabo</surName>
+            </individualName>
+            <organizationName> Beaty Biodiversity Museum</organizationName>
+            <positionName>Collections Curator of the UBC BBM Cowan Tetrapod Collection</positionName>
+            <address>
+                    <deliveryPoint>2212 Main Mall</deliveryPoint>
+                    <city>Vancouver</city>
+                    <administrativeArea>BC</administrativeArea>
+                    <postalCode>V6T 1Z4</postalCode>
+                    <country>CA</country>
+            </address>
+            <electronicMailAddress>ildiko.szabo@ubc.ca</electronicMailAddress>
+            <onlineUrl>https://beatymuseum.ubc.ca/research-2/collections/cowan-tetrapod-collection/</onlineUrl>
+                    </metadataProvider>
+                    <associatedParty>
+            <individualName>
+                    <givenName>Paul</givenName>
+                <surName>Bucci</surName>
+            </individualName>
+            <organizationName>Beaty Biodiversity Museum</organizationName>
+            <positionName>Collections Curator, Biodiversity Informatics</positionName>
+            <address>
+                    <deliveryPoint>2212 Main Mall</deliveryPoint>
+                    <city>Vancouver</city>
+                    <administrativeArea>British Columbia</administrativeArea>
+                    <postalCode>V6T 1Z4</postalCode>
+                    <country>CA</country>
+            </address>
+            <electronicMailAddress>paul.bucci@ubc.ca</electronicMailAddress>
+                    <userId directory="https://orcid.org/">0000-0002-8646-7730</userId>
+            <role>processor</role>
+                    </associatedParty>
+                    <associatedParty>
+            <individualName>
+                    <givenName>Jill</givenName>
+                <surName>Jankowski</surName>
+            </individualName>
+            <organizationName>The University of British Columbia</organizationName>
+            <positionName>Director of Cowan Tetrapod Collection</positionName>
+            <address>
+                    <city>Vancouver</city>
+                    <administrativeArea>British Columbia</administrativeArea>
+                    <country>CA</country>
+            </address>
+            <electronicMailAddress>jankowsk@biodiversity.ubc.ca</electronicMailAddress>
+            <onlineUrl>https://biodiversity.ubc.ca/people/faculty/jill-jankowski</onlineUrl>
+            <role></role>
+                    </associatedParty>
+                    <associatedParty>
+            <individualName>
+                    <givenName>Carole</givenName>
+                <surName>Sinou</surName>
+            </individualName>
+            <organizationName>Université de Montréal</organizationName>
+            <positionName>Canadensys manager</positionName>
+            <address>
+                    <deliveryPoint>4101 rue Sherbrooke Est</deliveryPoint>
+                    <city>Montréal</city>
+                    <administrativeArea>Québec</administrativeArea>
+                    <postalCode>H1X 2B2</postalCode>
+                    <country>CA</country>
+            </address>
+            <electronicMailAddress>carole.sinou@umontreal.ca</electronicMailAddress>
+                    <userId directory="https://orcid.org/">0000-0002-6718-6669</userId>
+            <role>programmer</role>
+                    </associatedParty>
+            <pubDate>
+                    2024-02-26
+            </pubDate>
+            <language>eng</language>
+                <abstract>
+                            <para>The Cowan Tetrapod Collection herpetology holdings of 206 species is principally a North American synoptic collection. 84% of the living species known to occur in British Columbia are represented. The collection was founded by Dr. Ian McTaggart-Cowan. The herpetology collection is housed at the University of British Columbia Beaty Biodiversity Museum, which contains approximately 2 million natural history specimens.</para>
+                </abstract>
+                        <keywordSet>
+                                    <keyword>Occurrence</keyword>
+                            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+                        </keywordSet>
+                        <keywordSet>
+                                    <keyword>Occurrence</keyword>
+                            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml</keywordThesaurus>
+                        </keywordSet>
+                        <keywordSet>
+                                    <keyword>Specimen</keyword>
+                            <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+                        </keywordSet>
+                <intellectualRights>
+                    <para>To the extent possible under law, the publisher has waived all rights to these data and has dedicated them to the <ulink url="http://creativecommons.org/publicdomain/zero/1.0/legalcode"><citetitle>Public Domain (CC0 1.0)</citetitle></ulink>. Users may copy, modify, distribute and use the work, including for commercial purposes, without restriction.</para>
+                </intellectualRights>
+                <distribution scope="document">
+                    <online>
+                        <url function="information">https://beatymuseum.ubc.ca/research-2/collections/cowan-tetrapod-collection/</url>
+                    </online>
+                </distribution>
+                <coverage>
+                        <geographicCoverage>
+                                <geographicDescription>Global in scope but principally a North American Synoptic collection with a Western Canada emphasis.</geographicDescription>
+                            <boundingCoordinates>
+                                <westBoundingCoordinate>-180</westBoundingCoordinate>
+                                <eastBoundingCoordinate>180</eastBoundingCoordinate>
+                                <northBoundingCoordinate>90</northBoundingCoordinate>
+                                <southBoundingCoordinate>-90</southBoundingCoordinate>
+                            </boundingCoordinates>
+                        </geographicCoverage>
+                                <temporalCoverage>
+                                        <rangeOfDates>
+                                                <beginDate>
+                                                    <calendarDate>1931</calendarDate>
+                                                </beginDate>
+                                            <endDate>
+                                                <calendarDate>2013</calendarDate>
+                                            </endDate>
+                                        </rangeOfDates>
+                                </temporalCoverage>
+                                <taxonomicCoverage>
+                                        <generalTaxonomicCoverage>36 out of 43 British Columbia species.</generalTaxonomicCoverage>
+                                        <taxonomicClassification>
+                                                <taxonRankName>class</taxonRankName>
+                                            <taxonRankValue>Reptilia</taxonRankValue>
+                                                <commonName>Reptiles</commonName>
+                                        </taxonomicClassification>
+                                        <taxonomicClassification>
+                                                <taxonRankName>class</taxonRankName>
+                                            <taxonRankValue>Amphibia</taxonRankValue>
+                                                <commonName>Amphibians</commonName>
+                                        </taxonomicClassification>
+                                </taxonomicCoverage>
+                </coverage>
+                <maintenance>
+                    <description>
+                        <para></para>
+                    </description>
+                    <maintenanceUpdateFrequency>unkown</maintenanceUpdateFrequency>
+                </maintenance>
+
+                    <contact>
+            <individualName>
+                    <givenName>Ildiko</givenName>
+                <surName>Szabo</surName>
+            </individualName>
+            <organizationName> Beaty Biodiversity Museum</organizationName>
+            <positionName>Collections Curator of the UBC BBM Cowan Tetrapod Collection</positionName>
+            <address>
+                    <deliveryPoint>2212 Main Mall</deliveryPoint>
+                    <city>Vancouver</city>
+                    <administrativeArea>BC</administrativeArea>
+                    <postalCode>V6T 1Z4</postalCode>
+                    <country>CA</country>
+            </address>
+            <electronicMailAddress>ildiko.szabo@ubc.ca</electronicMailAddress>
+            <onlineUrl>https://beatymuseum.ubc.ca/research-2/collections/cowan-tetrapod-collection/</onlineUrl>
+                    </contact>
+        </dataset>
+            <additionalMetadata>
+                <metadata>
+                    <gbif>
+                            <dateStamp>2012-07-19T06:45:28.365+00:00</dateStamp>
+                            <hierarchyLevel>dataset</hierarchyLevel>
+                                <citation>Cowan Tetrapod Collection at the University of British Columbia Beaty Biodiversity Museum (UBCBBM)</citation>
+                            <resourceLogoUrl>https://explore.beatymuseum.ubc.ca/brand/sub/beaty-logo-sub-herptology-colour.png</resourceLogoUrl>
+                                    <collection>
+                                            <parentCollectionIdentifier>University of British Columbia Beaty Biodiversity Museum</parentCollectionIdentifier>
+                                            <collectionIdentifier>UBCBBM</collectionIdentifier>
+                                        <collectionName>Cowan Tetrapod Collection - Herpetology</collectionName>
+                                    </collection>
+                                    <specimenPreservationMethod>alcohol</specimenPreservationMethod>
+                            <dc:replaces>https://data.canadensys.net/ipt/resource?id=ubc_bbm_ctc_herps/v6.1.xml</dc:replaces>
+                    </gbif>
+                </metadata>
+            </additionalMetadata>
+    </eml:eml>

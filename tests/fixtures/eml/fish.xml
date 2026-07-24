@@ -1,0 +1,207 @@
+    <eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+             xmlns:dc="http://purl.org/dc/terms/"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.2/eml.xsd"
+             packageId="4caf2040-83ad-4fa7-ba13-005bced721eb/v1.5" system="http://gbif.org" scope="system"
+    xml:lang="eng">
+
+        <dataset>
+                <alternateIdentifier>4caf2040-83ad-4fa7-ba13-005bced721eb</alternateIdentifier>
+                <alternateIdentifier>https://data.canadensys.net/ipt/resource?r=beaty-museum-fish-collection</alternateIdentifier>
+                <title xml:lang="eng">Beaty Biodiversity Museum Fish Collection</title>
+                    <creator>
+            <individualName>
+                    <givenName>Nicolas</givenName>
+                <surName>Bailly</surName>
+            </individualName>
+            <organizationName>Beaty Biodiversity Museum</organizationName>
+            <positionName>Curatorial Assistant</positionName>
+            <address>
+                    <deliveryPoint>2212 Main Mall</deliveryPoint>
+                    <city>Vancouver</city>
+                    <administrativeArea>British Columbia</administrativeArea>
+                    <postalCode>V6T 1Z4</postalCode>
+                    <country>CA</country>
+            </address>
+            <electronicMailAddress>nicolas.bailly@ubc.ca</electronicMailAddress>
+                    <userId directory="https://orcid.org/">0000-0003-4994-0653</userId>
+                    </creator>
+                    <metadataProvider>
+            <individualName>
+                    <givenName>Paul</givenName>
+                <surName>Bucci</surName>
+            </individualName>
+            <organizationName>Beaty Biodiversity Museum</organizationName>
+            <positionName>Collections Curator, Biodiversity Informatics</positionName>
+            <address>
+                    <deliveryPoint>2212 Main Mall</deliveryPoint>
+                    <city>Vancouver</city>
+                    <administrativeArea>British Columbia</administrativeArea>
+                    <postalCode>V6T 1Z4</postalCode>
+                    <country>CA</country>
+            </address>
+            <electronicMailAddress>paul.bucci@ubc.ca</electronicMailAddress>
+                    <userId directory="https://orcid.org/">0000-0002-8646-7730</userId>
+                    </metadataProvider>
+                    <associatedParty>
+            <individualName>
+                    <givenName>Paul</givenName>
+                <surName>Bucci</surName>
+            </individualName>
+            <organizationName>Beaty Biodiversity Museum</organizationName>
+            <positionName>Collections Curator, Biodiversity Informatics</positionName>
+            <address>
+                    <deliveryPoint>2212 Main Mall</deliveryPoint>
+                    <city>Vancouver</city>
+                    <administrativeArea>British Columbia</administrativeArea>
+                    <postalCode>V6T1Z4</postalCode>
+                    <country>CA</country>
+            </address>
+            <electronicMailAddress>paul.bucci@ubc.ca</electronicMailAddress>
+                    <userId directory="https://orcid.org/">0000-0002-8646-7730</userId>
+            <role>processor</role>
+                    </associatedParty>
+                    <associatedParty>
+            <individualName>
+                    <givenName>Nicolas</givenName>
+                <surName>Bailly</surName>
+            </individualName>
+            <organizationName>Beaty Biodiversity Museum</organizationName>
+            <positionName>Curatorial Assistant</positionName>
+            <address>
+                    <deliveryPoint>2212 Main Mall</deliveryPoint>
+                    <city>Vancouver</city>
+                    <administrativeArea>British Columbia</administrativeArea>
+                    <postalCode>V6T1Z4</postalCode>
+                    <country>CA</country>
+            </address>
+            <electronicMailAddress>nicolas.bailly@ubc.ca</electronicMailAddress>
+                    <userId directory="https://orcid.org/">0000-0003-4994-0653</userId>
+            <role>custodianSteward</role>
+                    </associatedParty>
+                    <associatedParty>
+            <individualName>
+                    <givenName>Eric G.</givenName>
+                <surName>Taylor</surName>
+            </individualName>
+            <organizationName>Department of Zoology</organizationName>
+            <positionName>Director of Fish Collection</positionName>
+            <address>
+                    <country>CA</country>
+            </address>
+            <role>curator</role>
+                    </associatedParty>
+            <pubDate>
+                    2025-04-24
+            </pubDate>
+            <language>eng</language>
+                <abstract>
+                            <para>The UBC-BBM Fish Collection (University of British Columbia, Beaty Biodiversity Museum, UBFC), was begun by Dr. C. McLean Fraser in the Department of Zoology in the 1910s. It was officially created in 1945 when the cataloguing was started. It has been managed by different UBC institutes and departments until 2010 when the BBM was created. The computerization started in 1975. The oldest specimen was collected in 1903.
+The collection may currently hold 26,000 lots with 300,000 specimens over the 33,700 lots with 346,000 specimens recorded in the database (inventory 2023). Almost 32,000 recorded lots are georeferenced, from about 5,700 different stations. Two-thirds of the recorded lots come from marine waters, but one third in terms of number of specimens. Besides fishes from British Columbia and adjacent Canada and USA’s states that are the location for 75% of the recorded lots, various expeditions in the Pacific and Asia in the 1950-60s increased the diversity to reach today about 2,800 recorded valid species, with recorded 11 holotypes and 209 paratypes for 38 nominal species.  About 500 x-ray plates and 129 drawings are available at https://open.library.ubc.ca/collections/bbmnhibc.
+For more details, see https://beatymuseum.ubc.ca/research-2/collections/fish-collection/.
+The database was previously disseminated through FishBase since 1996 (temporarily, there may be duplicates in GBIF).</para>
+                </abstract>
+                        <keywordSet>
+                                    <keyword>Occurrence</keyword>
+                            <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml</keywordThesaurus>
+                        </keywordSet>
+                        <keywordSet>
+                                    <keyword>Specimen</keyword>
+                            <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+                        </keywordSet>
+                <additionalInfo>
+                    <para>Currently this dataset contains only the names that were assigned during the registration of the specimens. We are currently working to add the current valid name.
+Note: the current otherCatalogNumber corresponds to a collection event number. Thus, lots of specimens caught during the same collection event carries the same otherCatalogNumber. Two digits will be progressively added to differentiate all lots.</para>
+                </additionalInfo>
+                <intellectualRights>
+                    <para>To the extent possible under law, the publisher has waived all rights to these data and has dedicated them to the <ulink url="http://creativecommons.org/publicdomain/zero/1.0/legalcode"><citetitle>Public Domain (CC0 1.0)</citetitle></ulink>. Users may copy, modify, distribute and use the work, including for commercial purposes, without restriction.</para>
+                </intellectualRights>
+                <distribution scope="document">
+                    <online>
+                        <url function="information">https://collections.beatymuseum.ubc.ca</url>
+                    </online>
+                </distribution>
+                <coverage>
+                        <geographicCoverage>
+                                <geographicDescription>Worldwide with emphasis for marine species on the North Pacific (some in South Pacific, Atlantic, and Indian ocean), for freshwater species on North America (mainly British Columbia, some in Asia, few in South America and Europe).</geographicDescription>
+                            <boundingCoordinates>
+                                <westBoundingCoordinate>-180</westBoundingCoordinate>
+                                <eastBoundingCoordinate>180</eastBoundingCoordinate>
+                                <northBoundingCoordinate>90</northBoundingCoordinate>
+                                <southBoundingCoordinate>-90</southBoundingCoordinate>
+                            </boundingCoordinates>
+                        </geographicCoverage>
+                                <temporalCoverage>
+                                        <rangeOfDates>
+                                                <beginDate>
+                                                    <calendarDate>1946-01-01</calendarDate>
+                                                </beginDate>
+                                            <endDate>
+                                                <calendarDate>2024-02-01</calendarDate>
+                                            </endDate>
+                                        </rangeOfDates>
+                                </temporalCoverage>
+                </coverage>
+                <maintenance>
+                    <description>
+                        <para></para>
+                    </description>
+                    <maintenanceUpdateFrequency>asNeeded</maintenanceUpdateFrequency>
+                </maintenance>
+
+                    <contact>
+            <individualName>
+                    <givenName>Nicolas</givenName>
+                <surName>Bailly</surName>
+            </individualName>
+            <organizationName>Beaty Biodiversity Museum</organizationName>
+            <positionName>Curatorial Assistant</positionName>
+            <address>
+                    <deliveryPoint>2212 Main Mall</deliveryPoint>
+                    <city>Vancouver</city>
+                    <administrativeArea>British Columbia</administrativeArea>
+                    <postalCode>V6T 1Z4</postalCode>
+                    <country>CA</country>
+            </address>
+            <electronicMailAddress>nicolas.bailly@ubc.ca</electronicMailAddress>
+                    <userId directory="https://orcid.org/">0000-0003-4994-0653</userId>
+                    </contact>
+        </dataset>
+            <additionalMetadata>
+                <metadata>
+                    <gbif>
+                            <dateStamp>2024-02-16T18:13:07.941+00:00</dateStamp>
+                            <hierarchyLevel>dataset</hierarchyLevel>
+                                <physical>
+                                    <objectName>FishBase</objectName>
+                                    <characterEncoding>UTF-8</characterEncoding>
+                                    <dataFormat>
+                                        <externallyDefinedFormat>
+                                            <formatName>Online database</formatName>
+                                                <formatVersion>1.0</formatVersion>
+                                        </externallyDefinedFormat>
+                                    </dataFormat>
+                                    <distribution>
+                                        <online>
+                                            <url function="download">https://fishbase.ca/museum/SpecCollectionsList.php?catnum_operator=BEGINS_WITH&amp;catnum_value=UBC&amp;catnum_fieldname=catnum&amp;catnum_fieldtype=CHAR&amp;genus_operator=EQUAL&amp;genus_value=&amp;genus_fieldname=genus&amp;genus_fieldtype=CHAR&amp;species_operator=EQUAL&amp;species_value=&amp;species_fieldname=species&amp;species_fieldtype=CHAR&amp;genuscol_operator=EQUAL&amp;genuscol_value=&amp;genuscol_fieldname=genuscol&amp;genuscol_fieldtype=CHAR&amp;speciescol_operator=CONTAINS&amp;speciescol_value=&amp;speciescol_fieldname=speciescol&amp;speciescol_fieldtype=CHAR&amp;station_operator=BEGINS_WITH&amp;station_value=&amp;station_fieldname=station&amp;station_fieldtype=CHAR&amp;famcode_value=&amp;famcode_operator=EQUAL&amp;famcode_fieldname=famcode&amp;famcode_fieldtype=INT&amp;c_code_value=&amp;c_code_operator=EQUAL&amp;c_code_fieldname=c_code&amp;c_code_fieldtype=CHAR&amp;areacode_value=&amp;areacode_operator=EQUAL&amp;areacode_fieldname=areacode&amp;areacode_fieldtype=CHAR&amp;locality1_value=&amp;locality1_operator=CONTAINS&amp;locality1_fieldname=locality1&amp;locality1_fieldtype=CHAR&amp;collector_value=&amp;collector_operator=CONTAINS&amp;collector_fieldname=collector&amp;collector_fieldtype=CHAR&amp;year_value=&amp;year_operator=EQUAL&amp;year_fieldname=year&amp;year_fieldtype=INT&amp;expedition_value=&amp;expedition_operator=EQUAL&amp;expedition_fieldname=expedition&amp;expedition_fieldtype=CHAR</url>
+                                        </online>
+                                    </distribution>
+                                </physical>
+                            <resourceLogoUrl>https://explore.beatymuseum.ubc.ca/brand/sub/beaty-logo-sub-fish-colour.svg</resourceLogoUrl>
+                                    <collection>
+                                            <collectionIdentifier>ICH</collectionIdentifier>
+                                        <collectionName>Beaty Biodiversity Museum Fish Collection</collectionName>
+                                    </collection>
+                                    <specimenPreservationMethod>alcohol</specimenPreservationMethod>
+                                    <specimenPreservationMethod>glycerin</specimenPreservationMethod>
+                                    <specimenPreservationMethod>other</specimenPreservationMethod>
+                                <jgtiCuratorialUnit>
+                                        <jgtiUnitType>lots</jgtiUnitType>
+                                        <jgtiUnits
+                                                uncertaintyMeasure="1000">35000</jgtiUnits>
+                                </jgtiCuratorialUnit>
+                            <dc:replaces>4caf2040-83ad-4fa7-ba13-005bced721eb/v1.5.xml</dc:replaces>
+                    </gbif>
+                </metadata>
+            </additionalMetadata>
+    </eml:eml>

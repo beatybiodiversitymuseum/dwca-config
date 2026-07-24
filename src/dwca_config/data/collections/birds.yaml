@@ -1,34 +1,148 @@
 name: birds
 specify_name: Birds
 query_id: 363
-deduplicate_by: collectionobject.guid
 dwca_terms:
-  collectionobject.collectingEvent.integer1: day
-  collectionobject.collectingEvent.integer2: month
-  collectionobject.collectingEvent.text2: year
-  collectionobject.collectingEvent.text6: recordedBy
-  collectionobject.collectingEvent.text1: fieldNotes
-  collectionobject.collectingEvent.text3: habitat
   collectionobject.collectingEvent.locality.text1: verbatimCoordinates
-  collectionobject.collectingEvent.locality.geoCoordDetails.geoRefCompiledBy.lastName: georeferenceRemarks
-  collectionobject.collectingEvent.locality.geoCoordDetails.text1: georeferencedDate
-  collectionobject.collectingEvent.locality.geoCoordDetails.protocol: georeferenceProtocol
-  collectionobject.collectingEvent.locality.geoCoordDetails.geoRefRemarks: georeferenceRemarks
-  collectionobject.collectingEvent.locality.geoCoordDetails.source: georeferenceSources
-  collectionobject.collectingEvent.locality.localityDetails.number3: maximumElevationInMeters
-  collectionobject.collectingEvent.locality.localityDetails.number4: minimumElevationInMeters
-  collectionobject.determinations.text3: dateIdentified
-  collectionobject.determinations.determiner.lastName: identifiedBy
-  collectionobject.determinations.text6: identificationQualifier
-  collectionobject.determinations.alternateName: vernacularName
-  collectionobject.determinations.preferredTaxon: scientificName
-  collectionobject.preparations.text10: preparations
+  collectionobject.collectingEvent.text1: fieldNotes
+  collectionobject.collectingEvent.text2: year
+  collectionobject.collectingEvent.text3: habitat
 dwca_defaults:
   collectionCode: CTC
   collectionID: http://grbio.org/cool/m0m3-x1cz
-  datasetName: Cowan Tetrapod Collection - Birds
   datasetID: https://doi.org/10.15468/aytqsu
-dwca_metadata:
-  dataset_id: https://doi.org/10.15468/aytqsu
-  title: Cowan Tetrapod Collection - Birds
-  description: null
+eml_metadata:
+  datasetTitle: Cowan Tetrapod Collection - Birds
+  creators:
+  - givenName: Ildiko
+    surName: Szabo
+    organizationName: Beaty Biodiversity Museum
+    positionName: Collections Curator of the UBC BBM Cowan Tetrapod Collection
+    email: ildiko.szabo@ubc.ca
+    onlineUrl: https://beatymuseum.ubc.ca/research-2/collections/cowan-tetrapod-collection/
+    address:
+      deliveryPoint: 2212 Main Mall
+      city: Vancouver
+      administrativeArea: BC
+      postalCode: V6T 1Z4
+      country: CA
+  associatedParties:
+  - givenName: Carole
+    surName: Sinou
+    organizationName: Université de Montréal
+    positionName: Canadensys manager
+    email: carole.sinou@umontreal.ca
+    role: programmer
+    address:
+      deliveryPoint: 4101 rue Sherbrooke Est
+      city: Montréal
+      administrativeArea: Québec
+      postalCode: H1X 2B2
+      country: CA
+    userId:
+      value: 0000-0002-6718-6669
+      directory: https://orcid.org/
+  - givenName: Jill
+    surName: Jankowski
+    organizationName: The University of British Columbia
+    positionName: Director of Cowan Tetrapod Collection
+    email: jankowsk@biodiversity.ubc.ca
+    onlineUrl: https://biodiversity.ubc.ca/people/faculty/jill-jankowski
+    address:
+      city: Vancouver
+      administrativeArea: British Columbia
+      country: CA
+  - givenName: Paul
+    surName: Bucci
+    organizationName: Beaty Biodiversity Museum
+    positionName: Collections Curator, Biodiversity Informatics
+    email: paul.bucci@ubc.ca
+    role: processor
+    address:
+      deliveryPoint: 2212 Main Mall
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+    userId:
+      value: 0000-0002-8646-7730
+      directory: https://orcid.org/
+  abstract: The Cowan Tetrapod Collection avian holdings of 1,803 species represent 160 families
+    is comprised of over 16,500 study skins, 820 skeletons, 600 mounts, and 7,735 egg clutches.
+    The oldest specimens date from the late 1840s and several extinct taxa are represented.
+    Global in scope, the collection is especially strong in specimens collected from Western
+    Canada, Mexico (especially Ilsas Tres Marias), and the former Transvaal region of South
+    Africa. The collection was founded by Dr. Ian McTaggart-Cowan and his father-in-law Kenneth
+    Racey. Notable collections include those of H.R. Macmillan, W.S. Maguire, A.C. Brooks,
+    and W.J. Plowden-Wardlaw. The avian collection is housed at the University of British
+    Columbia Beaty Biodiversity Museum which contains approximately 2 million natural history
+    specimens.
+  keywordSets:
+  - keywords:
+    - Occurrence
+    thesaurus: 'GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml'
+  - keywords:
+    - Occurrence
+    thesaurus: 'GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml'
+  - keywords:
+    - Specimen
+    thesaurus: 'GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml'
+  distributions:
+  - scope: document
+    function: information
+    url: http://www.beatymuseum.ubc.ca/collections/vertebrate
+  geographicCoverage:
+    description: Global in scope with a particular emphasis on Western Canada, Mexico (especially
+      Ilsas Tres Marias), and the former Transvaal region of South Africa.
+  taxonomicCoverage:
+    description: All living bird orders; 72% of living bird families are represented.
+    classifications:
+    - rankName: class
+      rankValue: Aves
+      commonName: Birds
+  temporalCoverage:
+    beginDate: '1848-12-31'
+    endDate: '2023-11-01'
+  maintenance:
+    frequency: unkown
+  contacts:
+  - givenName: Ildiko
+    surName: Szabo
+    organizationName: Beaty Biodiversity Museum
+    positionName: Collections Curator of the UBC BBM Cowan Tetrapod Collection
+    email: ildiko.szabo@ubc.ca
+    onlineUrl: https://beatymuseum.ubc.ca/research-2/collections/cowan-tetrapod-collection/
+    address:
+      deliveryPoint: 2212 Main Mall
+      city: Vancouver
+      administrativeArea: BC
+      postalCode: V6T 1Z4
+      country: CA
+  - givenName: Christopher
+    surName: Stinson
+    organizationName: Beaty Biodiversity Museum
+    positionName: Lead Curatorial Assistant
+    phone: 604-822-4665
+    email: christopher.stinson@ubc.ca
+    address:
+      deliveryPoint: 2212 Main Mall
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+  resourceLogoUrl: https://explore.beatymuseum.ubc.ca/brand/sub/beaty-logo-sub-vertebrate-colour.png
+  collection:
+    parentIdentifier: Cowan Tetrapod Collection
+    identifier: CTC
+    name: Cowan Tetrapod Collection - Birds
+  preservationMethods:
+  - dried
+  curatorialUnits:
+  - unitType: skins
+    beginRange: '16500'
+    endRange: '18000'
+  - unitType: eggs
+    beginRange: '7700'
+    endRange: '7800'
+  - unitType: skeletons
+    beginRange: '820'
+    endRange: '850'

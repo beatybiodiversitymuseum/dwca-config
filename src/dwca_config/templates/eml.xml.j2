@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eml:eml
+  xmlns:eml="https://eml.ecoinformatics.org/eml-2.2.0"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://eml.ecoinformatics.org/eml-2.2.0 https://rs.gbif.org/schema/eml-gbif-profile/1.3/eml.xsd"
+  packageId="{{ packageId }}"
+  system="{{ system }}"
+  scope="{{ scope }}"
+  xml:lang="{{ languageCode }}">
+
+  <dataset>
+    <!-- Zero or more <alternateIdentifier> elements. -->
+    {{ alternateIdentifiers }}
+
+    <title xml:lang="{{ languageCode }}">{{ datasetTitle }}</title>
+
+    <!-- One or more complete <creator> elements. -->
+    {{ creators }}
+
+    <!-- One or more complete <metadataProvider> elements. -->
+    {{ metadataProviders }}
+
+    <!-- Zero or more complete <associatedParty> elements, including roles. -->
+    {{ associatedParties }}
+
+    <pubDate>{{ publicationDate }}</pubDate>
+    <language>{{ languageCode }}</language>
+
+    <abstract>
+      <para>{{ abstract }}</para>
+    </abstract>
+
+    <!-- Zero or more complete <keywordSet> elements. -->
+    {{ keywordSets }}
+
+    <intellectualRights>
+      <para>{{ intellectualRights.text }}</para>
+    </intellectualRights>
+
+    <!-- Optional SPDX-style <licensed> element. -->
+    {{ license }}
+
+    <!-- Zero or more complete <distribution> elements. -->
+    {{ distributions }}
+
+    <coverage>
+      <geographicCoverage>
+        <geographicDescription>{{ geographicCoverage.description }}</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>{{ geographicCoverage.west }}</westBoundingCoordinate>
+          <eastBoundingCoordinate>{{ geographicCoverage.east }}</eastBoundingCoordinate>
+          <northBoundingCoordinate>{{ geographicCoverage.north }}</northBoundingCoordinate>
+          <southBoundingCoordinate>{{ geographicCoverage.south }}</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+
+      <!-- Optional complete <taxonomicCoverage> element. -->
+      {{ taxonomicCoverage }}
+
+      <!-- Optional complete <temporalCoverage> element. -->
+      {{ temporalCoverage }}
+    </coverage>
+
+    <maintenance>
+      <description>
+        <para>{{ maintenance.description }}</para>
+      </description>
+      <maintenanceUpdateFrequency>{{ maintenance.frequency }}</maintenanceUpdateFrequency>
+    </maintenance>
+
+    <!-- One or more complete <contact> elements. -->
+    {{ contacts }}
+
+    <!-- Optional complete <methods> element. -->
+    {{ methods }}
+
+    <!-- Optional complete <project> element. -->
+    {{ project }}
+
+    <!-- Optional complete <additionalInfo> element. -->
+    {{ additionalInfo }}
+  </dataset>
+
+  <additionalMetadata>
+    <metadata>
+      <gbif>
+        <dateStamp>{{ dateStamp }}</dateStamp>
+        <hierarchyLevel>{{ hierarchyLevel }}</hierarchyLevel>
+
+        <!-- Optional complete <citation> element. -->
+        {{ citation }}
+
+        <!-- Optional complete <bibliography> element. -->
+        {{ bibliography }}
+
+        <!-- Zero or more external-data <physical> elements. -->
+        {{ externalDataSets }}
+
+        <resourceLogoUrl>{{ resourceLogoUrl }}</resourceLogoUrl>
+
+        <collection>
+          <parentCollectionIdentifier>{{ collection.parentIdentifier }}</parentCollectionIdentifier>
+          <collectionIdentifier>{{ collection.identifier }}</collectionIdentifier>
+          <collectionName>{{ collection.name }}</collectionName>
+        </collection>
+
+        <formationPeriod>{{ formationPeriod }}</formationPeriod>
+
+        <!-- Zero or more <specimenPreservationMethod> elements. -->
+        {{ preservationMethods }}
+
+        <!-- Zero or more complete <jgtiCuratorialUnit> elements. -->
+        {{ curatorialUnits }}
+
+        <dc:replaces>{{ replaces }}</dc:replaces>
+      </gbif>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>

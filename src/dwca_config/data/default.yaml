@@ -1,70 +1,103 @@
+specify_name:
+query_id:
+deduplicate_by: collectionobject.catalogNumber
 dwca_terms:
-  collectionobject.guid: occurrenceID
-  collectionobject.catalogNumber: catalogNumber
   collectionobject.altCatalogNumber: otherCatalogNumbers
-  collectionobject.timestampModified: modified
-  collectionobject.collectingEvent.startDate: eventDate
-  collectionobject.collectingEvent.endDate: eventDate
-  collectionobject.collectingEvent.verbatimDate: verbatimEventDate
-  collectionobject.collectingEvent.startDateVerbatim: verbatimEventDate
-  collectionobject.collectingEvent.verbatimLocality: verbatimLocality
-  collectionobject.collectingEvent.stationFieldNumber: recordNumber
+  collectionobject.catalogNumber: catalogNumber
+  collectionobject.collectingEvent.collectingEventAttribute.text1: minimumDepthInMeters
+  collectionobject.collectingEvent.collectingEventAttribute.text2: maximumDepthInMeters
+  collectionobject.collectingEvent.collectingEventAttribute.text9: habitat
   collectionobject.collectingEvent.collectors: recordedBy
-  collectionobject.collectingEvent.locality.localityName: locality
-  collectionobject.collectingEvent.locality.latitude1: decimalLatitude
-  collectionobject.collectingEvent.locality.longitude1: decimalLongitude
-  collectionobject.collectingEvent.locality.verbatimLatitude: verbatimLatitude
-  collectionobject.collectingEvent.locality.verbatimLongitude: verbatimLongitude
-  collectionobject.collectingEvent.locality.verbatimElevation: verbatimElevation
-  collectionobject.collectingEvent.locality.namedPlace: higherGeography
-  collectionobject.collectingEvent.locality.remarks: locationRemarks
+  collectionobject.collectingEvent.endDate: eventDate
+  collectionobject.collectingEvent.integer1: day
+  collectionobject.collectingEvent.integer2: month
+  collectionobject.collectingEvent.locality.geoCoordDetails.geoRefCompiledBy.lastName: georeferenceRemarks
+  collectionobject.collectingEvent.locality.geoCoordDetails.geoRefRemarks: georeferenceRemarks
+  collectionobject.collectingEvent.locality.geoCoordDetails.protocol: georeferenceProtocol
+  collectionobject.collectingEvent.locality.geoCoordDetails.source: georeferenceSources
+  collectionobject.collectingEvent.locality.geoCoordDetails.text1: georeferencedDate
   collectionobject.collectingEvent.locality.geography.Continent.fullName: continent
   collectionobject.collectingEvent.locality.geography.Country.fullName: country
-  collectionobject.collectingEvent.locality.geography.State.fullName: stateProvince
   collectionobject.collectingEvent.locality.geography.County.fullName: county
-  collectionobject.determinations.taxon.Kingdom.fullName: kingdom
-  collectionobject.determinations.taxon.Division.fullName: phylum
-  collectionobject.determinations.taxon.Phylum.fullName: phylum
-  collectionobject.determinations.taxon.Subphylum.fullName: subphylum
-  collectionobject.determinations.taxon.Class.fullName: class
-  collectionobject.determinations.taxon.Subclass.fullName: subclass
-  collectionobject.determinations.taxon.Infraclass.fullName: infraclass
-  collectionobject.determinations.taxon.Superorder.fullName: superorder
-  collectionobject.determinations.taxon.Order.fullName: order
-  collectionobject.determinations.taxon.Suborder.fullName: suborder
-  collectionobject.determinations.taxon.Infraorder.fullName: infraorder
-  collectionobject.determinations.taxon.Superfamily.fullName: superfamily
-  collectionobject.determinations.taxon.Family.fullName: family
-  collectionobject.determinations.taxon.Subfamily.fullName: subfamily
-  collectionobject.determinations.taxon.Tribe.fullName: tribe
-  collectionobject.determinations.taxon.Subtribe.fullName: subtribe
-  collectionobject.determinations.taxon.Genus.fullName: genus
-  collectionobject.determinations.taxon.Subgenus.fullName: subgenus
-  collectionobject.determinations.taxon.Species.fullName: specificEpithet
-  collectionobject.determinations.taxon.Subspecies.fullName: infraspecificEpithet
-  collectionobject.determinations.taxon.Infraspecific.fullName: infraspecificEpithet
-  collectionobject.determinations.taxon.author: scientificNameAuthorship
-  collectionobject.determinations.preferredTaxon.Kingdom.fullName: kingdom
-  collectionobject.determinations.preferredTaxon.Division.fullName: phylum
-  collectionobject.determinations.preferredTaxon.Class.fullName: class
-  collectionobject.determinations.preferredTaxon.Order.fullName: order
-  collectionobject.determinations.preferredTaxon.Family.fullName: family
-  collectionobject.determinations.preferredTaxon.Genus.fullName: genus
-  collectionobject.determinations.preferredTaxon.Species.fullName: specificEpithet
-  collectionobject.determinations.preferredTaxon.Infraspecific.fullName: infraspecificEpithet
-  collectionobject.determinations.determinedDate: dateIdentified
-  collectionobject.determinations.remarks: identificationRemarks
-  collectionobject.preparations.status: disposition
-  collectionobject.preparations.prepType.name: preparations
-  collectionobject.preparations.countAmt: individualCount
+  collectionobject.collectingEvent.locality.geography.State.fullName: stateProvince
+  collectionobject.collectingEvent.locality.latitude1: decimalLatitude
+  collectionobject.collectingEvent.locality.localityDetails.number3: maximumElevationInMeters
+  collectionobject.collectingEvent.locality.localityDetails.number4: minimumElevationInMeters
+  collectionobject.collectingEvent.locality.localityName: locality
+  collectionobject.collectingEvent.locality.longitude1: decimalLongitude
+  collectionobject.collectingEvent.locality.namedPlace: higherGeography
+  collectionobject.collectingEvent.locality.remarks: locationRemarks
+  collectionobject.collectingEvent.locality.verbatimElevation: verbatimElevation
+  collectionobject.collectingEvent.locality.verbatimLatitude: verbatimLatitude
+  collectionobject.collectingEvent.locality.verbatimLongitude: verbatimLongitude
   collectionobject.collectingEvent.paleoContext.chronosStrat.Erathem/Era.fullName: earliestEraOrLowestErathem
-  collectionobject.collectingEvent.paleoContext.chronosStrat.System/Period.fullName: earliestPeriodOrLowestSystem
   collectionobject.collectingEvent.paleoContext.chronosStrat.Series/Epoch.fullName: earliestEpochOrLowestSeries
   collectionobject.collectingEvent.paleoContext.chronosStrat.Stage/Age.fullName: earliestAgeOrLowestStage
-  collectionobject.collectingEvent.paleoContext.lithoStrat.Litho Group.fullName: group
-  collectionobject.collectingEvent.paleoContext.lithoStrat.Formation.fullName: formation
-  collectionobject.collectingEvent.paleoContext.lithoStrat.Member.fullName: member
+  collectionobject.collectingEvent.paleoContext.chronosStrat.System/Period.fullName: earliestPeriodOrLowestSystem
   collectionobject.collectingEvent.paleoContext.lithoStrat.Exposure.fullName: bed
+  collectionobject.collectingEvent.paleoContext.lithoStrat.Formation.fullName: formation
+  collectionobject.collectingEvent.paleoContext.lithoStrat.Litho Group.fullName: group
+  collectionobject.collectingEvent.paleoContext.lithoStrat.Member.fullName: member
+  collectionobject.collectingEvent.startDate: eventDate
+  collectionobject.collectingEvent.startDateVerbatim: verbatimEventDate
+  collectionobject.collectingEvent.stationFieldNumber: recordNumber
+  collectionobject.collectingEvent.text6: recordedBy
+  collectionobject.collectingEvent.verbatimDate: verbatimEventDate
+  collectionobject.collectingEvent.verbatimLocality: verbatimLocality
+  collectionobject.collectionObjectAttribute.text1: sex
+  collectionobject.collectionObjectProperties.text16: basisOfRecord
+  collectionobject.collectionObjectProperties.text31: associatedReferences
+  collectionobject.determinations.alternateName: vernacularName
+  collectionobject.determinations.determinedDate: dateIdentified
+  collectionobject.determinations.determiner: identifiedBy
+  collectionobject.determinations.determiner.lastName: identifiedBy
+  collectionobject.determinations.preferredTaxon: scientificName
+  collectionobject.determinations.preferredTaxon.Class.fullName: class
+  collectionobject.determinations.preferredTaxon.Division.fullName: phylum
+  collectionobject.determinations.preferredTaxon.Family.fullName: family
+  collectionobject.determinations.preferredTaxon.Genus.fullName: genus
+  collectionobject.determinations.preferredTaxon.Infraspecific.fullName: infraspecificEpithet
+  collectionobject.determinations.preferredTaxon.Kingdom.fullName: kingdom
+  collectionobject.determinations.preferredTaxon.Order.fullName: order
+  collectionobject.determinations.preferredTaxon.Species.fullName: specificEpithet
+  collectionobject.determinations.preferredTaxon.text10: taxonRank
+  collectionobject.determinations.remarks: identificationRemarks
+  collectionobject.determinations.taxon.Class.fullName: class
+  collectionobject.determinations.taxon.Division.fullName: phylum
+  collectionobject.determinations.taxon.Family.fullName: family
+  collectionobject.determinations.taxon.Genus.fullName: genus
+  collectionobject.determinations.taxon.Infraclass.fullName: infraclass
+  collectionobject.determinations.taxon.Infraorder.fullName: infraorder
+  collectionobject.determinations.taxon.Infraspecific.fullName: infraspecificEpithet
+  collectionobject.determinations.taxon.Kingdom.fullName: kingdom
+  collectionobject.determinations.taxon.Order.fullName: order
+  collectionobject.determinations.taxon.Phylum.fullName: phylum
+  collectionobject.determinations.taxon.Species.fullName: specificEpithet
+  collectionobject.determinations.taxon.Subclass.fullName: subclass
+  collectionobject.determinations.taxon.Subfamily.fullName: subfamily
+  collectionobject.determinations.taxon.Subgenus.fullName: subgenus
+  collectionobject.determinations.taxon.Suborder.fullName: suborder
+  collectionobject.determinations.taxon.Subphylum.fullName: subphylum
+  collectionobject.determinations.taxon.Subspecies.fullName: infraspecificEpithet
+  collectionobject.determinations.taxon.Subtribe.fullName: subtribe
+  collectionobject.determinations.taxon.Superfamily.fullName: superfamily
+  collectionobject.determinations.taxon.Superorder.fullName: superorder
+  collectionobject.determinations.taxon.Tribe.fullName: tribe
+  collectionobject.determinations.taxon.acceptedTaxon.text1: taxonRank
+  collectionobject.determinations.taxon.author: scientificNameAuthorship
+  collectionobject.determinations.text1: identifiedBy
+  collectionobject.determinations.text3: dateIdentified
+  collectionobject.determinations.text6: identificationQualifier
+  collectionobject.determinations.typeStatusName: typeStatus
+  collectionobject.guid: occurrenceID
+  collectionobject.preparations.countAmt: individualCount
+  collectionobject.preparations.prepType.name: preparations
+  collectionobject.preparations.status: disposition
+  collectionobject.preparations.text10: preparations
+  collectionobject.preparations.text2: specimenCondition
+  collectionobject.remarks: occurrenceRemarks
+  collectionobject.text2: previousIdentifications
+  collectionobject.timestampModified: modified
 dwca_defaults:
   ownerInstitutionCode: BBM
   license: https://creativecommons.org/publicdomain/zero/1.0/
@@ -74,11 +107,11 @@ dwca_defaults:
   institutionID: http://biocol.org/urn:lsid:biocol.org:col:15106
 dwca_metadata:
   license: CC0 1.0 Universal (https://creativecommons.org/publicdomain/zero/1.0/)
-  organization: Beaty Biodiversity Museum, University of British Columbia
 media:
+  attachment_column: collectionobject.collectionObjectAttachments
   output_column: Associated Media
   public_base_url: https://beaty.b-cdn.net
-  link_separator: " | "
+  link_separator: ' | '
   convertible_extensions:
   - jpg
   - jpeg
@@ -87,6 +120,37 @@ media:
   - tiff
   output_extension: jpg
   filename:
-    pattern: ""
+    pattern: ''
     sequence_style: alphabetic
     first_unsuffixed: true
+eml_metadata:
+  languageCode: eng
+  metadataProviders:
+  - givenName: Paul
+    surName: Bucci
+    organizationName: Beaty Biodiversity Museum
+    positionName: Collections Curator, Biodiversity Informatics
+    email: paul.bucci@ubc.ca
+    address:
+      deliveryPoint: 2212 Main Mall
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+    userId:
+      value: 0000-0002-8646-7730
+      directory: https://orcid.org/
+  intellectualRights:
+    text: To the extent possible under law, the publisher has waived all rights to these data
+      and has dedicated them to the Public Domain (CC0 1.0). Users may copy, modify, distribute
+      and use the work, including for commercial purposes, without restriction.
+    link:
+      url: http://creativecommons.org/publicdomain/zero/1.0/legalcode
+      title: Public Domain (CC0 1.0)
+  geographicCoverage:
+    west: '-180'
+    east: '180'
+    north: '90'
+    south: '-90'
+  maintenance:
+    description: ''

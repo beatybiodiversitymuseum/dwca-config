@@ -1,0 +1,295 @@
+<eml:eml xmlns:eml="eml://ecoinformatics.org/eml-2.1.1"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="eml://ecoinformatics.org/eml-2.1.1 http://rs.gbif.org/schema/eml-gbif-profile/1.1/eml.xsd"
+         packageId="628abbe5-dc8d-41e9-a0c7-f05efe282649/v3.7" system="http://gbif.org" scope="system"
+         xml:lang="eng">
+
+<dataset>
+  <alternateIdentifier>628abbe5-dc8d-41e9-a0c7-f05efe282649</alternateIdentifier>
+  <alternateIdentifier>https://data.canadensys.net/ipt/resource?r=ubc-lichen</alternateIdentifier>
+  <title xml:lang="eng">University of British Columbia Herbarium (UBC) - Lichen Collection</title>
+      <creator>
+    <individualName>
+        <givenName>Olivia</givenName>
+      <surName>Lee</surName>
+    </individualName>
+    <organizationName>University of British Columbia Herbarium</organizationName>
+    <positionName>Manager of Bryophyhte, Fungi and Lichen Collections</positionName>
+    <address>
+        <deliveryPoint>3529-6270 University Boulevard</deliveryPoint>
+        <city>Vancouver</city>
+        <administrativeArea>British Columbia</administrativeArea>
+        <postalCode>V6T 1Z4</postalCode>
+        <country>CA</country>
+    </address>
+    <phone>(604) 822-3344</phone>
+    <electronicMailAddress>UBC.Herbarium@ubc.ca</electronicMailAddress>
+    <onlineUrl>http://www.biodiversity.ubc.ca/museum/herbarium/</onlineUrl>
+      </creator>
+      <creator>
+    <individualName>
+        <givenName>Karen</givenName>
+      <surName>Golinski</surName>
+    </individualName>
+    <organizationName>University of British Columbia Herbarium</organizationName>
+    <positionName>Manager of Bryophyhte, Fungi and Lichen Collections</positionName>
+    <address>
+        <deliveryPoint>017-2212 Main Mall</deliveryPoint>
+        <city>Vancouver</city>
+        <administrativeArea>British Columbia</administrativeArea>
+        <postalCode>V6T 1Z4</postalCode>
+        <country>CA</country>
+    </address>
+    <phone>(604) 822-3344</phone>
+    <electronicMailAddress>Karen.Golinski@ubc.ca</electronicMailAddress>
+    <onlineUrl>https://herbweb.botany.ubc.ca/herbarium/index.php</onlineUrl>
+      </creator>
+      <metadataProvider>
+    <individualName>
+        <givenName>Beryl</givenName>
+      <surName>Zhuang</surName>
+    </individualName>
+    <organizationName>University of British Columbia Herbarium</organizationName>
+    <positionName>Database Manager</positionName>
+    <address>
+        <deliveryPoint>3529-6270 University Boulevard</deliveryPoint>
+        <city>Vancouver</city>
+        <administrativeArea>British Columbia</administrativeArea>
+        <postalCode>V6T 1Z4</postalCode>
+        <country>CA</country>
+    </address>
+    <phone>(604) 822-3344</phone>
+    <electronicMailAddress>bzhuang@mail.ubc.ca</electronicMailAddress>
+    <onlineUrl>http://www.biodiversity.ubc.ca/museum/herbarium/</onlineUrl>
+      </metadataProvider>
+      <associatedParty>
+    <individualName>
+        <givenName>Beryl</givenName>
+      <surName>Zhuang</surName>
+    </individualName>
+    <organizationName>University of British Columbia Herbarium</organizationName>
+    <positionName>Database Manager</positionName>
+    <address>
+        <deliveryPoint>3529-6270 University Boulevard</deliveryPoint>
+        <city>Vancouver</city>
+        <administrativeArea>British Columbia</administrativeArea>
+        <postalCode>V6T 1Z4</postalCode>
+        <country>CA</country>
+    </address>
+    <phone>(604) 822-3344</phone>
+    <electronicMailAddress>bzhuang@mail.ubc.ca</electronicMailAddress>
+    <onlineUrl>https://herbweb.botany.ubc.ca/herbarium/index.php</onlineUrl>
+    <role>programmer</role>
+      </associatedParty>
+      <associatedParty>
+    <individualName>
+        <givenName>Jeannette</givenName>
+      <surName>Whitton</surName>
+    </individualName>
+    <organizationName>University of British Columbia Herbarium</organizationName>
+    <positionName>Director &amp; Curator, Vascular Plants</positionName>
+    <address>
+        <deliveryPoint>3529-6270 University Boulevard</deliveryPoint>
+        <city>Vancouver</city>
+        <administrativeArea>British Columbia</administrativeArea>
+        <postalCode>V6T 1Z4</postalCode>
+        <country>CA</country>
+    </address>
+    <electronicMailAddress>jeannette.whitton@botany.ubc.ca</electronicMailAddress>
+    <onlineUrl>https://botany.ubc.ca/people/jeannette-whitton</onlineUrl>
+    <role>principalInvestigator</role>
+      </associatedParty>
+      <associatedParty>
+    <individualName>
+        <givenName>Trevor</givenName>
+      <surName>Goward</surName>
+    </individualName>
+    <organizationName>University of British Columbia Herbarium</organizationName>
+    <positionName>Co-Curator of Lichens</positionName>
+    <address>
+        <country>CA</country>
+    </address>
+    <role>curator</role>
+      </associatedParty>
+      <associatedParty>
+    <individualName>
+        <givenName>Curtis</givenName>
+      <surName>Björk</surName>
+    </individualName>
+    <organizationName>University of British Columbia Herbarium</organizationName>
+    <positionName>Co-Curator of Lichens</positionName>
+    <address>
+        <country>CA</country>
+    </address>
+    <role>curator</role>
+      </associatedParty>
+      <associatedParty>
+    <individualName>
+        <givenName>Karen</givenName>
+      <surName>Golinski</surName>
+    </individualName>
+    <organizationName>University of British Columbia Herbarium</organizationName>
+    <positionName>Manager of Bryophyhte, Fungi and Lichen Collections</positionName>
+    <address>
+        <deliveryPoint>017-2212 Main Mall</deliveryPoint>
+        <city>Vancouver</city>
+        <administrativeArea>British Columbia</administrativeArea>
+        <postalCode>V6T 1Z4</postalCode>
+        <country>CA</country>
+    </address>
+    <phone>(604) 822-3344</phone>
+    <electronicMailAddress>Karen.Golinski@ubc.ca</electronicMailAddress>
+    <onlineUrl>https://herbweb.botany.ubc.ca/herbarium/index.php</onlineUrl>
+    <role>custodianSteward</role>
+      </associatedParty>
+  <pubDate>
+      2023-11-22
+  </pubDate>
+  <language>eng</language>
+  <abstract>
+    <para>With 40,000 lichen specimens catalogued to date, the UBC Herbarium houses one of the largest lichen collections in western North America.
+We have a very solid macrolichen collection, with a strong focus on cyanolichens, especially the genus Peltigera. For this genus, at least, this is certainly the largest collection in North America. The collection is also strong in Calicioids as well as in other microlichen groups characteristic of oldgrowth forests. Taken as a whole, the collection is very strong on epiphytic lichens, and rather strong on terricolous lichens, especially macrolichens.</para>
+  </abstract>
+      <keywordSet>
+            <keyword>Occurrence</keyword>
+        <keywordThesaurus>GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type.xml</keywordThesaurus>
+      </keywordSet>
+      <keywordSet>
+            <keyword>UBC</keyword>
+            <keyword>University of British Columbia Herbarium</keyword>
+            <keyword>Beaty Biodiversity Museum</keyword>
+            <keyword>Canadensys</keyword>
+            <keyword>Canada</keyword>
+            <keyword>British Columbia</keyword>
+            <keyword>collection</keyword>
+            <keyword>herbarium</keyword>
+            <keyword>specimens</keyword>
+            <keyword>lichen</keyword>
+        <keywordThesaurus>n/a</keywordThesaurus>
+      </keywordSet>
+      <keywordSet>
+            <keyword>Specimen</keyword>
+        <keywordThesaurus>GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml</keywordThesaurus>
+      </keywordSet>
+  <intellectualRights>
+    <para>To the extent possible under law, the publisher has waived all rights to these data and has dedicated them to the <ulink url="http://creativecommons.org/publicdomain/zero/1.0/legalcode"><citetitle>Public Domain (CC0 1.0)</citetitle></ulink>. Users may copy, modify, distribute and use the work, including for commercial purposes, without restriction.</para>
+  </intellectualRights>
+  <distribution scope="document">
+    <online>
+      <url function="information">https://beatymuseum.ubc.ca/research-2/collections/herbarium/herbarium-fungi-and-lichens/</url>
+    </online>
+  </distribution>
+  <coverage>
+      <geographicCoverage>
+          <geographicDescription>We have a very solid macrolichen collection, with a strong focus on cyanolichens, especially the genus Peltigera. For this genus, at least, this is certainly the largest collection in North America. The collection is also strong in Calicioids as well as in other microlichen groups characteristic of oldgrowth forests. Taken as a whole, the collection is very strong on epiphytic lichens, and rather strong on terricolous lichens, especially macrolichens.</geographicDescription>
+        <boundingCoordinates>
+          <westBoundingCoordinate>-180</westBoundingCoordinate>
+          <eastBoundingCoordinate>180</eastBoundingCoordinate>
+          <northBoundingCoordinate>90</northBoundingCoordinate>
+          <southBoundingCoordinate>-90</southBoundingCoordinate>
+        </boundingCoordinates>
+      </geographicCoverage>
+          <taxonomicCoverage>
+              <generalTaxonomicCoverage>We have a very solid macrolichen collection, with a strong focus on cyanolichens, especially the genus Peltigera. For this genus, at least, this is certainly the largest collection in North America. The collection is also strong in Calicioids as well as in other microlichen groups characteristic of oldgrowth forests. Taken as a whole, the collection is very strong on epiphytic lichens, and rather strong on terricolous lichens, especially macrolichens.</generalTaxonomicCoverage>
+              <taxonomicClassification>
+                  <taxonRankName>kingdom</taxonRankName>
+                <taxonRankValue>Lichen</taxonRankValue>
+                  <commonName>Lichen</commonName>
+              </taxonomicClassification>
+          </taxonomicCoverage>
+  </coverage>
+  <maintenance>
+    <description>
+      <para></para>
+    </description>
+    <maintenanceUpdateFrequency>unkown</maintenanceUpdateFrequency>
+  </maintenance>
+
+      <contact>
+    <individualName>
+        <givenName>Karen</givenName>
+      <surName>Golinski</surName>
+    </individualName>
+    <organizationName>University of British Columbia Herbarium</organizationName>
+    <positionName>Manager of Bryophyhte, Fungi and Lichen Collections</positionName>
+    <address>
+        <deliveryPoint>017-2212 Main Mall</deliveryPoint>
+        <city>Vancouver</city>
+        <administrativeArea>British Columbia</administrativeArea>
+        <postalCode>V6T 1Z4</postalCode>
+        <country>CA</country>
+    </address>
+    <phone>(604) 822-3344</phone>
+    <electronicMailAddress>Karen.Golinski@ubc.ca</electronicMailAddress>
+    <onlineUrl>https://herbweb.botany.ubc.ca/herbarium/index.php</onlineUrl>
+      </contact>
+  <methods>
+        <methodStep>
+          <description>
+            <para></para>
+          </description>
+        </methodStep>
+  </methods>
+</dataset>
+  <additionalMetadata>
+    <metadata>
+      <gbif>
+          <dateStamp>2014-08-18T06:07:29.717+00:00</dateStamp>
+          <hierarchyLevel>dataset</hierarchyLevel>
+            <citation identifier="doi:10.5886/8hh3tyfd">University of British Columbia Lichen Collection (UBC). http://dx.doi.org/10.5886/8hh3tyfd. (consulted on [date])</citation>
+            <physical>
+              <objectName>UBC Herbarium Databases</objectName>
+              <characterEncoding>UTF-8</characterEncoding>
+              <dataFormat>
+                <externallyDefinedFormat>
+                  <formatName>HTML</formatName>
+                </externallyDefinedFormat>
+              </dataFormat>
+              <distribution>
+                <online>
+                  <url function="download">https://herbweb.botany.ubc.ca/herbarium/index.php</url>
+                </online>
+              </distribution>
+            </physical>
+            <physical>
+              <objectName>Canadensys explorer</objectName>
+              <characterEncoding>UTF-8</characterEncoding>
+              <dataFormat>
+                <externallyDefinedFormat>
+                  <formatName>HTML</formatName>
+                </externallyDefinedFormat>
+              </dataFormat>
+              <distribution>
+                <online>
+                  <url function="download">https://data.canadensys.net/explorer/occurrences/search?q=data_resource_uid?dr19</url>
+                </online>
+              </distribution>
+            </physical>
+            <physical>
+              <objectName>GBIF data portal</objectName>
+              <characterEncoding>UTF-8</characterEncoding>
+              <dataFormat>
+                <externallyDefinedFormat>
+                  <formatName>HTML</formatName>
+                </externallyDefinedFormat>
+              </dataFormat>
+              <distribution>
+                <online>
+                  <url function="download">https://www.gbif.org/dataset/628abbe5-dc8d-41e9-a0c7-f05efe282649</url>
+                </online>
+              </distribution>
+            </physical>
+          <resourceLogoUrl>https://data.canadensys.net/ipt/logo.do?r=ubc-vascular-specimens</resourceLogoUrl>
+              <collection>
+                  <parentCollectionIdentifier>UBC</parentCollectionIdentifier>
+                  <collectionIdentifier>UBC</collectionIdentifier>
+                <collectionName>University of British Columbia Herbarium (UBC) - Lichen Collection</collectionName>
+              </collection>
+            <formationPeriod>early 1900s-present</formationPeriod>
+                <specimenPreservationMethod>mounted</specimenPreservationMethod>
+          <dc:replaces>628abbe5-dc8d-41e9-a0c7-f05efe282649/v3.7.xml</dc:replaces>
+      </gbif>
+    </metadata>
+  </additionalMetadata>
+</eml:eml>

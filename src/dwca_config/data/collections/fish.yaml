@@ -1,19 +1,136 @@
 name: fish
 specify_name: Fishes
 query_id: 367
-deduplicate_by: null
 dwca_terms:
   collectionobject.collectingEvent.remarks: eventRemarks
   collectionobject.collectingEvent.text1: recordNumber
-  collectionobject.collectingEvent.collectingEventAttribute.text9: habitat
-  collectionobject.collectingEvent.collectingEventAttribute.text1: minimumDepthInMeters
-  collectionobject.collectingEvent.collectingEventAttribute.text2: maximumDepthInMeters
 dwca_defaults:
   collectionCode: ICH
   collectionID: 5aee131f-91dd-4b78-bfee-296f86801b7f
-  datasetName: Beaty Biodiversity Museum Fish Collection
   datasetID: https://doi.org/10.15468/yacq34
-dwca_metadata:
-  dataset_id: https://doi.org/10.15468/yacq34
-  title: Beaty Biodiversity Museum Fish Collection
-  description: null
+eml_metadata:
+  datasetTitle: Beaty Biodiversity Museum Fish Collection
+  creators:
+  - givenName: Nicolas
+    surName: Bailly
+    organizationName: Beaty Biodiversity Museum
+    positionName: Curatorial Assistant
+    email: nicolas.bailly@ubc.ca
+    address:
+      deliveryPoint: 2212 Main Mall
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+    userId:
+      value: 0000-0003-4994-0653
+      directory: https://orcid.org/
+  associatedParties:
+  - givenName: Paul
+    surName: Bucci
+    organizationName: Beaty Biodiversity Museum
+    positionName: Collections Curator, Biodiversity Informatics
+    email: paul.bucci@ubc.ca
+    role: processor
+    address:
+      deliveryPoint: 2212 Main Mall
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T1Z4
+      country: CA
+    userId:
+      value: 0000-0002-8646-7730
+      directory: https://orcid.org/
+  - givenName: Nicolas
+    surName: Bailly
+    organizationName: Beaty Biodiversity Museum
+    positionName: Curatorial Assistant
+    email: nicolas.bailly@ubc.ca
+    role: custodianSteward
+    address:
+      deliveryPoint: 2212 Main Mall
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T1Z4
+      country: CA
+    userId:
+      value: 0000-0003-4994-0653
+      directory: https://orcid.org/
+  - givenName: Eric G.
+    surName: Taylor
+    organizationName: Department of Zoology
+    positionName: Director of Fish Collection
+    role: curator
+    address:
+      country: CA
+  abstract: The UBC-BBM Fish Collection (University of British Columbia, Beaty Biodiversity
+    Museum, UBFC), was begun by Dr. C. McLean Fraser in the Department of Zoology in the 1910s.
+    It was officially created in 1945 when the cataloguing was started. It has been managed
+    by different UBC institutes and departments until 2010 when the BBM was created. The computerization
+    started in 1975. The oldest specimen was collected in 1903. The collection may currently
+    hold 26,000 lots with 300,000 specimens over the 33,700 lots with 346,000 specimens recorded
+    in the database (inventory 2023). Almost 32,000 recorded lots are georeferenced, from
+    about 5,700 different stations. Two-thirds of the recorded lots come from marine waters,
+    but one third in terms of number of specimens. Besides fishes from British Columbia and
+    adjacent Canada and USA’s states that are the location for 75% of the recorded lots, various
+    expeditions in the Pacific and Asia in the 1950-60s increased the diversity to reach today
+    about 2,800 recorded valid species, with recorded 11 holotypes and 209 paratypes for 38
+    nominal species. About 500 x-ray plates and 129 drawings are available at https://open.library.ubc.ca/collections/bbmnhibc.
+    For more details, see https://beatymuseum.ubc.ca/research-2/collections/fish-collection/.
+    The database was previously disseminated through FishBase since 1996 (temporarily, there
+    may be duplicates in GBIF).
+  keywordSets:
+  - keywords:
+    - Occurrence
+    thesaurus: 'GBIF Dataset Type Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_type_2015-07-10.xml'
+  - keywords:
+    - Specimen
+    thesaurus: 'GBIF Dataset Subtype Vocabulary: http://rs.gbif.org/vocabulary/gbif/dataset_subtype.xml'
+  distributions:
+  - scope: document
+    function: information
+    url: https://collections.beatymuseum.ubc.ca
+  geographicCoverage:
+    description: Worldwide with emphasis for marine species on the North Pacific (some in
+      South Pacific, Atlantic, and Indian ocean), for freshwater species on North America
+      (mainly British Columbia, some in Asia, few in South America and Europe).
+  temporalCoverage:
+    beginDate: '1946-01-01'
+    endDate: '2024-02-01'
+  maintenance:
+    frequency: asNeeded
+  contacts:
+  - givenName: Nicolas
+    surName: Bailly
+    organizationName: Beaty Biodiversity Museum
+    positionName: Curatorial Assistant
+    email: nicolas.bailly@ubc.ca
+    address:
+      deliveryPoint: 2212 Main Mall
+      city: Vancouver
+      administrativeArea: British Columbia
+      postalCode: V6T 1Z4
+      country: CA
+    userId:
+      value: 0000-0003-4994-0653
+      directory: https://orcid.org/
+  externalDataSets:
+  - name: FishBase
+    characterEncoding: UTF-8
+    formatName: Online database
+    formatVersion: '1.0'
+    function: download
+    url: https://fishbase.ca/museum/SpecCollectionsList.php?catnum_operator=BEGINS_WITH&catnum_value=UBC&catnum_fieldname=catnum&catnum_fieldtype=CHAR&genus_operator=EQUAL&genus_value=&genus_fieldname=genus&genus_fieldtype=CHAR&species_operator=EQUAL&species_value=&species_fieldname=species&species_fieldtype=CHAR&genuscol_operator=EQUAL&genuscol_value=&genuscol_fieldname=genuscol&genuscol_fieldtype=CHAR&speciescol_operator=CONTAINS&speciescol_value=&speciescol_fieldname=speciescol&speciescol_fieldtype=CHAR&station_operator=BEGINS_WITH&station_value=&station_fieldname=station&station_fieldtype=CHAR&famcode_value=&famcode_operator=EQUAL&famcode_fieldname=famcode&famcode_fieldtype=INT&c_code_value=&c_code_operator=EQUAL&c_code_fieldname=c_code&c_code_fieldtype=CHAR&areacode_value=&areacode_operator=EQUAL&areacode_fieldname=areacode&areacode_fieldtype=CHAR&locality1_value=&locality1_operator=CONTAINS&locality1_fieldname=locality1&locality1_fieldtype=CHAR&collector_value=&collector_operator=CONTAINS&collector_fieldname=collector&collector_fieldtype=CHAR&year_value=&year_operator=EQUAL&year_fieldname=year&year_fieldtype=INT&expedition_value=&expedition_operator=EQUAL&expedition_fieldname=expedition&expedition_fieldtype=CHAR
+  resourceLogoUrl: https://explore.beatymuseum.ubc.ca/brand/sub/beaty-logo-sub-fish-colour.svg
+  collection:
+    parentIdentifier: ''
+    identifier: ICH
+    name: Beaty Biodiversity Museum Fish Collection
+  preservationMethods:
+  - alcohol
+  - glycerin
+  - other
+  curatorialUnits:
+  - unitType: lots
+    units: '35000'
+    uncertainty: '1000'
