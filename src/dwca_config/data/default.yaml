@@ -83,7 +83,7 @@ dwca_terms:
   collectionobject.determinations.taxon.Superfamily.fullName: superfamily
   collectionobject.determinations.taxon.Superorder.fullName: superorder
   collectionobject.determinations.taxon.Tribe.fullName: tribe
-  collectionobject.determinations.taxon.acceptedTaxon.text1: taxonRank
+  collectionobject.determinations.taxon.acceptedTaxon.Infraspecific.text1: taxonRank
   collectionobject.determinations.taxon.author: scientificNameAuthorship
   collectionobject.determinations.text1: identifiedBy
   collectionobject.determinations.text3: dateIdentified
