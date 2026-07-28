@@ -109,3 +109,7 @@ eml_metadata:
     userId:
       value: 0000-0002-4397-2497
       directory: https://orcid.org/
+  alternateIdentifiers:
+  - 86e3e77d-8fc7-432f-8835-efe87f7248b3
+  - https://data.canadensys.net/ipt/resource?r=beaty-biodiversity-museum-fossils
+  gbifMetadata: null

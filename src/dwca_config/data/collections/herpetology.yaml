@@ -128,3 +128,11 @@ eml_metadata:
     name: Cowan Tetrapod Collection - Herpetology
   preservationMethods:
   - alcohol
+  alternateIdentifiers:
+  - df9c8b86-9d36-4e29-91b3-4274dff053e5
+  - https://data.canadensys.net/ipt/resource?r=ubc_bbm_ctc_herps
+  gbifMetadata:
+    citation:
+      text: Cowan Tetrapod Collection at the University of British Columbia Beaty Biodiversity
+        Museum (UBCBBM)
+      identifier: ''

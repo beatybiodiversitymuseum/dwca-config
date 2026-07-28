@@ -176,6 +176,10 @@ def flatten_eml(document: Dict[str, Any]) -> Dict[str, Any]:
     attributes = root.get("@attributes", {})
     flat: Dict[str, Any] = {
         "languageCode": attributes.get("xml:lang", dataset.get("language")),
+        "alternateIdentifiers": [
+            _node_text(item)
+            for item in _as_list(dataset.get("alternateIdentifier"))
+        ],
         "datasetTitle": _node_text(dataset.get("title")),
         "creators": [_party(item) for item in _as_list(dataset.get("creator"))],
         "metadataProviders": [
@@ -185,6 +189,7 @@ def flatten_eml(document: Dict[str, Any]) -> Dict[str, Any]:
             _party(item) for item in _as_list(dataset.get("associatedParty"))
         ],
         "abstract": _node_text(dataset.get("abstract", {}).get("para")),
+        "publicationDate": {"automatic": True},
         "contacts": [_party(item) for item in _as_list(dataset.get("contact"))],
         "resourceLogoUrl": _node_text(gbif.get("resourceLogoUrl")),
         "formationPeriod": _node_text(gbif.get("formationPeriod")),
@@ -229,13 +234,6 @@ def flatten_eml(document: Dict[str, Any]) -> Dict[str, Any]:
             "url": _node_text(item.get("online", {}).get("url")),
         }
         for item in _as_list(dataset.get("distribution"))
-        if (
-            item.get("online", {})
-            .get("url", {})
-            .get("@attributes", {})
-            .get("function")
-            != "download"
-        )
     ]
 
     coverage = dataset.get("coverage", {})
@@ -355,6 +353,20 @@ def flatten_eml(document: Dict[str, Any]) -> Dict[str, Any]:
             value["endRange"] = _node_text(ranges.get("endRange"))
         units.append(value)
     flat["curatorialUnits"] = units
+
+    citation = gbif.get("citation")
+    if citation is not None:
+        flat["gbifMetadata"] = {
+            "hierarchyLevel": _node_text(gbif.get("hierarchyLevel")) or "dataset",
+            "citation": {
+                "text": _node_text(citation),
+                "identifier": (
+                    citation.get("@attributes", {}).get("identifier")
+                    if isinstance(citation, dict)
+                    else ""
+                ),
+            },
+        }
 
     return {
         key: value

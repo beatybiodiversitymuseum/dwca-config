@@ -164,3 +164,11 @@ eml_metadata:
   formationPeriod: early 1900s - present
   preservationMethods:
   - mounted
+  alternateIdentifiers:
+  - 4edd9396-59df-4b01-9e29-dc21a59f9963
+  - https://data.canadensys.net/ipt/resource?r=ubc-bryophytes
+  gbifMetadata:
+    citation:
+      text: University of British Columbia Herbarium (UBC) - Bryophytes Collection. http://dx.doi.org/10.5886/5rr9fbb6
+        (consulted on [date])
+      identifier: doi:10.5886/5rr9fbb6

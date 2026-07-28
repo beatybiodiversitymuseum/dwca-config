@@ -134,3 +134,7 @@ eml_metadata:
   - unitType: lots
     units: '35000'
     uncertainty: '1000'
+  alternateIdentifiers:
+  - 4caf2040-83ad-4fa7-ba13-005bced721eb
+  - https://data.canadensys.net/ipt/resource?r=beaty-museum-fish-collection
+  gbifMetadata: null

@@ -9,6 +9,12 @@ from .config import (
     merge_config,
     render_eml,
 )
+from .metadata import (
+    LEGACY_TO_CANONICAL,
+    MetadataValidationError,
+    normalize_eml_metadata,
+    validate_metadata,
+)
 
 __all__ = [
     "ConfigError",
@@ -18,6 +24,10 @@ __all__ = [
     "load_eml_config",
     "merge_config",
     "render_eml",
+    "LEGACY_TO_CANONICAL",
+    "MetadataValidationError",
+    "normalize_eml_metadata",
+    "validate_metadata",
 ]
 
-__version__ = "0.3.0"
+__version__ = "0.4.0"

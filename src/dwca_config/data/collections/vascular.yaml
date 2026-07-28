@@ -114,6 +114,9 @@ eml_metadata:
   - scope: document
     function: information
     url: https://collections.beatymuseum.ubc.ca/dataset/07fd0d79-4883-435f-bba1-58fef110cd13
+  - scope: document
+    function: download
+    url: https://data.canadensys.net/ipt/archive.do?r=ubc-vascular-specimens
   geographicCoverage:
     description: The UBC Herbarium has one of the world's largest collections of British Columbia
       vascular plants and is worldwide in scope. Of the 235,000 vascular plant specimens,
@@ -172,3 +175,11 @@ eml_metadata:
   formationPeriod: early 1800s-present
   preservationMethods:
   - mounted
+  alternateIdentifiers:
+  - 07fd0d79-4883-435f-bba1-58fef110cd13
+  - https://data.canadensys.net/ipt/resource?r=ubc-vascular-specimens
+  gbifMetadata:
+    citation:
+      text: University of British Columbia Herbarium (UBC). http://dx.doi.org/10.5886/rtt57cc9.
+        (consulted on [date])
+      identifier: doi:10.5886/rtt57cc9

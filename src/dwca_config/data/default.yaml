@@ -154,3 +154,7 @@ eml_metadata:
     south: '-90'
   maintenance:
     description: ''
+  publicationDate:
+    automatic: true
+  gbifMetadata:
+    hierarchyLevel: dataset

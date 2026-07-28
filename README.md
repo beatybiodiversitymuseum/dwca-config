@@ -31,7 +31,7 @@ dependencies = [
 ```
 
 Replace `<release-tag>` with the release required by the application, for
-example `v0.3.0`. Do not use a moving branch such as `main` for deployments.
+example `v0.4.0`. Do not use a moving branch such as `main` for deployments.
 
 If installation cannot authenticate with GitHub, verify the SSH connection:
 
@@ -56,8 +56,8 @@ The public API is:
 - `load_collection(name)` — return a fresh, merged collection configuration.
 - `load_collection(name, merged=False)` — return only the collection overrides.
 - `load_default()` — return a fresh copy of the institution defaults.
-- `load_eml_config(name)` — return normalized EML configuration merged over
-  shared defaults.
+- `load_eml_config(name)` — return a fresh copy of the same canonical
+  `dwca_metadata` contract.
 - `render_eml(name, **publishing_state)` — generate a standalone, escaped
   GBIF-profile EML document; package UUID and publication dates are generated
   when omitted.
@@ -90,26 +90,129 @@ defaults, EML defaults, and media policy. Each collection file contains only
 additions or overrides and is recursively merged over the defaults by
 `load_collection()`.
 
-Normalized EML is part of the main configuration hierarchy. The `eml_metadata`
-mapping in `default.yaml` holds metadata shared by most collections, while each
-collection YAML contains its `eml_metadata` differences. Null values in a
-collection's EML override remove inherited fields. `load_collection()` includes
-the resolved `eml_metadata` mapping, and `load_eml_config()` returns a fresh copy
-of that mapping directly.
+`load_collection(name)["dwca_metadata"]` is the one canonical public EML
+contract. It is complete, recursively independent between calls, snake_case,
+and validated before it is returned. Consumers never need to merge metadata
+mappings or translate IPT-era names.
 
-To avoid duplicate authorities, collection YAML files do not repeat EML title,
-abstract, creator organization, or dataset ID under `dwca_metadata`.
-`load_collection()` derives that compatibility mapping from resolved EML and
-`dwca_defaults`. It likewise derives `dwca_defaults.datasetName` from the EML
-title unless a collection explicitly publishes a different value.
+The package currently retains `config["eml_metadata"]` as a deprecated,
+read-only compatibility alias using the old camelCase vocabulary. New code must
+not use it. It will be removed in a future breaking release. The packaged YAML
+continues to use that source vocabulary temporarily so existing data can be
+compared exactly with the curated IPT snapshots; normalization is centralized
+inside this package.
 
-The `eml_metadata` mapping follows the readable template vocabulary rather than
-the XML wrapper hierarchy. Common scalar fields include `datasetTitle`, `abstract`,
-`languageCode`, and `formationPeriod`; repeated records use lists such as
-`creators`, `contacts`, `keywordSets`, and `distributions`; related values use
-shallow mappings such as `geographicCoverage`, `maintenance`, and `collection`.
-The resolved configuration has a maximum depth of four while retaining all
-maintained semantic values.
+### Canonical EML schema
+
+The complete public structure is:
+
+```text
+dwca_metadata
+├── dataset_id: string (required)
+├── alternate_identifiers: list[string] (required)
+├── title: string (required)
+├── description: string (required)
+├── language: string (required)
+├── creators: list[party] (required, non-empty)
+├── metadata_providers: list[party] (required)
+├── associated_parties: list[party]
+├── contacts: list[party] (required, non-empty)
+├── publication_date: {automatic: true} | {automatic: false, value: YYYY-MM-DD}
+├── intellectual_rights: {text, link?: {url, title}} (required)
+├── license?: {name, url, identifier}
+├── keyword_sets?: list[{keywords: list[string], thesaurus: string}]
+├── distributions?: list[{scope, function, url}]
+├── maintenance?: {description, frequency}
+├── geographic_coverage?: {description, west, east, north, south}
+├── taxonomic_coverage?: {
+│     description,
+│     classifications: list[{rank_name, rank_value, common_name?}]
+│   }
+├── temporal_coverage?: {begin_date, end_date}
+├── methods?: {steps: list[string]}
+├── project?: object
+├── additional_info?: string
+├── bibliography?: list[{text, identifier}]
+├── external_datasets?: list[{
+│     name, character_encoding, format_name, format_version, function, url
+│   }]
+├── resource_logo_url?: URL
+├── collection?: {parent_identifier, identifier, name}
+├── formation_period?: string
+├── preservation_methods?: list[string]
+├── curatorial_units?: list[{
+│     unit_type, units?, uncertainty?, begin_range?, end_range?
+│   }]
+└── gbif_metadata?: {
+      hierarchy_level,
+      citation: {text, identifier}
+    }
+
+party = {
+  given_name?, sur_name?, organization_name?, position_name?, phone?, email?,
+  online_url?, role?,
+  address?: {
+    delivery_point?, city?, administrative_area?, postal_code?, country?
+  },
+  user_id?: {value, directory}
+}
+```
+
+Required nested keys are validated, as are list/scalar distinctions, absolute
+HTTP(S) URLs, ISO publication dates, and coordinate ranges. Longitudes must be
+between -180 and 180, latitudes between -90 and 90, west must not exceed east,
+and south must not exceed north.
+
+### Legacy key migration
+
+Top-level IPT-era keys map as follows:
+
+| Legacy | Canonical |
+|---|---|
+| `datasetTitle` | `title` |
+| `alternateIdentifiers` | `alternate_identifiers` |
+| `abstract` | `description` |
+| `languageCode` | `language` |
+| `metadataProviders` | `metadata_providers` |
+| `associatedParties` | `associated_parties` |
+| `publicationDate` | `publication_date` |
+| `keywordSets` | `keyword_sets` |
+| `intellectualRights` | `intellectual_rights` |
+| `geographicCoverage` | `geographic_coverage` |
+| `taxonomicCoverage` | `taxonomic_coverage` |
+| `temporalCoverage` | `temporal_coverage` |
+| `additionalInfo` | `additional_info` |
+| `externalDataSets` | `external_datasets` |
+| `resourceLogoUrl` | `resource_logo_url` |
+| `formationPeriod` | `formation_period` |
+| `preservationMethods` | `preservation_methods` |
+| `curatorialUnits` | `curatorial_units` |
+| `gbifMetadata` | `gbif_metadata` |
+
+All nested camelCase keys are converted recursively (`givenName` to
+`given_name`, `rankValue` to `rank_value`, and so on). `dataset_id` comes from
+the collection's publication default and falls back to its first alternate
+identifier. Unrecognized legacy fields are retained under their recursively
+snake-cased names rather than silently discarded.
+
+### Usage
+
+```python
+from dwca_config import load_collection
+
+metadata = load_collection("vascular")["dwca_metadata"]
+
+title = metadata["title"]
+doi = metadata["dataset_id"]
+creator = metadata["creators"][0]["organization_name"]
+license_url = metadata["license"]["url"]
+bounds = metadata["geographic_coverage"]
+gbif_citation = metadata["gbif_metadata"]["citation"]
+```
+
+That single mapping contains every maintained value required to construct the
+GBIF-profile EML. XML generation remains the consumer's responsibility;
+`render_eml()` is retained only as the package's existing convenience renderer.
 
 The corresponding human-readable XML outline is packaged at
 `templates/eml.xml.j2`. The supported renderer builds repeated and optional
@@ -137,12 +240,11 @@ from pathlib import Path
 Path("eml.xml").write_text(xml, encoding="utf-8")
 ```
 
-Publishing state is deliberately excluded from configuration. Values such as
-IPT/GBIF package UUIDs and versions, publication dates, date stamps,
-`dc:replaces`, generated dataset citations, archive download URLs, system,
-scope, and hierarchy level belong to the publisher or EML renderer. Stable
-collection identifiers, dataset DOIs, descriptive metadata, people, rights,
-coverage, maintenance policy, and informational URLs remain maintained here.
+Mutable publisher state such as package versions, date stamps, `dc:replaces`,
+system, and scope remains excluded. The contract does include stable alternate
+identifiers, archive distributions, GBIF citation metadata, hierarchy level,
+and an explicit publication-date policy. `{automatic: true}` directs a consumer
+to use its current publication date.
 
 Curated XML reference snapshots live under `tests/fixtures/eml`; they are not
 included in the runtime package. They seed the importer and verify that every

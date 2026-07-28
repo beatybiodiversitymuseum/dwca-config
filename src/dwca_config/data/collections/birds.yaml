@@ -146,3 +146,11 @@ eml_metadata:
   - unitType: skeletons
     beginRange: '820'
     endRange: '850'
+  alternateIdentifiers:
+  - ba0c046d-52bb-4262-a495-652988c9f3f7
+  - https://data.canadensys.net/ipt/resource?r=ubc_bbm_ctc_birds
+  gbifMetadata:
+    citation:
+      text: Cowan Tetrapod Collection at the University of British Columbia Beaty Biodiversity
+        Museum (UBCBBM)
+      identifier: ''

@@ -7,6 +7,7 @@ from typing import Any, Dict, Mapping
 import yaml
 
 from .eml import merge_eml, render_eml_document
+from .metadata import legacy_eml_metadata, normalize_eml_metadata
 
 
 class ConfigError(ValueError):
@@ -47,9 +48,9 @@ def load_default() -> Dict[str, Any]:
 
 
 def load_eml_config(name: str) -> Dict[str, Any]:
-    """Load resolved EML from the main collection configuration."""
+    """Load a fresh copy of the canonical EML metadata contract."""
 
-    resolved = load_collection(name).get("eml_metadata")
+    resolved = load_collection(name).get("dwca_metadata")
     if not isinstance(resolved, dict):
         raise ConfigError(f"Resolved EML configuration for {name!r} is invalid")
     return deepcopy(resolved)
@@ -58,27 +59,19 @@ def load_eml_config(name: str) -> Dict[str, Any]:
 def render_eml(name: str, **publishing_state: Any) -> str:
     """Render a collection's resolved configuration as standalone EML XML."""
 
-    return render_eml_document(load_eml_config(name), **publishing_state)
+    canonical = load_eml_config(name)
+    publication = canonical["publication_date"]
+    if "publication_date" not in publishing_state and not publication.get("automatic"):
+        publishing_state["publication_date"] = publication["value"]
+    return render_eml_document(
+        legacy_eml_metadata(canonical), **publishing_state
+    )
 
 
 def _eml_text(value: Any) -> Any:
     if not isinstance(value, Mapping):
         return value
     return value.get("#content", value.get("#text"))
-
-
-def _metadata_projection(eml: Mapping[str, Any]) -> Dict[str, Any]:
-    creators = eml.get("creators", [])
-    creator = creators[0] if isinstance(creators, list) and creators else {}
-    return {
-        "title": eml.get("datasetTitle"),
-        "description": eml.get("abstract"),
-        "organization": (
-            creator.get("organizationName")
-            if isinstance(creator, Mapping)
-            else None
-        ),
-    }
 
 
 def merge_config(
@@ -114,11 +107,11 @@ def load_collection(name: str, *, merged: bool = True) -> Dict[str, Any]:
     resolved = merge_config(default, collection)
     if shared_eml or collection_eml:
         resolved["eml_metadata"] = merge_eml(shared_eml, collection_eml)
-        projected = _metadata_projection(resolved["eml_metadata"])
-        metadata = merge_config(resolved.get("dwca_metadata", {}), projected)
         defaults = resolved.setdefault("dwca_defaults", {})
-        metadata["dataset_id"] = defaults.get("datasetID")
         if not defaults.get("datasetName"):
-            defaults["datasetName"] = projected.get("title")
-        resolved["dwca_metadata"] = metadata
+            defaults["datasetName"] = resolved["eml_metadata"].get("datasetTitle")
+        resolved["dwca_metadata"] = normalize_eml_metadata(
+            resolved["eml_metadata"],
+            dataset_id=defaults.get("datasetID"),
+        )
     return resolved

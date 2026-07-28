@@ -136,6 +136,9 @@ eml_metadata:
   - scope: document
     function: information
     url: https://beatymuseum.ubc.ca/research-2/collections/herbarium/
+  - scope: document
+    function: download
+    url: https://data.canadensys.net/ipt/archive.do?r=ubc-algae-specimens
   geographicCoverage:
     description: The strength of the U.B.C. Phycological Collection is primarily in the northeast
       Pacific, where its holdings represent the most comprehensive of any Herbarium. In addition,
@@ -211,3 +214,11 @@ eml_metadata:
   formationPeriod: mid 1800s-present
   preservationMethods:
   - mounted
+  alternateIdentifiers:
+  - 90302970-1bc6-4865-be76-9aef1dd707f9
+  - https://data.canadensys.net/ipt/resource?r=ubc-algae-specimens
+  gbifMetadata:
+    citation:
+      text: University of British Columbia Herbarium (UBC). http://dx.doi.org/10.5886/ujwtvvs2.
+        (consulted on [date])
+      identifier: doi:10.5886/ujwtvvs2

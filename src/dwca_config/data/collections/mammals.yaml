@@ -135,3 +135,11 @@ eml_metadata:
     name: Cowan Tetrapod Collection - Mammals
   preservationMethods:
   - dried
+  alternateIdentifiers:
+  - 3ad882bb-cd21-4201-8b83-3684bfc6d830
+  - https://data.canadensys.net/ipt/resource?r=ubc_bbm_ctc_mammals
+  gbifMetadata:
+    citation:
+      text: Cowan Tetrapod Collection at the University of British Columbia Beaty Biodiversity
+        Museum (UBCBBM)
+      identifier: ''

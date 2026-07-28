@@ -95,3 +95,6 @@ eml_metadata:
     userId:
       value: 0000-0002-8646-7730
       directory: https://orcid.org/
+  alternateIdentifiers:
+  - https://data.canadensys.net/ipt/resource?r=beaty-biodiversity-museum-marine-invertebrates
+  gbifMetadata: null

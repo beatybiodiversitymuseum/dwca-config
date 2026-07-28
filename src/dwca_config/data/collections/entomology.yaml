@@ -164,3 +164,12 @@ eml_metadata:
   - unitType: microscope slides
     beginRange: '25000'
     endRange: '30000'
+  alternateIdentifiers:
+  - 9c45867f-f77d-42f3-9751-ae16bb7c9bc8
+  - http://dx.doi.org/10.5886/r5d29ft9
+  - https://data.canadensys.net/ipt/resource?r=ubc-entomology-collections
+  gbifMetadata:
+    citation:
+      text: Spencer Entomological Collection (UBCZ) from University of British Columbia. http://dx.doi.org/10.5886/r5d29ft9
+        (accessed on [date])
+      identifier: doi:10.5886/r5d29ft9

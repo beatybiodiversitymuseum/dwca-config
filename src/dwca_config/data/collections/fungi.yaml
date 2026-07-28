@@ -158,3 +158,12 @@ eml_metadata:
   formationPeriod: early 1900s-present
   preservationMethods:
   - dried
+  alternateIdentifiers:
+  - ca1bcd7e-7387-42f9-81ba-1470db55e3e8
+  - http://dx.doi.org/10.5886/h4px7g4b
+  - https://data.canadensys.net/ipt/resource?r=ubc-fungi-specimens
+  gbifMetadata:
+    citation:
+      text: University of British Columbia Herbarium (UBC) - Fungi Collection from University
+        of British Columbia. http://dx.doi.org/10.5886/h4px7g4b (accessed on [date])
+      identifier: doi:10.5886/h4px7g4b

@@ -205,3 +205,11 @@ eml_metadata:
   formationPeriod: early 1900s-present
   preservationMethods:
   - mounted
+  alternateIdentifiers:
+  - 628abbe5-dc8d-41e9-a0c7-f05efe282649
+  - https://data.canadensys.net/ipt/resource?r=ubc-lichen
+  gbifMetadata:
+    citation:
+      text: University of British Columbia Lichen Collection (UBC). http://dx.doi.org/10.5886/8hh3tyfd.
+        (consulted on [date])
+      identifier: doi:10.5886/8hh3tyfd
