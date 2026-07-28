@@ -31,7 +31,7 @@ dependencies = [
 ```
 
 Replace `<release-tag>` with the release required by the application, for
-example `v0.2.0`. Do not use a moving branch such as `main` for deployments.
+example `v0.3.0`. Do not use a moving branch such as `main` for deployments.
 
 If installation cannot authenticate with GitHub, verify the SSH connection:
 

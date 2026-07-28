@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.3.0 — 2026-07-28
+
+### Fixed
+
+- Corrected the preferred-taxon rank path so `taxonRank` is read from the
+  infraspecific taxon node.
+
 ## v0.2.0 — 2026-07-23
 
 This release makes the package the maintained source of Beaty Biodiversity
