@@ -60,7 +60,7 @@ dwca_terms:
   collectionobject.determinations.preferredTaxon.Kingdom.fullName: kingdom
   collectionobject.determinations.preferredTaxon.Order.fullName: order
   collectionobject.determinations.preferredTaxon.Species.fullName: specificEpithet
-  collectionobject.determinations.preferredTaxon.text10: taxonRank
+  collectionobject.determinations.preferredTaxon.Infraspecific.text10: taxonRank
   collectionobject.determinations.remarks: identificationRemarks
   collectionobject.determinations.taxon.Class.fullName: class
   collectionobject.determinations.taxon.Division.fullName: phylum
