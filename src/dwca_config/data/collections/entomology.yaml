@@ -1,6 +1,5 @@
 name: entomology
 specify_name: Entomology
-query_id: 369
 dwca_terms:
   collectionobject.collectingEvent.remarks: localityRemarks
   collectionobject.collectingEvent.text1: recordedBy
