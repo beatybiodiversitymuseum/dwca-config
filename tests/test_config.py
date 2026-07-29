@@ -191,6 +191,7 @@ class ConfigTests(unittest.TestCase):
         self.assertNotIn("datasetTitle", config["dwca_metadata"])
 
     def test_renderer_accepts_canonical_configuration(self):
+        metadata = load_collection("vascular")["dwca_metadata"]
         xml = render_eml(
             "vascular",
             package_id="test-package",
@@ -200,6 +201,45 @@ class ConfigTests(unittest.TestCase):
         root = ET.fromstring(xml)
         self.assertEqual(root.attrib["packageId"], "test-package")
         self.assertGreater(len(list(root.iter())), 100)
+        local = lambda element: element.tag.rsplit("}", 1)[-1]
+        identifiers = [
+            element.text
+            for element in root.iter()
+            if local(element) == "alternateIdentifier"
+        ]
+        self.assertEqual(
+            identifiers,
+            [metadata["dataset_id"], *metadata["alternate_identifiers"]],
+        )
+        citations = [
+            element
+            for element in root.iter()
+            if local(element) == "citation"
+        ]
+        dataset_citation = metadata["gbif_metadata"]["citation"]
+        self.assertTrue(any(
+            element.text == dataset_citation["text"]
+            and element.attrib.get("identifier") == dataset_citation["identifier"]
+            for element in citations
+        ))
+        rights = next(
+            element
+            for element in root.iter()
+            if local(element) == "intellectualRights"
+        )
+        self.assertEqual(
+            "".join(rights.itertext()).strip(),
+            metadata["intellectual_rights"]["text"],
+        )
+        links = [
+            element
+            for element in rights.iter()
+            if local(element) == "ulink"
+        ]
+        self.assertEqual(
+            links[0].attrib["url"],
+            metadata["intellectual_rights"]["link"]["url"],
+        )
 
     def test_unknown_collection_has_useful_error(self):
         with self.assertRaisesRegex(ConfigError, "Unknown collection"):

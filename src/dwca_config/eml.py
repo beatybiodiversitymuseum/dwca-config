@@ -539,6 +539,15 @@ def render_eml_document(
         },
     )
     dataset = _add(root, "dataset")
+    identifiers = []
+    for identifier in (
+        [metadata.get("datasetID")]
+        + _as_list(metadata.get("alternateIdentifiers"))
+    ):
+        if identifier and identifier not in identifiers:
+            identifiers.append(identifier)
+    for identifier in identifiers:
+        _add(dataset, "alternateIdentifier", identifier)
     _add(dataset, "title", metadata["datasetTitle"], **{
         "{http://www.w3.org/XML/1998/namespace}lang": language
     })
@@ -559,13 +568,23 @@ def render_eml_document(
         if keyword_set.get("thesaurus") is not None:
             _add(node, "keywordThesaurus", keyword_set["thesaurus"])
 
+    inline_rights_links = []
     rights = metadata.get("intellectualRights")
     if isinstance(rights, dict):
-        para = _add(_add(dataset, "intellectualRights"), "para", rights.get("text", ""))
+        text = rights.get("text", "")
+        para = _add(_add(dataset, "intellectualRights"), "para")
         link = rights.get("link")
         if isinstance(link, dict) and link.get("url"):
+            title = link.get("title", link["url"])
+            before, separator, after = text.partition(title)
+            para.text = before if separator else text
             ulink = _add(para, "ulink", url=link["url"])
-            _add(ulink, "citetitle", link.get("title", link["url"]))
+            citetitle = _add(ulink, "citetitle", title)
+            inline_rights_links.append((ulink, citetitle))
+            if separator:
+                ulink.tail = after
+        else:
+            para.text = text
 
     license_value = metadata.get("license")
     if isinstance(license_value, dict):
@@ -641,7 +660,22 @@ def render_eml_document(
     additional = _add(_add(root, "additionalMetadata"), "metadata")
     gbif = _add(additional, "gbif")
     _add(gbif, "dateStamp", date_stamp or today)
-    _add(gbif, "hierarchyLevel", hierarchy_level)
+    gbif_metadata = metadata.get("gbifMetadata")
+    configured_hierarchy = (
+        gbif_metadata.get("hierarchyLevel")
+        if isinstance(gbif_metadata, dict)
+        else None
+    )
+    _add(gbif, "hierarchyLevel", configured_hierarchy or hierarchy_level)
+    if isinstance(gbif_metadata, dict):
+        citation = gbif_metadata.get("citation")
+        if isinstance(citation, dict):
+            _add(
+                gbif,
+                "citation",
+                citation.get("text", ""),
+                identifier=citation.get("identifier"),
+            )
     bibliography = metadata.get("bibliography")
     if bibliography:
         node = _add(gbif, "bibliography")
@@ -691,4 +725,9 @@ def render_eml_document(
         _add(gbif, f"{{{_DC_NAMESPACE}}}replaces", replaces)
 
     ET.indent(root, space="  ")
+    for ulink, citetitle in inline_rights_links:
+        if ulink.text is not None and not ulink.text.strip():
+            ulink.text = None
+        if citetitle.tail is not None and not citetitle.tail.strip():
+            citetitle.tail = None
     return ET.tostring(root, encoding="unicode", xml_declaration=True)

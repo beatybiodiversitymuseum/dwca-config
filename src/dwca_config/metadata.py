@@ -95,11 +95,13 @@ def legacy_eml_metadata(canonical: Mapping[str, Any]) -> Dict[str, Any]:
             return [camel_value(item) for item in value]
         return deepcopy(value)
 
-    return {
+    legacy = {
         reverse.get(key, key): camel_value(value)
         for key, value in canonical.items()
-        if key not in ("dataset_id",)
+        if key != "dataset_id"
     }
+    legacy["datasetID"] = deepcopy(canonical.get("dataset_id"))
+    return legacy
 
 
 def _fail(path: str, message: str) -> None:

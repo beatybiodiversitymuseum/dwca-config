@@ -42,6 +42,18 @@ Museum DwCA and EML publication configuration.
 - All twelve collection configurations load and render as well-formed EML.
 - The 21-test suite passes.
 - Both the source distribution and wheel build successfully.
+# 0.4.3
+
+- Render the canonical dataset ID and alternate identifiers as deduplicated
+  EML `alternateIdentifier` elements.
+- Render the canonical GBIF dataset citation and configured hierarchy level in
+  `additionalMetadata`.
+- Reconstruct intellectual-rights links as mixed XML content so the structured
+  link remains present without duplicating its title in the visible rights
+  text.
+- Add semantic renderer regression coverage for identifiers, citations,
+  rights text, and rights URLs.
+
 # 0.4.2
 
 - Remove obsolete Specify query IDs for birds, fish, fossils, lichen, and
