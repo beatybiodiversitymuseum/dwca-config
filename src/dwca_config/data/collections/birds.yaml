@@ -1,6 +1,5 @@
 name: birds
 specify_name: Birds
-query_id: 363
 dwca_terms:
   collectionobject.collectingEvent.locality.text1: verbatimCoordinates
   collectionobject.collectingEvent.text1: fieldNotes

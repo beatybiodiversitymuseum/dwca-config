@@ -1,6 +1,5 @@
 name: fish
 specify_name: Fishes
-query_id: 367
 dwca_terms:
   collectionobject.collectingEvent.remarks: eventRemarks
   collectionobject.collectingEvent.text1: recordNumber

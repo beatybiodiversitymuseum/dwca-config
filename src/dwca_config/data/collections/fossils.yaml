@@ -1,6 +1,5 @@
 name: fossils
 specify_name: Paleontology
-query_id: 380
 dwca_defaults:
   collectionCode: PAL
   collectionID: 1fcf0cb0-aa26-40d0-8311-fb4b6f2050f7

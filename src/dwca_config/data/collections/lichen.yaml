@@ -1,6 +1,5 @@
 name: lichen
 specify_name: Lichen
-query_id: 515
 dwca_terms:
   collectionobject.collectingEvent.remarks: habitat
   collectionobject.collectingEvent.text3: recordedBy

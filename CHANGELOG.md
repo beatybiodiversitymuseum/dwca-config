@@ -42,6 +42,11 @@ Museum DwCA and EML publication configuration.
 - All twelve collection configurations load and render as well-formed EML.
 - The 21-test suite passes.
 - Both the source distribution and wheel build successfully.
+# 0.4.2
+
+- Remove obsolete Specify query IDs for birds, fish, fossils, lichen, and
+  marine invertebrates so consumers do not run retired saved queries.
+
 # 0.4.1
 
 - Remove the obsolete entomology Specify query ID so consumers do not run the

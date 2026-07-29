@@ -1,6 +1,5 @@
 name: marine_invertebrates
 specify_name: Marine Invertebrates
-query_id: 368
 dwca_defaults:
   collectionCode: MIC
   collectionID: 403e3c1f-086f-461b-9718-60537ee4ce3c

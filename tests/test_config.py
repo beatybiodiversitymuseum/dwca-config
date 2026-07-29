@@ -41,7 +41,16 @@ class ConfigTests(unittest.TestCase):
         config = load_collection("birds")
         self.assertEqual(config["dwca_defaults"]["institutionCode"], "BBM")
         self.assertEqual(config["dwca_defaults"]["collectionCode"], "CTC")
-        self.assertIsNone(load_collection("entomology")["query_id"])
+        for name in (
+            "birds",
+            "entomology",
+            "fish",
+            "fossils",
+            "lichen",
+            "marine_invertebrates",
+        ):
+            with self.subTest(retired_query_collection=name):
+                self.assertIsNone(load_collection(name)["query_id"])
         first = load_collection("vascular")
         second = load_collection("vascular")
         first["dwca_metadata"]["creators"][0]["given_name"] = "changed"
