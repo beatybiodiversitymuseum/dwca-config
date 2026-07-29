@@ -42,6 +42,11 @@ Museum DwCA and EML publication configuration.
 - All twelve collection configurations load and render as well-formed EML.
 - The 21-test suite passes.
 - Both the source distribution and wheel build successfully.
+# 0.4.1
+
+- Remove the obsolete entomology Specify query ID so consumers do not run the
+  retired saved query.
+
 # 0.4.0
 
 - Make `dwca_metadata` the complete, validated snake_case EML metadata contract.
