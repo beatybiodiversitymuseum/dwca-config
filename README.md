@@ -319,6 +319,8 @@ Clone the repository and install it in editable mode:
 ```console
 git clone git@github.com:beatybiodiversitymuseum/dwca-config.git
 cd dwca-config
+python3 -m venv .venv
+source .venv/bin/activate
 python -m pip install -e .
 ```
 
