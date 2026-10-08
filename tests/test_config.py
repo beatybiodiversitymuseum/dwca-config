@@ -87,7 +87,8 @@ class ConfigTests(unittest.TestCase):
         self.assertIn("citation", metadata["gbif_metadata"])
 
     def test_algae_metadata_is_complete(self):
-        metadata = load_collection("algae")["dwca_metadata"]
+        config = load_collection("algae")
+        metadata = config["dwca_metadata"]
         self.assertEqual(len(metadata["associated_parties"]), 5)
         self.assertEqual(len(metadata["keyword_sets"]), 4)
         self.assertEqual(len(metadata["distributions"]), 2)
@@ -97,6 +98,11 @@ class ConfigTests(unittest.TestCase):
         ), 7)
         self.assertEqual(metadata["formation_period"], "mid 1800s-present")
         self.assertEqual(metadata["collection"]["name"], metadata["title"])
+        self.assertNotIn("microhabitat", config["dwca_terms"].values())
+        self.assertEqual(
+            config["dwca_dynamic_properties"],
+            {"collectionobject.collectingEvent.text4": "microhabitat"},
+        )
 
     def test_legacy_normalization_preserves_every_value(self):
         defaults = load_default()

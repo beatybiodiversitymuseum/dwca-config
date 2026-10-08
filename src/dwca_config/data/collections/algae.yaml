@@ -5,10 +5,11 @@ dwca_terms:
   collectionobject.collectingEvent.remarks: habitat
   collectionobject.collectingEvent.text2: eventRemarks
   collectionobject.collectingEvent.text3: verbatimEventDate
-  collectionobject.collectingEvent.text4: microhabitat
   collectionobject.collectingEvent.text5: recordedBy
   collectionobject.determinations.text2: dateIdentified
   collectionobject.determinations.text5: identifiedBy
+dwca_dynamic_properties:
+  collectionobject.collectingEvent.text4: microhabitat
 dwca_defaults:
   collectionCode: UBC
   collectionID: http://grscicoll.org/institution/university-british-columbia-botany-department
