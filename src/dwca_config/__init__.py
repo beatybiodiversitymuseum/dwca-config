@@ -30,4 +30,4 @@ __all__ = [
     "validate_metadata",
 ]
 
-__version__ = "0.4.3"
+__version__ = "0.4.5"
